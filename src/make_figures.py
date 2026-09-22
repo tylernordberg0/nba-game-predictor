@@ -84,7 +84,7 @@ def live_accuracy() -> None:
     _pct(ax, 0.1)
     ax.xaxis.set_major_formatter(matplotlib.dates.DateFormatter("%b %-d"))
     ax.set_ylabel("Cumulative accuracy")
-    _titles(ax, f"Live predictions: {n} games so far", "Wide interval = small sample; not yet distinguishable from the backtest")
+    _titles(ax, f"Live test: {n} games, picked before tip-off", "Wide interval = small sample; not distinguishable from the backtest")
     ax.legend(loc="lower right", frameon=False, fontsize=9)
     fig.tight_layout()
     fig.savefig(FIGURES_DIR / "live_accuracy.png", dpi=150)

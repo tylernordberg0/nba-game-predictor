@@ -1,6 +1,6 @@
 # NBA Game Predictor
 
-A logistic regression model that predicts NBA game winners from each team's last 10 games. It runs as a daily pipeline that pulls live data from the NBA stats API, retrains, publishes its picks before tip-off, and scores them against the real results.
+A logistic regression model that predicts NBA game winners from each team's last 10 games. It includes a daily pipeline that pulls live data from the NBA stats API, retrains, predicts the day's games, and scores the picks against real results.
 
 ## Results
 
@@ -9,7 +9,7 @@ A logistic regression model that predicts NBA game winners from each team's last
 | **Season-by-season backtest** (2017-18 to 2025-26) | 10,739 | **62.8%** | 56.0% |
 | 80/20 time-ordered holdout (Mar 2024 to Apr 2026) | 2,631 | 64.2% | 54.7% |
 | 5-fold `TimeSeriesSplit` | 13,152 | 62.7% (mean) | – |
-| Live picks, made before tip-off (Feb 6–12, 2026) | 51 | 64.7% (33–18) | – |
+| Live test: picks made before tip-off (Feb 6–12, 2026) | 51 | 64.7% (33–18) | – |
 
 In the backtest, each season is predicted by a model trained only on the seasons before it. The model beats the home-team baseline in every one of the 9 seasons, by 2.4 to 9.8 points.
 
@@ -27,15 +27,15 @@ About a third of games are essentially coin flips for this model. The daily outp
 
 All backtest numbers come from `python -m src.backtest` and are saved in [`results/backtest_metrics.json`](results/backtest_metrics.json). They can move by a few tenths of a point between runs because the NBA occasionally revises past box scores.
 
-## Live track record
+## Live test
 
-Every prediction is appended to [`results/predictions.csv`](results/predictions.csv) with a UTC timestamp before games start, then committed and pushed. The next day's run fills in the winner. Picks are never edited after they're saved, and GitHub's server-side push times (in the repo's Activity view) show when each day's picks went up.
+I ran the pipeline daily for a week in February 2026, before games started each day, and scored the picks against the real results. Each prediction is one row in [`results/predictions.csv`](results/predictions.csv) with the winner filled in. Running `python -m src.run_daily` appends new picks with a UTC timestamp, skips games that have already tipped off, and never edits a pick once it's saved.
 
 ![Live accuracy](figures/live_accuracy.png)
 
-The first 51 live games (Feb 2026) went 33–18. With so few games the 95% interval is roughly 52–78%, so this confirms the pipeline works end to end, not that the model beats its backtest. Tracking resumes with the 2026-27 season.
+The 51 live games went 33–18. With so few games the 95% interval is roughly 52–78%, so this confirms the pipeline works end to end, not that the model beats its backtest.
 
-Two things to know about those first rows (`model_version = v1`):
+Two things to know about these rows (`model_version = v1`):
 - They were made by the original script, which didn't record timestamps, so `predicted_at` is blank. They're converted from the untouched JSON files in [`results/archive/`](results/archive/) by [`scripts/convert_legacy_history.py`](scripts/convert_legacy_history.py).
 - The original script had a bug: live features left out each team's most recent game, so they were one game out of date. `v2` fixes this. The backtest was never affected; the bug was only in the live-prediction path.
 
@@ -68,7 +68,7 @@ The selection rule itself (≥ 60% confidence) is unchanged, so new bets are com
 nba_api game logs ──► features (rolling 10-game averages) ──► logistic regression ──► today's picks
      (2015-16 →)            one row per game: home & away           retrained daily         │
                                                                                             ▼
-                        results/predictions.csv ◄── next day: fill in winners ◄── daily commit + push
+                        results/predictions.csv ◄── next day: fill in winners
 ```
 
 **Data.** Team box scores for every regular-season game since 2015-16, from the NBA stats API via [`nba_api`](https://github.com/swar/nba_api) (`TeamGameLogs`), plus the day's schedule (`ScoreboardV2`). Completed seasons are cached; the current season is re-downloaded once a day. The exploration notebook also uses the [Kaggle NBA games dataset](https://www.kaggle.com/datasets/nathanlauga/nba-games) (2003–2022). No raw data is committed; see [`data/README.md`](data/README.md).
@@ -131,8 +131,6 @@ python -m src.betting               # interactive: log bets on today's picks / s
 
 The first run downloads about 11 seasons of game logs (roughly a minute). No API keys are needed.
 
-**Automation.** [`scripts/run_and_push.sh`](scripts/run_and_push.sh) runs the pipeline, regenerates the charts, and commits and pushes the results. It's scheduled locally for about 11am ET. I first tried GitHub Actions ([`.github/workflows/daily.yml`](.github/workflows/daily.yml)), but stats.nba.com times out requests from GitHub's cloud runners, a known issue with `nba_api`. So the workflow is kept for manual runs only, until the block lifts.
-
 ## Repo structure
 
 ```
@@ -153,9 +151,8 @@ The first run downloads about 11 seasons of game logs (roughly a minute). No API
 │   ├── backtest_metrics.json, backtest_by_season.csv
 │   └── archive/           # original JSON history, unmodified
 ├── figures/
-├── scripts/               # run_and_push.sh (daily job), convert_legacy_history.py
-├── data/                  # local cache only (not committed)
-└── .github/workflows/daily.yml   # manual-only (see Automation)
+├── scripts/convert_legacy_history.py
+└── data/                  # local cache only (not committed)
 ```
 
 ## License
