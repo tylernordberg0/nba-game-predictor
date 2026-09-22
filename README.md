@@ -29,7 +29,7 @@ All backtest numbers come from `python -m src.backtest` and are saved in [`resul
 
 ## Live track record
 
-Every prediction is appended to [`results/predictions.csv`](results/predictions.csv) with a UTC timestamp before games start. A GitHub Actions job commits it daily, so the commit history is public proof of when each pick was made. The next day's run fills in the winner. Picks are never edited after they're saved.
+Every prediction is appended to [`results/predictions.csv`](results/predictions.csv) with a UTC timestamp before games start, then committed and pushed. The next day's run fills in the winner. Picks are never edited after they're saved, and GitHub's server-side push times (in the repo's Activity view) show when each day's picks went up.
 
 ![Live accuracy](figures/live_accuracy.png)
 
@@ -68,7 +68,7 @@ The selection rule itself (≥ 60% confidence) is unchanged, so new bets are com
 nba_api game logs ──► features (rolling 10-game averages) ──► logistic regression ──► today's picks
      (2015-16 →)            one row per game: home & away           retrained daily         │
                                                                                             ▼
-                        results/predictions.csv ◄── next day: fill in winners ◄── GitHub Actions commit
+                        results/predictions.csv ◄── next day: fill in winners ◄── daily commit + push
 ```
 
 **Data.** Team box scores for every regular-season game since 2015-16, from the NBA stats API via [`nba_api`](https://github.com/swar/nba_api) (`TeamGameLogs`), plus the day's schedule (`ScoreboardV2`). Completed seasons are cached; the current season is re-downloaded once a day. The exploration notebook also uses the [Kaggle NBA games dataset](https://www.kaggle.com/datasets/nathanlauga/nba-games) (2003–2022). No raw data is committed; see [`data/README.md`](data/README.md).
@@ -131,7 +131,7 @@ python -m src.betting               # interactive: log bets on today's picks / s
 
 The first run downloads about 11 seasons of game logs (roughly a minute). No API keys are needed.
 
-**Automation.** [`.github/workflows/daily.yml`](.github/workflows/daily.yml) runs the pipeline at 15:00 UTC every day and commits the updated CSV and charts. It needs no secrets; the only permission it uses is `contents: write`, to push its commit. You can also start it manually from the Actions tab.
+**Automation.** [`scripts/run_and_push.sh`](scripts/run_and_push.sh) runs the pipeline, regenerates the charts, and commits and pushes the results. It's scheduled locally for about 11am ET. I first tried GitHub Actions ([`.github/workflows/daily.yml`](.github/workflows/daily.yml)), but stats.nba.com times out requests from GitHub's cloud runners, a known issue with `nba_api`. So the workflow is kept for manual runs only, until the block lifts.
 
 ## Repo structure
 
@@ -153,7 +153,7 @@ The first run downloads about 11 seasons of game logs (roughly a minute). No API
 │   ├── backtest_metrics.json, backtest_by_season.csv
 │   └── archive/           # original JSON history, unmodified
 ├── figures/
-├── scripts/convert_legacy_history.py
+├── scripts/               # run_and_push.sh (daily job), convert_legacy_history.py
 ├── data/                  # local cache only (not committed)
-└── .github/workflows/daily.yml
+└── .github/workflows/daily.yml   # manual-only (see Automation)
 ```

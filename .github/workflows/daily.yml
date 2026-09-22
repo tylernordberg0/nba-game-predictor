@@ -1,9 +1,12 @@
 name: Daily predictions
 
+# stats.nba.com currently times out requests from GitHub-hosted runners
+# (tested Sept 2026), so this is manual-only for now and the daily run uses
+# scripts/run_and_push.sh on a local machine. If the block lifts, add back:
+#   schedule:
+#     - cron: "0 15 * * *"  # 15:00 UTC = 11am ET (10am in winter)
 on:
-  schedule:
-    - cron: "0 15 * * *"  # 15:00 UTC = 11am ET (10am in winter), before the earliest tip-offs
-  workflow_dispatch:       # "Run workflow" button for manual runs
+  workflow_dispatch:
 
 permissions:
   contents: write          # to commit results back to the repo
