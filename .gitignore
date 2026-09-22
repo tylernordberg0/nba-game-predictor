@@ -1,0 +1,19 @@
+# Environments and secrets
+venv/
+.venv/
+.env
+
+# Python / Jupyter caches
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Data: NBA API cache and Kaggle raw files are not redistributed (see data/README.md)
+data/*
+!data/README.md
+*.pkl
+
+# Local-only files
+_private/
+*.docx
+.DS_Store

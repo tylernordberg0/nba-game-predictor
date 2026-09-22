@@ -1,0 +1,49 @@
+{
+  "data_pulled_through": "2026-04-12",
+  "total_games": 13152,
+  "walk_forward": {
+    "test_seasons": "2017-18 to 2025-26",
+    "games": 10739,
+    "model_accuracy": 0.6275258403948226,
+    "home_baseline": 0.5595493062668777,
+    "log_loss": 0.6394787632692162,
+    "brier": 0.22440999025920666,
+    "calibration": [
+      {
+        "confidence": "50%-58%",
+        "games": 3477,
+        "accuracy": 0.5217141213689963,
+        "mean_confidence": 0.5387913224658888
+      },
+      {
+        "confidence": "58%-65%",
+        "games": 2676,
+        "accuracy": 0.6102391629297459,
+        "mean_confidence": 0.6140645710861669
+      },
+      {
+        "confidence": "65%-100%",
+        "games": 4586,
+        "accuracy": 0.7178368948975141,
+        "mean_confidence": 0.7361277114786214
+      }
+    ]
+  },
+  "holdout_80_20": {
+    "train_games": 10521,
+    "test_games": 2631,
+    "test_from": "2024-03-23",
+    "model_accuracy": 0.6423413150893197,
+    "home_baseline": 0.5465602432535158
+  },
+  "time_series_cv_5": {
+    "fold_accuracy": [
+      0.6263686131386861,
+      0.6140510948905109,
+      0.6158759124087592,
+      0.6336678832116789,
+      0.645529197080292
+    ],
+    "mean": 0.6270985401459854
+  }
+}

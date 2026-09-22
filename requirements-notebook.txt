@@ -1,0 +1,4 @@
+# Extra packages to re-run notebooks/nba_pred_nb.ipynb
+-r requirements.txt
+seaborn==0.13.2
+jupyter==1.1.1
