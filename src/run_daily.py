@@ -10,6 +10,7 @@ Steps:
   1. Load game logs (cached) and fill in results for earlier unscored picks.
   2. Retrain logistic regression on every completed game.
   3. Predict today's games from each team's last-10-game form.
+     Games that have already tipped off are skipped.
   4. Append the picks to results/predictions.csv, unless today is already
      saved or yesterday's games aren't all final (then features would be stale).
 """
@@ -69,9 +70,16 @@ def main() -> None:
 
     # 3. Predict
     schedule = get_schedule(day)
+    if not replay:
+        # Only games that haven't tipped off count as predictions. Matters when
+        # a scheduled run fires late (e.g. the laptop was asleep at 10am).
+        started = schedule["GAME_STATUS_ID"] != 1
+        if started.any():
+            print(f"\nSkipping {started.sum()} game(s) that already started.")
+        schedule = schedule[~started]
     new_rows = []
     if schedule.empty:
-        print(f"\nNo games scheduled on {day}.")
+        print(f"\nNo games left to predict on {day}.")
     else:
         form = current_team_form(logs)
         abbr = team_abbreviations()

@@ -157,3 +157,7 @@ The first run downloads about 11 seasons of game logs (roughly a minute). No API
 ├── data/                  # local cache only (not committed)
 └── .github/workflows/daily.yml   # manual-only (see Automation)
 ```
+
+## License
+
+[MIT](LICENSE)

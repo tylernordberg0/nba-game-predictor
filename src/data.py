@@ -65,9 +65,10 @@ def load_game_logs(seasons: list[str], today: date) -> pd.DataFrame:
 
 
 def get_schedule(d: date) -> pd.DataFrame:
-    """Games scheduled on date d: GAME_ID, HOME_TEAM_ID, VISITOR_TEAM_ID."""
+    """Games on date d: GAME_ID, HOME_TEAM_ID, VISITOR_TEAM_ID, GAME_STATUS_ID
+    (1 = not started, 2 = in progress, 3 = final)."""
     games = scoreboardv2.ScoreboardV2(game_date=d.strftime("%Y-%m-%d"), timeout=60).get_data_frames()[0]
-    return games[["GAME_ID", "HOME_TEAM_ID", "VISITOR_TEAM_ID"]].drop_duplicates("GAME_ID")
+    return games[["GAME_ID", "HOME_TEAM_ID", "VISITOR_TEAM_ID", "GAME_STATUS_ID"]].drop_duplicates("GAME_ID")
 
 
 def team_abbreviations() -> dict[int, str]:
