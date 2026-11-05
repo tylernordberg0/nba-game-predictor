@@ -33,8 +33,10 @@ def load_game_logs(seasons: list[str], today: date) -> pd.DataFrame:
     """One row per team per regular-season game, for all requested seasons.
 
     Completed seasons are cached forever. The current season is re-downloaded
-    once per day, since new games are added daily. If a download fails we fall
-    back to a stale cache (with a warning) rather than training without the season.
+    once per day, since new games are added daily. If the current season can't be
+    downloaded we stop with an error: predicting from a stale cache would use
+    out-of-date team form (or, early in a season, last season's form) without
+    any visible sign that something went wrong.
     """
     SEASON_CACHE_DIR.mkdir(parents=True, exist_ok=True)
     current = season_for_date(today)
@@ -53,8 +55,11 @@ def load_game_logs(seasons: list[str], today: date) -> pd.DataFrame:
             df.to_pickle(path)
             log.info("Fetched %s (%d rows)", season, len(df))
         except RuntimeError:
-            if not path.exists():
-                raise
+            if season == current or not path.exists():
+                raise RuntimeError(
+                    f"Could not download {season} from stats.nba.com, so team form would be "
+                    "out of date. Nothing was predicted or saved; try again later."
+                ) from None
             log.warning("Using stale cache for %s", season)
             df = pd.read_pickle(path)
         frames.append(df)
