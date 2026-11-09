@@ -56,8 +56,8 @@ The more useful lesson came from reviewing the bets afterwards. The original sim
 
 Again, 14 bets prove nothing either way. But this shows that picking winners and finding profitable bets are different problems. The simulator now shows, for every bet:
 - the implied probability from the odds, vig included: −150 → 60.0%, +130 → 43.5%
-- a no-vig probability, if you also enter the opponent's odds. A sportsbook's two implied probabilities add up to more than 100% (−110/−110 gives 52.4% + 52.4%); dividing each by the total removes the bookmaker's margin.
 - the model's edge and expected value per $1, with a warning when the bet loses money on average by the model's own probabilities
+- the worst odds still worth taking: the price at which the model's probability is 3 points above the implied probability (a margin for the model's slight overconfidence on strong picks). Worse odds get a warning and are only logged if you confirm.
 - the sportsbook and a UTC timestamp, so every logged price can be checked as pre-tip-off
 
 The selection rule itself (≥ 60% confidence) is unchanged, so new bets are comparable to the old ones.

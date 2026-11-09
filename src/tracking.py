@@ -21,6 +21,9 @@ def load_predictions() -> pd.DataFrame:
 def save_predictions(df: pd.DataFrame) -> None:
     PREDICTIONS_CSV.parent.mkdir(parents=True, exist_ok=True)
     df = df[COLUMNS].sort_values(["date", "confidence"], ascending=[True, False])
+    # Keep `correct` as 1/0 (blank if unplayed); a float column would rewrite every
+    # old row as 1.0/0.0 and make the git history look like past picks changed.
+    df = df.assign(correct=pd.to_numeric(df["correct"]).astype("Int64"))
     df.to_csv(PREDICTIONS_CSV, index=False, float_format="%.4f")
 
 
