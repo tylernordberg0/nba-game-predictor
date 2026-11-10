@@ -97,13 +97,15 @@ function countPhrase(list: Injury[], role: Role, label: string, many: string): s
   return parts.length ? parts.join(", ") : null;
 }
 
-/** "CHA missing 61 min/game: 2 starters out, 1 rotation player day-to-day." */
+/** "CHA missing 61 min/game, 17 min/game in doubt: 2 starters out, 1 rotation player day-to-day." */
 export function summarizeTeam(abbr: string, list: Injury[] | undefined): TeamSummary {
   const injuries = list ?? [];
   const startersOut = injuries.filter((i) => i.role === "starter" && i.out);
   if (!injuries.length) return { missingMinutes: 0, startersOut, line: `${abbr}: no one listed` };
   const known = injuries.filter((i) => i.minutes != null);
-  const total = known.reduce((s, i) => s + (i.minutes ?? 0), 0);
+  const sum = (list: Injury[]) => Math.round(list.reduce((s, i) => s + (i.minutes ?? 0), 0));
+  const outMin = sum(known.filter((i) => i.out));
+  const doubtMin = sum(known.filter((i) => !i.out));
   const phrases = [
     countPhrase(injuries, "starter", "starter", "starters"),
     countPhrase(injuries, "rotation", "rotation player", "rotation players"),
@@ -117,10 +119,15 @@ export function summarizeTeam(abbr: string, list: Injury[] | undefined): TeamSum
       line: `${abbr}: ${out} out, ${injuries.length - out} day-to-day (minutes not on file)`,
     };
   }
+  // "Out" and "day-to-day" are kept apart: a day-to-day player may still play.
+  const minutes = [
+    outMin ? `missing ${outMin} min/game` : null,
+    doubtMin ? `${doubtMin} min/game in doubt` : null,
+  ].filter(Boolean);
   return {
-    missingMinutes: total,
+    missingMinutes: outMin + doubtMin,
     startersOut,
-    line: `${abbr} missing ${Math.round(total)} min/game: ${phrases.join(", ")}`,
+    line: `${abbr} ${minutes.join(", ")}: ${phrases.join(", ")}`,
   };
 }
 

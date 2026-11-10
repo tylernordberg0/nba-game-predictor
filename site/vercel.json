@@ -4,7 +4,6 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "installCommand": "npm ci",
-  "cleanUrls": true,
   "rewrites": [
     { "source": "/bet-checker", "destination": "/index.html" },
     { "source": "/results", "destination": "/index.html" }
