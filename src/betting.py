@@ -80,6 +80,33 @@ def score_bets(bets: pd.DataFrame, preds: pd.DataFrame) -> pd.DataFrame:
     return bets
 
 
+def money(x: float) -> str:
+    return f"{'+' if x >= 0 else '-'}${abs(x):.2f}"
+
+
+def report_bets(bets: pd.DataFrame, newly: pd.Series) -> None:
+    """Print each bet settled in this run, grouped by date. If none were settled
+    now, show the most recent day of settled bets."""
+    settled = bets.dropna(subset=["result"])
+    if settled.empty:
+        return
+    dates = sorted(bets.loc[newly, "date"].unique()) if newly.any() else [settled["date"].max()]
+    for d in dates:
+        day = settled[settled["date"] == d]
+        w = int((day["result"] == "W").sum())
+        print(f"\nBets for {d}: {w}-{len(day) - w}, {money(day['profit'].sum())} on ${day['stake'].sum():.2f} staked")
+        for b in day.itertuples():
+            print(f"  {b.result} {b.matchup:<11} {b.pick:<4} {int(b.odds):+5d}  ${b.stake:>6.2f}  {money(b.profit):>9}")
+
+
+def settle(bets: pd.DataFrame, preds: pd.DataFrame) -> pd.DataFrame:
+    """Settle open bets that now have a result, and print what was settled."""
+    was_open = bets["result"].isna().copy()
+    bets = score_bets(bets, preds)
+    report_bets(bets, was_open & bets["result"].notna())
+    return bets
+
+
 def ask_book(last: str | None) -> str:
     """Sportsbook name. Enter reuses the last one you logged."""
     prompt = f"Sportsbook [{last}]: " if last else "Sportsbook you're taking odds from: "
@@ -139,7 +166,7 @@ def ask_stake() -> float | None:
 def main() -> None:
     today = today_eastern().isoformat()
     preds = load_predictions()
-    bets = score_bets(load_bets(), preds)
+    bets = settle(load_bets(), preds)
 
     todays = preds[(preds["date"] == today) & (preds["confidence"] >= MIN_CONFIDENCE)]
     logged_today = bets[bets["date"] == today]

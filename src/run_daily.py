@@ -24,7 +24,8 @@ from src import config
 from src.data import get_schedule, load_game_logs, team_abbreviations
 from src.features import build_game_table, current_team_form
 from src.model import home_win_probability, train
-from src.tracking import fill_results, load_predictions, record, save_predictions
+from src.betting import load_bets, save_bets, settle
+from src.tracking import fill_results, load_predictions, print_results, record, save_predictions
 
 
 def rating(conf: float) -> str:
@@ -55,13 +56,15 @@ def main() -> None:
 
     # 1. Score earlier picks
     preds = load_predictions()
+    unscored = preds["winner"].isna().copy()
     preds = fill_results(preds, logs)
+    print_results(preds, unscored & preds["winner"].notna())
     yesterday = (day - timedelta(days=1)).isoformat()
     y = preds[preds["date"] == yesterday]
     yesterday_complete = y["winner"].notna().all()
-    if len(y):
-        c, n = int(y["correct"].sum()), int(y["correct"].notna().sum())
-        print(f"\nYesterday ({yesterday}): {c}-{n - c}" + ("" if yesterday_complete else f"  ({len(y) - n} game(s) not final yet)"))
+    if not yesterday_complete:
+        print(f"  ({int(y['winner'].isna().sum())} game(s) from {yesterday} not final yet)")
+    bets = settle(load_bets(), preds)  # settles and prints any bets on those games
 
     # 2. Train
     games = build_game_table(logs)
@@ -114,6 +117,7 @@ def main() -> None:
             preds = pd.concat([preds, pd.DataFrame(new_rows)], ignore_index=True)
             print(f"\nSaved {len(new_rows)} predictions.")
         save_predictions(preds)  # also persists any newly filled results
+        save_bets(bets)  # and any newly settled bets
 
     c, n = record(preds)
     if n:

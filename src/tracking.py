@@ -36,6 +36,22 @@ def fill_results(preds: pd.DataFrame, logs: pd.DataFrame) -> pd.DataFrame:
     return preds
 
 
+def print_results(preds: pd.DataFrame, newly: pd.Series) -> None:
+    """Print each game scored in this run, grouped by date. If nothing new was
+    scored (e.g. a second run the same day), show the most recent day with results."""
+    scored = preds.dropna(subset=["winner"])
+    if scored.empty:
+        return
+    dates = sorted(preds.loc[newly, "date"].unique()) if newly.any() else [scored["date"].max()]
+    for d in dates:
+        day = scored[scored["date"] == d].sort_values("confidence", ascending=False)
+        c = int((day["correct"] == 1).sum())
+        print(f"\nResults for {d}: {c}-{len(day) - c}")
+        for r in day.itertuples():
+            mark = "\u2713" if r.correct == 1 else "\u2717"
+            print(f"  {mark} {r.away + ' @ ' + r.home:<11} picked {r.pick:<4} {r.confidence:>4.0%}   winner {r.winner}")
+
+
 def record(preds: pd.DataFrame) -> tuple[int, int]:
     """(correct, scored) over all games that have a result."""
     scored = preds.dropna(subset=["correct"])
