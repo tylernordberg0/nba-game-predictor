@@ -113,6 +113,10 @@ These roughly follow Dean Oliver's "four factors" plus overall point differentia
 - Standardize features and tune regularization with time-series cross-validation. Compare against gradient boosting on log loss, not just accuracy.
 - Fetch closing odds automatically (for example from an odds API), backtest a price-aware betting rule over full seasons, and measure closing-line value.
 
+## Website
+
+[`site/`](site/) is a static site (React, Vite, TypeScript, hosted on Vercel) with three pages: today's picks against the DraftKings price, a bet checker that runs the same math as the automatic bets, and the full record. `python -m src.export_site` writes its data to `site/public/data/` after each daily run; injuries are fetched live in the browser from ESPN. See [`site/README.md`](site/README.md).
+
 ## Running it
 
 Requires Python 3.13.

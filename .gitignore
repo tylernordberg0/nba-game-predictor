@@ -17,3 +17,10 @@ data/*
 _private/
 *.docx
 .DS_Store
+
+# Website build output and design-review scratch files
+site/node_modules/
+site/dist/
+.vercel/
+.impeccable/review/
+.impeccable/mocks/
