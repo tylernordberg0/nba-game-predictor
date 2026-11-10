@@ -40,6 +40,8 @@ The pipeline (`nbapred`) runs on the Mac each morning: it scores yesterday's gam
 
 Name: NBA Game Predictor. Not affiliated with the NBA, its teams, ESPN or DraftKings. Teams appear as abbreviations and names only: no team logos and no player photos.
 
+Every page carries a footer disclaimer: a personal data-science project for education and entertainment; not betting or financial advice; all bets simulated, no real money; past results don't predict future results; not affiliated with the NBA, its teams, ESPN, DraftKings or The Odds API; the current national problem-gambling helpline (1-800-MY-RESET as of Nov 2026). A short "Simulated bets · not betting advice" line sits beside every bet verdict and bet list.
+
 ## Evidence on Hand
 
 - `results/predictions.csv`: live record. 51 picks from Feb 6–12, 2026 (33–18, made by the original v1 script) plus v2 picks since Nov 5, 2026, each with a pre-tip-off timestamp.
