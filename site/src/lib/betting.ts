@@ -36,6 +36,13 @@ export function limitOdds(prob: number): number {
   return toAmerican(prob - MIN_EDGE);
 }
 
+/** The worst price the automatic rule would take: the limit, but never shorter
+ *  than the -250 cap, and no price at all for a pick under 60%. */
+export function ruleLimit(prob: number): number | null {
+  if (prob < MIN_CONFIDENCE) return null;
+  return Math.max(limitOdds(prob), MAX_FAVORITE);
+}
+
 export function isValidAmerican(odds: number): boolean {
   return Number.isInteger(odds) && (odds <= -100 || odds >= 100);
 }

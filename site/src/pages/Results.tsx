@@ -41,10 +41,15 @@ function PickGrid({ picks }: { picks: Pick[] }) {
   return (
     <div className="grid-wrap">
       <ol className="pick-days">
-        {byDate.map(([date, list]) => {
+        {byDate.map(([date, list], idx) => {
           const r = pickRecord(list);
+          const version = list[0].model_version;
+          const newVersion = idx === 0 || byDate[idx - 1][1][0].model_version !== version;
           return (
-            <li key={date} className="pick-day">
+            <li key={date} className={`pick-day ${newVersion ? "has-version" : ""}`}>
+              {newVersion && (
+                <span className="pick-version">{version === "v1" ? "v1 · February test, original script" : `${version} · current model`}</span>
+              )}
               <span className="pick-date">{dateLabel(date)}</span>
               <span className="pick-cells">
                 {list.map((p) => (
@@ -84,7 +89,7 @@ function BetRows({ label, bets }: { label: string; bets: Bet[] }) {
   return (
     <tr>
       <th scope="row">{label}</th>
-      <td className="num">{s.n}{s.open ? ` (+${s.open} open)` : ""}</td>
+      <td className="num col-opt">{s.n}{s.open ? ` (+${s.open} open)` : ""}</td>
       <td className="num">{s.n ? `${s.wins}–${s.losses}` : "–"}</td>
       <td className="num">{s.n ? money(s.staked, false) : "–"}</td>
       <td className="num">{s.n ? money(s.profit) : "–"}</td>
@@ -267,7 +272,7 @@ export function Results() {
           <div className="table-wrap">
             <table className="data">
               <thead>
-                <tr><th scope="col">Bets</th><th scope="col" className="num">Settled</th><th scope="col" className="num">Record</th><th scope="col" className="num">Staked</th><th scope="col" className="num">Profit or loss</th><th scope="col" className="num">Return</th></tr>
+                <tr><th scope="col">Bets</th><th scope="col" className="num col-opt">Settled</th><th scope="col" className="num">Record</th><th scope="col" className="num">Staked</th><th scope="col" className="num">Profit</th><th scope="col" className="num">Return</th></tr>
               </thead>
               <tbody>
                 <BetRows label="Automatic ($10 each)" bets={auto} />

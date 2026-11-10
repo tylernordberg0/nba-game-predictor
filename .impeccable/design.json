@@ -1,0 +1,722 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-10T22:43:06Z",
+  "title": "Design System: NBA Game Predictor",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "primary",
+        "displayName": "Board Ink",
+        "canonical": "oklch(17.9% 0.013 249)",
+        "tonalRamp": [
+          "oklch(15% 0.006 249)",
+          "oklch(27% 0.010 249)",
+          "oklch(38% 0.012 249)",
+          "oklch(50% 0.013 249)",
+          "oklch(62% 0.013 249)",
+          "oklch(74% 0.011 249)",
+          "oklch(85% 0.007 249)",
+          "oklch(95% 0.003 249)"
+        ]
+      },
+      "ink-2": {
+        "role": "primary",
+        "displayName": "Open Row Ink",
+        "canonical": "oklch(21.9% 0.019 252)",
+        "tonalRamp": [
+          "oklch(15% 0.009 252)",
+          "oklch(27% 0.014 252)",
+          "oklch(38% 0.018 252)",
+          "oklch(50% 0.019 252)",
+          "oklch(62% 0.019 252)",
+          "oklch(74% 0.016 252)",
+          "oklch(85% 0.010 252)",
+          "oklch(95% 0.005 252)"
+        ]
+      },
+      "ink-3": {
+        "role": "primary",
+        "displayName": "Raised Ink",
+        "canonical": "oklch(26.5% 0.023 251)",
+        "tonalRamp": [
+          "oklch(15% 0.011 251)",
+          "oklch(27% 0.017 251)",
+          "oklch(38% 0.022 251)",
+          "oklch(50% 0.023 251)",
+          "oklch(62% 0.023 251)",
+          "oklch(74% 0.019 251)",
+          "oklch(85% 0.013 251)",
+          "oklch(95% 0.006 251)"
+        ]
+      },
+      "ink-line": {
+        "role": "primary",
+        "displayName": "Board Rule",
+        "canonical": "oklch(33.1% 0.027 249)",
+        "tonalRamp": [
+          "oklch(15% 0.013 249)",
+          "oklch(27% 0.020 249)",
+          "oklch(38% 0.025 249)",
+          "oklch(50% 0.027 249)",
+          "oklch(62% 0.027 249)",
+          "oklch(74% 0.023 249)",
+          "oklch(85% 0.015 249)",
+          "oklch(95% 0.007 249)"
+        ]
+      },
+      "on-ink": {
+        "role": "primary",
+        "displayName": "Board White",
+        "canonical": "oklch(97.2% 0.003 248)",
+        "tonalRamp": [
+          "oklch(15% 0.002 248)",
+          "oklch(27% 0.003 248)",
+          "oklch(38% 0.003 248)",
+          "oklch(50% 0.003 248)",
+          "oklch(62% 0.003 248)",
+          "oklch(74% 0.003 248)",
+          "oklch(85% 0.002 248)",
+          "oklch(95% 0.001 248)"
+        ]
+      },
+      "on-ink-2": {
+        "role": "primary",
+        "displayName": "Board Gray",
+        "canonical": "oklch(78.0% 0.023 250)",
+        "tonalRamp": [
+          "oklch(15% 0.011 250)",
+          "oklch(27% 0.017 250)",
+          "oklch(38% 0.022 250)",
+          "oklch(50% 0.023 250)",
+          "oklch(62% 0.023 250)",
+          "oklch(74% 0.019 250)",
+          "oklch(85% 0.013 250)",
+          "oklch(95% 0.006 250)"
+        ]
+      },
+      "on-ink-3": {
+        "role": "primary",
+        "displayName": "Board Dim",
+        "canonical": "oklch(66.4% 0.028 250)",
+        "tonalRamp": [
+          "oklch(15% 0.014 250)",
+          "oklch(27% 0.021 250)",
+          "oklch(38% 0.026 250)",
+          "oklch(50% 0.028 250)",
+          "oklch(62% 0.028 250)",
+          "oklch(74% 0.023 250)",
+          "oklch(85% 0.015 250)",
+          "oklch(95% 0.007 250)"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Panel Gray",
+        "canonical": "oklch(94.4% 0.007 248)",
+        "tonalRamp": [
+          "oklch(15% 0.003 248)",
+          "oklch(27% 0.005 248)",
+          "oklch(38% 0.007 248)",
+          "oklch(50% 0.007 248)",
+          "oklch(62% 0.007 248)",
+          "oklch(74% 0.006 248)",
+          "oklch(85% 0.004 248)",
+          "oklch(95% 0.002 248)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface White",
+        "canonical": "oklch(100.0% 0.000 90)",
+        "tonalRamp": [
+          "oklch(15% 0.000 90)",
+          "oklch(27% 0.000 90)",
+          "oklch(38% 0.000 90)",
+          "oklch(50% 0.000 90)",
+          "oklch(62% 0.000 90)",
+          "oklch(74% 0.000 90)",
+          "oklch(85% 0.000 90)",
+          "oklch(95% 0.000 90)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Rule Gray",
+        "canonical": "oklch(87.8% 0.014 248)",
+        "tonalRamp": [
+          "oklch(15% 0.007 248)",
+          "oklch(27% 0.011 248)",
+          "oklch(38% 0.013 248)",
+          "oklch(50% 0.014 248)",
+          "oklch(62% 0.014 248)",
+          "oklch(74% 0.012 248)",
+          "oklch(85% 0.008 248)",
+          "oklch(95% 0.004 248)"
+        ]
+      },
+      "line-2": {
+        "role": "neutral",
+        "displayName": "Faint Rule",
+        "canonical": "oklch(92.9% 0.009 248)",
+        "tonalRamp": [
+          "oklch(15% 0.004 248)",
+          "oklch(27% 0.006 248)",
+          "oklch(38% 0.008 248)",
+          "oklch(50% 0.009 248)",
+          "oklch(62% 0.009 248)",
+          "oklch(74% 0.007 248)",
+          "oklch(85% 0.005 248)",
+          "oklch(95% 0.002 248)"
+        ]
+      },
+      "control": {
+        "role": "neutral",
+        "displayName": "Control Gray",
+        "canonical": "oklch(63.7% 0.027 248)",
+        "tonalRamp": [
+          "oklch(15% 0.013 248)",
+          "oklch(27% 0.020 248)",
+          "oklch(38% 0.025 248)",
+          "oklch(50% 0.027 248)",
+          "oklch(62% 0.027 248)",
+          "oklch(74% 0.023 248)",
+          "oklch(85% 0.015 248)",
+          "oklch(95% 0.007 248)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Text",
+        "canonical": "oklch(17.9% 0.013 249)",
+        "tonalRamp": [
+          "oklch(15% 0.006 249)",
+          "oklch(27% 0.010 249)",
+          "oklch(38% 0.012 249)",
+          "oklch(50% 0.013 249)",
+          "oklch(62% 0.013 249)",
+          "oklch(74% 0.011 249)",
+          "oklch(85% 0.007 249)",
+          "oklch(95% 0.003 249)"
+        ]
+      },
+      "text-2": {
+        "role": "neutral",
+        "displayName": "Text Gray",
+        "canonical": "oklch(41.0% 0.027 248)",
+        "tonalRamp": [
+          "oklch(15% 0.014 248)",
+          "oklch(27% 0.021 248)",
+          "oklch(38% 0.026 248)",
+          "oklch(50% 0.027 248)",
+          "oklch(62% 0.027 248)",
+          "oklch(74% 0.023 248)",
+          "oklch(85% 0.015 248)",
+          "oklch(95% 0.007 248)"
+        ]
+      },
+      "text-3": {
+        "role": "neutral",
+        "displayName": "Text Dim",
+        "canonical": "oklch(49.7% 0.028 248)",
+        "tonalRamp": [
+          "oklch(15% 0.014 248)",
+          "oklch(27% 0.021 248)",
+          "oklch(38% 0.027 248)",
+          "oklch(50% 0.028 248)",
+          "oklch(62% 0.028 248)",
+          "oklch(74% 0.024 248)",
+          "oklch(85% 0.016 248)",
+          "oklch(95% 0.007 248)"
+        ]
+      },
+      "alert": {
+        "role": "secondary",
+        "displayName": "Alert Yellow",
+        "canonical": "oklch(88.5% 0.181 95)",
+        "tonalRamp": [
+          "oklch(15% 0.090 95)",
+          "oklch(27% 0.135 95)",
+          "oklch(38% 0.171 95)",
+          "oklch(50% 0.181 95)",
+          "oklch(62% 0.181 95)",
+          "oklch(74% 0.153 95)",
+          "oklch(85% 0.099 95)",
+          "oklch(95% 0.045 95)"
+        ]
+      },
+      "alert-ink": {
+        "role": "secondary",
+        "displayName": "Alert Ink",
+        "canonical": "oklch(20.2% 0.041 96)",
+        "tonalRamp": [
+          "oklch(15% 0.021 96)",
+          "oklch(27% 0.031 96)",
+          "oklch(38% 0.039 96)",
+          "oklch(50% 0.041 96)",
+          "oklch(62% 0.041 96)",
+          "oklch(74% 0.035 96)",
+          "oklch(85% 0.023 96)",
+          "oklch(95% 0.010 96)"
+        ]
+      },
+      "alert-wash": {
+        "role": "secondary",
+        "displayName": "Alert Wash",
+        "canonical": "oklch(96.9% 0.061 98)",
+        "tonalRamp": [
+          "oklch(15% 0.031 98)",
+          "oklch(27% 0.046 98)",
+          "oklch(38% 0.058 98)",
+          "oklch(50% 0.061 98)",
+          "oklch(62% 0.061 98)",
+          "oklch(74% 0.052 98)",
+          "oklch(85% 0.034 98)",
+          "oklch(95% 0.015 98)"
+        ]
+      },
+      "win": {
+        "role": "tertiary",
+        "displayName": "Win Green",
+        "canonical": "oklch(48.4% 0.097 159)",
+        "tonalRamp": [
+          "oklch(15% 0.049 159)",
+          "oklch(27% 0.073 159)",
+          "oklch(38% 0.092 159)",
+          "oklch(50% 0.097 159)",
+          "oklch(62% 0.097 159)",
+          "oklch(74% 0.083 159)",
+          "oklch(85% 0.053 159)",
+          "oklch(95% 0.024 159)"
+        ]
+      },
+      "win-bg": {
+        "role": "tertiary",
+        "displayName": "Win Tint",
+        "canonical": "oklch(94.0% 0.022 163)",
+        "tonalRamp": [
+          "oklch(15% 0.011 163)",
+          "oklch(27% 0.016 163)",
+          "oklch(38% 0.021 163)",
+          "oklch(50% 0.022 163)",
+          "oklch(62% 0.022 163)",
+          "oklch(74% 0.018 163)",
+          "oklch(85% 0.012 163)",
+          "oklch(95% 0.005 163)"
+        ]
+      },
+      "win-on-ink": {
+        "role": "tertiary",
+        "displayName": "Win on Ink",
+        "canonical": "oklch(80.0% 0.106 160)",
+        "tonalRamp": [
+          "oklch(15% 0.053 160)",
+          "oklch(27% 0.079 160)",
+          "oklch(38% 0.100 160)",
+          "oklch(50% 0.106 160)",
+          "oklch(62% 0.106 160)",
+          "oklch(74% 0.090 160)",
+          "oklch(85% 0.058 160)",
+          "oklch(95% 0.026 160)"
+        ]
+      },
+      "loss": {
+        "role": "tertiary",
+        "displayName": "Loss Red",
+        "canonical": "oklch(49.9% 0.138 28)",
+        "tonalRamp": [
+          "oklch(15% 0.069 28)",
+          "oklch(27% 0.104 28)",
+          "oklch(38% 0.131 28)",
+          "oklch(50% 0.138 28)",
+          "oklch(62% 0.138 28)",
+          "oklch(74% 0.117 28)",
+          "oklch(85% 0.076 28)",
+          "oklch(95% 0.035 28)"
+        ]
+      },
+      "loss-bg": {
+        "role": "tertiary",
+        "displayName": "Loss Tint",
+        "canonical": "oklch(93.3% 0.021 28)",
+        "tonalRamp": [
+          "oklch(15% 0.011 28)",
+          "oklch(27% 0.016 28)",
+          "oklch(38% 0.020 28)",
+          "oklch(50% 0.021 28)",
+          "oklch(62% 0.021 28)",
+          "oklch(74% 0.018 28)",
+          "oklch(85% 0.012 28)",
+          "oklch(95% 0.005 28)"
+        ]
+      },
+      "loss-on-ink": {
+        "role": "tertiary",
+        "displayName": "Loss on Ink",
+        "canonical": "oklch(77.2% 0.106 27)",
+        "tonalRamp": [
+          "oklch(15% 0.053 27)",
+          "oklch(27% 0.080 27)",
+          "oklch(38% 0.101 27)",
+          "oklch(50% 0.106 27)",
+          "oklch(62% 0.106 27)",
+          "oklch(74% 0.090 27)",
+          "oklch(85% 0.058 27)",
+          "oklch(95% 0.027 27)"
+        ]
+      },
+      "series": {
+        "role": "neutral",
+        "displayName": "Chart Series",
+        "canonical": "oklch(17.9% 0.013 249)",
+        "tonalRamp": [
+          "oklch(15% 0.006 249)",
+          "oklch(27% 0.010 249)",
+          "oklch(38% 0.012 249)",
+          "oklch(50% 0.013 249)",
+          "oklch(62% 0.013 249)",
+          "oklch(74% 0.011 249)",
+          "oklch(85% 0.007 249)",
+          "oklch(95% 0.003 249)"
+        ]
+      },
+      "series-context": {
+        "role": "neutral",
+        "displayName": "Chart Context",
+        "canonical": "oklch(66.4% 0.028 250)",
+        "tonalRamp": [
+          "oklch(15% 0.014 250)",
+          "oklch(27% 0.021 250)",
+          "oklch(38% 0.026 250)",
+          "oklch(50% 0.028 250)",
+          "oklch(62% 0.028 250)",
+          "oklch(74% 0.023 250)",
+          "oklch(85% 0.015 250)",
+          "oklch(95% 0.007 250)"
+        ]
+      },
+      "chart-grid": {
+        "role": "neutral",
+        "displayName": "Chart Grid",
+        "canonical": "oklch(92.9% 0.009 248)",
+        "tonalRamp": [
+          "oklch(15% 0.004 248)",
+          "oklch(27% 0.006 248)",
+          "oklch(38% 0.008 248)",
+          "oklch(50% 0.009 248)",
+          "oklch(62% 0.009 248)",
+          "oklch(74% 0.007 248)",
+          "oklch(85% 0.005 248)",
+          "oklch(95% 0.002 248)"
+        ]
+      },
+      "chart-axis": {
+        "role": "neutral",
+        "displayName": "Chart Axis",
+        "canonical": "oklch(79.9% 0.020 248)",
+        "tonalRamp": [
+          "oklch(15% 0.010 248)",
+          "oklch(27% 0.015 248)",
+          "oklch(38% 0.019 248)",
+          "oklch(50% 0.020 248)",
+          "oklch(62% 0.020 248)",
+          "oklch(74% 0.017 248)",
+          "oklch(85% 0.011 248)",
+          "oklch(95% 0.005 248)"
+        ]
+      },
+      "focus": {
+        "role": "neutral",
+        "displayName": "Focus Ring",
+        "canonical": "oklch(17.9% 0.013 249)",
+        "tonalRamp": [
+          "oklch(15% 0.006 249)",
+          "oklch(27% 0.010 249)",
+          "oklch(38% 0.012 249)",
+          "oklch(50% 0.013 249)",
+          "oklch(62% 0.013 249)",
+          "oklch(74% 0.011 249)",
+          "oklch(85% 0.007 249)",
+          "oklch(95% 0.003 249)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The one h1 on each page; uppercase; 2rem under 760px."
+      },
+      "figure-large": {
+        "displayName": "Large figure",
+        "purpose": "Record-strip figures and the Results tally."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Results section headings; uppercase. Verdict headings and ticket teams use 2rem."
+      },
+      "board-code": {
+        "displayName": "Board code",
+        "purpose": "Matchup on a board row; the pick is 700 at 1.5rem."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Side-column and panel headings; uppercase. The brand uses 700."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Opening paragraph of Results, max 62ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Prose, capped at 60 to 72ch. Secondary text is 0.9375rem."
+      },
+      "body-small": {
+        "displayName": "Small",
+        "purpose": "Captions, help text, footnotes and the footer."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase column headers, fact labels and ticket headers; tracking 0.08 to 0.1em."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "Times, prices, percentages, edges and money, with tabular numerals; 700 for confidence and a moved price."
+      }
+    },
+    "shadows": [
+      {
+        "name": "ticket-edge",
+        "value": "0 1px 2px rgb(13 18 23 / 0.05)",
+        "purpose": "Faint paper edge on tickets only."
+      },
+      {
+        "name": "tooltip-lift",
+        "value": "0 6px 16px rgb(13 18 23 / 0.18)",
+        "purpose": "The chart tooltip, the one floating element."
+      },
+      {
+        "name": "selection-ring",
+        "value": "0 0 0 2px var(--surface), 0 0 0 4px var(--ink)",
+        "purpose": "Selected square in the pick grid."
+      },
+      {
+        "name": "tab-underline",
+        "value": "inset 0 -3px 0 var(--on-ink)",
+        "purpose": "Current page in the top bar."
+      },
+      {
+        "name": "selected-inset",
+        "value": "inset 0 0 0 1px var(--ink)",
+        "purpose": "Doubles the border of the selected team option; the invalid input uses the same with var(--loss)."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "Token --ease-out: button press, chevron turn, row detail entry, change flash."
+      },
+      {
+        "name": "row-reorder",
+        "value": "280ms cubic-bezier(0.77, 0, 0.175, 1)",
+        "purpose": "Board rows slide to their new place when the order changes (transform only, lib/useFlip.ts)."
+      },
+      {
+        "name": "change-flash",
+        "value": "1400ms var(--ease-out), rgb(255 214 10 / 0.42) to rgb(255 214 10 / 0.07)",
+        "purpose": "A changed board row flashes yellow once, then holds a 7% tint."
+      },
+      {
+        "name": "row-detail-enter",
+        "value": "180ms var(--ease-out), opacity 0 to 1 and translateY(-6px) to 0",
+        "purpose": "Open-row detail entry via @starting-style."
+      },
+      {
+        "name": "button-press",
+        "value": "transform 140ms var(--ease-out), scale(0.97)",
+        "purpose": "Active state on every button."
+      },
+      {
+        "name": "state-fade",
+        "value": "160ms ease",
+        "purpose": "Color, background and border changes on tabs, buttons and the expander."
+      },
+      {
+        "name": "chevron-turn",
+        "value": "200ms var(--ease-out), rotate(180deg)",
+        "purpose": "Expander icon when a row opens."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "no animation; static rgb(255 214 10 / 0.14) tint on changed rows",
+        "purpose": "prefers-reduced-motion: reduce removes the slide, flash, fade and press."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "today-single-column",
+        "value": "1280px"
+      },
+      {
+        "name": "stack-panels",
+        "value": "900px"
+      },
+      {
+        "name": "board-compact",
+        "value": "760px"
+      },
+      {
+        "name": "phone",
+        "value": "520px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ink fill, white text. One per view, for the action the verdict supports.",
+      "html": "<button class=\"ds-btn-primary\">Add to my sandbox</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: var(--radius); border: 1px solid transparent; font: 600 0.9375rem var(--font-ui); cursor: pointer; transition: transform 140ms var(--ease-out), background-color 160ms ease, border-color 160ms ease; background: var(--ink); color: var(--on-ink); } .ds-btn-primary:hover { background: var(--ink-3); } .ds-btn-primary:active { transform: scale(0.97); } .ds-btn-primary:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; } .ds-btn-primary:disabled { background: var(--line); color: var(--text-3); cursor: not-allowed; }"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "White with a gray border, for resets, filters and the chart table toggle.",
+      "html": "<button class=\"ds-btn-quiet\">Reset to the DraftKings price</button>",
+      "css": ".ds-btn-quiet { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: var(--radius); border: 1px solid transparent; font: 600 0.9375rem var(--font-ui); cursor: pointer; transition: transform 140ms var(--ease-out), background-color 160ms ease, border-color 160ms ease; background: var(--surface); border-color: var(--control); color: var(--text); } .ds-btn-quiet:hover { border-color: var(--ink); } .ds-btn-quiet:active { transform: scale(0.97); } .ds-btn-quiet:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }"
+    },
+    {
+      "name": "On-Ink Button",
+      "kind": "button",
+      "refersTo": "button-on-ink",
+      "description": "Outlined button for actions inside the board.",
+      "html": "<div class=\"ds-ink-wrap\"><button class=\"ds-btn-on-ink\">Check a price for this game <svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 8h10M9 4l4 4-4 4\"/></svg></button></div>",
+      "css": ".ds-ink-wrap { background: var(--ink); padding: 20px; border-radius: 6px; } .ds-btn-on-ink { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: var(--radius); border: 1px solid transparent; font: 600 0.9375rem var(--font-ui); cursor: pointer; transition: transform 140ms var(--ease-out), background-color 160ms ease, border-color 160ms ease; background: transparent; border-color: var(--on-ink-3); color: var(--on-ink); } .ds-btn-on-ink:hover { border-color: var(--on-ink); background: var(--ink-3); } .ds-btn-on-ink:active { transform: scale(0.97); } .ds-btn-on-ink:focus-visible { outline: 2px solid var(--on-ink); outline-offset: 2px; }"
+    },
+    {
+      "name": "Moneyline Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Labelled 44px field; number fields are set in Chivo Mono.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-odds\">Moneyline</label><input id=\"ds-odds\" class=\"ds-input\" inputmode=\"numeric\" value=\"+130\"><p class=\"ds-field-help\">Your price. DraftKings had +106.</p></div>",
+      "css": ".ds-field { display: grid; gap: 6px; max-width: 220px; font-family: var(--font-ui); color: var(--text); } .ds-field label { font-size: 0.8125rem; font-weight: 600; } .ds-input { width: 100%; min-height: 44px; padding: 0 12px; background: var(--surface); color: var(--text); border: 1px solid var(--control); border-radius: var(--radius); font: 400 1rem var(--font-fig); letter-spacing: -0.01em; } .ds-input:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; } .ds-field-help { margin: 0; font-size: 0.8125rem; color: var(--text-3); }"
+    },
+    {
+      "name": "Top Bar and Tabs",
+      "kind": "nav",
+      "refersTo": "topbar",
+      "description": "Ink bar with the brand, the update time and three link tabs; the current page has a 3px white underline.",
+      "html": "<header class=\"ds-topbar\"><a href=\"#\" class=\"ds-brand\">NBA Game Predictor</a><p class=\"ds-updated\">Updated Nov 10, 9:41 AM ET · results through Nov 9</p><nav class=\"ds-tabs\"><a href=\"#\" class=\"ds-tab\" aria-current=\"page\">Today</a><a href=\"#\" class=\"ds-tab\">Bet checker</a><a href=\"#\" class=\"ds-tab\">Results</a></nav></header>",
+      "css": ".ds-topbar { background: var(--ink); color: var(--on-ink); min-height: 60px; padding: 0 24px; display: flex; align-items: center; gap: 8px 28px; flex-wrap: wrap; font-family: var(--font-ui); } .ds-brand { font: 700 1.375rem/1 var(--font-display); letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none; color: inherit; white-space: nowrap; } .ds-updated { margin: 0 auto 0 0; font-size: 0.8125rem; color: var(--on-ink-2); } .ds-tabs { display: flex; align-self: stretch; gap: 4px; } .ds-tab { display: flex; align-items: center; padding: 0 14px; min-height: 44px; font-weight: 500; color: var(--on-ink-2); text-decoration: none; box-shadow: inset 0 -3px 0 transparent; transition: color 160ms ease, box-shadow 160ms ease; } .ds-tab:hover { color: var(--on-ink); } .ds-tab[aria-current=\"page\"] { color: var(--on-ink); box-shadow: inset 0 -3px 0 var(--on-ink); } .ds-tab:focus-visible { outline: 2px solid var(--on-ink); outline-offset: 2px; }"
+    },
+    {
+      "name": "Board Row",
+      "kind": "custom",
+      "refersTo": "board",
+      "description": "One game on the ink board, here in its changed state with a moved price and the Changed tag.",
+      "html": "<div class=\"ds-board\"><div class=\"ds-row-head\"><span>Tip (ET)</span><span>Game</span><span>Pick</span><span class=\"ds-r\">Conf.</span><span class=\"ds-r\">DraftKings</span><span>Status</span><span></span></div><div class=\"ds-row\"><span class=\"ds-fig\">7:40 PM</span><span class=\"ds-game\"><span class=\"ds-matchup\">MIL <span class=\"ds-at\">@</span> NYK</span><span class=\"ds-cities\">Milwaukee at New York</span><span class=\"ds-changed\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M8 2.5l6 10.5H2L8 2.5z\"/><path d=\"M8 6.5v3M8 11.4v.1\"/></svg>Changed · price moved</span></span><span class=\"ds-pickcell\"><span class=\"ds-pick\">NYK</span><span class=\"ds-rating\">Best bet</span></span><span class=\"ds-fig ds-r ds-conf\">81.3%</span><span class=\"ds-fig ds-r ds-moved\">−1040</span><span class=\"ds-status-skip\">Skip · price too short</span><button class=\"ds-expander\" aria-expanded=\"false\" aria-label=\"Show details\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 6l4 4 4-4\"/></svg></button></div><div class=\"ds-row ds-row-plain\"><span class=\"ds-fig\">8:10 PM</span><span class=\"ds-game\"><span class=\"ds-matchup\">BOS <span class=\"ds-at\">@</span> PHI</span><span class=\"ds-cities\">Boston at Philadelphia</span></span><span class=\"ds-pickcell\"><span class=\"ds-pick\">BOS</span><span class=\"ds-rating ds-rating-dim\">Lean</span></span><span class=\"ds-fig ds-r ds-conf\">62.1%</span><span class=\"ds-fig ds-r\">−117</span><span><span class=\"ds-status-bet\">Bet $10</span></span><button class=\"ds-expander\" aria-expanded=\"false\" aria-label=\"Show details\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 6l4 4 4-4\"/></svg></button></div></div>",
+      "css": ".ds-board { background: var(--ink); color: var(--on-ink); border-radius: 6px; overflow: hidden; font-family: var(--font-ui); } .ds-row-head, .ds-row { display: grid; grid-template-columns: 88px minmax(0, 1.3fr) minmax(0, 0.7fr) 84px 92px minmax(0, 1fr) 44px; align-items: center; column-gap: 12px; padding: 0 8px 0 20px; } .ds-row-head { min-height: 40px; font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--on-ink-3); border-bottom: 1px solid var(--ink-line); } .ds-row { min-height: 76px; padding-top: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--ink-line); background: rgb(255 214 10 / 0.07); } .ds-row-plain { background: var(--ink); border-bottom: 0; } .ds-r { text-align: right; } .ds-fig { font-family: var(--font-fig); font-variant-numeric: tabular-nums; letter-spacing: -0.01em; font-size: 0.9375rem; white-space: nowrap; } .ds-conf { font-weight: 700; } .ds-moved { color: var(--alert); font-weight: 700; } .ds-game, .ds-pickcell { display: grid; gap: 2px; min-width: 0; } .ds-matchup { font: 600 1.75rem/1 var(--font-display); letter-spacing: 0.02em; white-space: nowrap; } .ds-at { color: var(--on-ink-3); font-size: 1.125rem; vertical-align: 2px; margin: 0 2px; } .ds-cities { font-size: 0.8125rem; color: var(--on-ink-2); } .ds-pick { font: 700 1.5rem/1 var(--font-display); letter-spacing: 0.02em; } .ds-rating { font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--on-ink); } .ds-rating-dim { color: var(--on-ink-3); } .ds-changed { justify-self: start; display: inline-flex; align-items: center; gap: 6px; margin-top: 4px; background: var(--alert); color: var(--alert-ink); font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 8px 3px 6px; border-radius: 3px; } .ds-changed svg { width: 13px; height: 13px; } .ds-status-skip, .ds-status-bet { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; } .ds-status-skip { color: var(--on-ink-2); } .ds-status-bet { display: inline-flex; background: var(--on-ink); color: var(--ink); padding: 5px 9px; border-radius: 3px; white-space: nowrap; } .ds-expander { width: 40px; height: 40px; display: grid; place-items: center; background: transparent; border: 1px solid transparent; border-radius: var(--radius); color: var(--on-ink-2); cursor: pointer; transition: background-color 160ms ease, color 160ms ease; } .ds-expander:hover { background: var(--ink-3); color: var(--on-ink); } .ds-expander:focus-visible { outline: 2px solid var(--on-ink); outline-offset: 2px; }"
+    },
+    {
+      "name": "Ticket",
+      "kind": "card",
+      "refersTo": "ticket",
+      "description": "A simulated bet as a segmented stub with dashed tear lines and a result stamp.",
+      "html": "<article class=\"ds-ticket\"><header class=\"ds-ticket-head\"><span class=\"ds-ticket-seq\">No. 016</span><span>Manual</span><span class=\"ds-ticket-date\">Nov 9</span></header><div class=\"ds-ticket-main\"><div class=\"ds-ticket-pick\"><span class=\"ds-ticket-team\">DAL</span><span class=\"ds-ticket-game\">IND @ DAL</span></div><div class=\"ds-stamp ds-stamp-win\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 8.5l3.2 3.2L13 4.8\"/></svg><span>Won</span><b>+$6.21</b></div></div><dl class=\"ds-ticket-facts\"><div><dt>Price</dt><dd>−161</dd></div><div><dt>Implied</dt><dd>61.7%</dd></div><div><dt>Model</dt><dd>70.6%</dd></div><div><dt>Edge</dt><dd>+8.9</dd></div><div><dt>Stake</dt><dd>$10.00</dd></div></dl><footer class=\"ds-ticket-foot\">Placed Nov 9, 9:25 AM ET · DraftKings</footer></article>",
+      "css": ".ds-ticket { max-width: 440px; background: var(--surface); color: var(--text); border: 1px solid var(--line); border-radius: 6px; box-shadow: 0 1px 2px rgb(13 18 23 / 0.05); font-family: var(--font-ui); } .ds-ticket-head { display: flex; align-items: baseline; gap: 12px; padding: 10px 16px; border-bottom: 1px dashed var(--line); font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-3); } .ds-ticket-seq { font-family: var(--font-fig); font-weight: 400; letter-spacing: 0; color: var(--text); } .ds-ticket-date { margin-left: auto; } .ds-ticket-main { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 16px; } .ds-ticket-pick { display: grid; } .ds-ticket-team { font: 700 2rem/1 var(--font-display); letter-spacing: 0.02em; } .ds-ticket-game { font-size: 0.8125rem; color: var(--text-2); margin-top: 2px; } .ds-stamp { display: inline-flex; align-items: center; gap: 6px; border: 2px solid currentColor; border-radius: 4px; padding: 4px 10px; font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; } .ds-stamp b { font-family: var(--font-fig); font-weight: 700; letter-spacing: -0.01em; } .ds-stamp-win { color: var(--win); } .ds-ticket-facts { margin: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border-top: 1px dashed var(--line); border-bottom: 1px dashed var(--line); } .ds-ticket-facts > div { padding: 10px 6px 10px 16px; } .ds-ticket-facts > div + div { border-left: 1px dashed var(--line); padding-left: 10px; } .ds-ticket-facts dt { font-size: 0.625rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-3); } .ds-ticket-facts dd { margin: 2px 0 0; font-family: var(--font-fig); font-size: 0.8125rem; letter-spacing: -0.01em; white-space: nowrap; } .ds-ticket-foot { padding: 8px 16px 10px; font-size: 0.75rem; color: var(--text-3); }"
+    },
+    {
+      "name": "Alert Notice",
+      "kind": "custom",
+      "refersTo": "notice-alert",
+      "description": "Solid yellow bar for stale data or a failed load: the yellow means look.",
+      "html": "<div class=\"ds-notice-alert\" role=\"status\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M8 2.5l6 10.5H2L8 2.5z\"/><path d=\"M8 6.5v3M8 11.4v.1\"/></svg><span><strong>Showing data from Mon, Nov 9.</strong> Today's update hasn't run yet, so these are not today's games.</span></div>",
+      "css": ".ds-notice-alert { display: flex; gap: 10px; align-items: flex-start; background: var(--alert); border: 1px solid var(--alert); color: var(--alert-ink); border-radius: var(--radius); padding: 12px 16px; font: 400 0.9375rem/1.5 var(--font-ui); } .ds-notice-alert svg { flex: none; margin-top: 4px; } .ds-notice-alert strong { font-weight: 600; }"
+    },
+    {
+      "name": "Pick Grid Row",
+      "kind": "custom",
+      "refersTo": "pick-cell-win",
+      "description": "One game day of the live record: a square per pick with a check, cross or open dot, and the day's tally.",
+      "html": "<div class=\"ds-pick-day\"><span class=\"ds-pick-date\">Nov 9</span><span class=\"ds-pick-cells\"><button class=\"ds-pick-cell ds-win\" aria-pressed=\"true\" aria-label=\"Won\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 8.5l3.2 3.2L13 4.8\"/></svg></button><button class=\"ds-pick-cell ds-loss\" aria-pressed=\"false\" aria-label=\"Lost\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 4l8 8M12 4l-8 8\"/></svg></button><button class=\"ds-pick-cell ds-win\" aria-pressed=\"false\" aria-label=\"Won\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 8.5l3.2 3.2L13 4.8\"/></svg></button><button class=\"ds-pick-cell ds-open\" aria-pressed=\"false\" aria-label=\"Open\"><span class=\"ds-dot\"></span></button></span><span class=\"ds-pick-tally\">2–1</span></div>",
+      "css": ".ds-pick-day { display: grid; grid-template-columns: 64px minmax(0, 1fr) 48px; align-items: center; gap: 12px; max-width: 420px; padding: 16px 20px; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; font-family: var(--font-ui); } .ds-pick-date { font-size: 0.8125rem; font-weight: 500; color: var(--text-2); } .ds-pick-cells { display: flex; flex-wrap: wrap; gap: 4px; } .ds-pick-cell { width: 30px; height: 30px; display: grid; place-items: center; border: 0; border-radius: 3px; padding: 0; cursor: pointer; } .ds-win { background: var(--win-bg); color: var(--win); } .ds-loss { background: var(--loss-bg); color: var(--loss); } .ds-open { background: var(--panel); color: var(--text-3); } .ds-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; } .ds-pick-cell[aria-pressed=\"true\"] { box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--ink); } .ds-pick-cell:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; } .ds-pick-tally { font-family: var(--font-fig); font-size: 0.8125rem; letter-spacing: -0.01em; text-align: right; color: var(--text-2); }"
+    },
+    {
+      "name": "Record Strip Cell",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "One cell of the record strip: uppercase label, large condensed figure with its baseline, and the sample size.",
+      "html": "<div class=\"ds-strip-cell\"><h2>Backtest</h2><p class=\"ds-strip-fig\">62.8%<span>vs 56.0% always picking home</span></p><p class=\"ds-strip-note\">10,739 games, 2017-18 to 2025-26. Each season predicted by a model trained only on earlier seasons.</p></div>",
+      "css": ".ds-strip-cell { max-width: 420px; padding: 20px 24px; background: var(--surface); color: var(--text); border: 1px solid var(--line); border-radius: 6px; font-family: var(--font-ui); } .ds-strip-cell h2 { margin: 0; font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-3); } .ds-strip-fig { margin: 6px 0 0; font: 600 2.75rem/1.05 var(--font-display); letter-spacing: 0.01em; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; } .ds-strip-fig span { font: 500 0.9375rem/1.3 var(--font-ui); letter-spacing: 0; color: var(--text-2); } .ds-strip-note { margin: 8px 0 0; font-size: 0.8125rem; color: var(--text-3); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Gate Board",
+    "overview": "The site borrows from the departures board and the boarding pass. Tonight's games sit on one ink-black board, sorted by tip-off, with times and prices in monospaced figures and team abbreviations in a condensed uppercase face. Each simulated bet is a white ticket stub with dashed tear lines and a stamp that is added once the game settles. Everything around the board is quiet: a cool gray page, white panels, thin gray rules.\n\nThe system is nearly monochrome. Ink and gray carry the structure, one yellow marks what has changed or needs a second look, and a muted green and red mark settled results. Density is high on the board and in tables, and looser on the Results page, which reads as a document with a contents list, long-form text and three charts.\n\nTeams appear as abbreviations and city names only. There are no team logos, no player photos and no illustrations; the only pictures are five small line icons and the charts. The site is light-only for now: the stylesheet declares `color-scheme: light` and has no dark-theme tokens.",
+    "keyCharacteristics": [
+      "One ink board on a cool light ground; white surfaces for everything else.",
+      "Three voices in type: condensed uppercase for names and headline figures, monospace for numbers, plain sans for prose.",
+      "One alert yellow, kept for changes and warnings.",
+      "Green and red only on settled results, always paired with a check or a cross.",
+      "Flat surfaces separated by 1px lines; two small shadows in the whole site.",
+      "Standard web controls: links as tabs, native select and inputs, real tables."
+    ],
+    "rules": [
+      {
+        "name": "The Yellow Means Look Rule",
+        "body": "Alert Yellow is reserved for changes and things that need attention: a moved price, a new injury, stale data, a price that looks too good. It is never decoration, never a brand color and never a button fill. If nothing has changed and nothing needs checking, the screen has no yellow on it.",
+        "section": "colors"
+      },
+      {
+        "name": "The Record Only Rule",
+        "body": "Green and red mean a settled result, won or lost, and nothing else. They appear only in the record (ticket stamps, the pick grid, the bets table, a final game on the board) and always with a check or cross icon beside them, so the meaning never depends on color alone. Money figures stay in the text color whether positive or negative. Two uses in the current build fall outside this rule and should not be copied: the green check badge on a fair-price verdict in the Bet checker, and Loss Red on invalid form fields.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ink Is the Brand Rule",
+        "body": "There is no accent color for emphasis. Emphasis on the light ground is ink; emphasis on the board is white. The one filled tag on the board, \"Bet $10\", is white with ink text.",
+        "section": "colors"
+      },
+      {
+        "name": "The Numbers in Mono Rule",
+        "body": "Any figure that sits in a column or beside another figure is Chivo Mono with tabular numerals, right-aligned in tables. Headline figures (a record, an accuracy rate) are the exception and use Barlow Condensed.",
+        "section": "typography"
+      },
+      {
+        "name": "The Condensed Is for Names Rule",
+        "body": "Barlow Condensed is used for team abbreviations, headings and headline figures, always at 1.125rem or larger. Sentences are never set in it.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Board Rule",
+        "body": "Nothing on the page is raised to look important. Containers sit at rest with a 1px border and no shadow; only a ticket and a tooltip cast one.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep Alert Yellow (#ffd60a) for changes and things that need attention, with Alert Ink (#1c1600) text on it.",
+      "Do pair every green or red result with a check or cross icon and the word (Won, Lost, Final).",
+      "Do set comparable numbers in Chivo Mono with tabular numerals, right-aligned in tables.",
+      "Do show teams as abbreviations in Barlow Condensed, with city names in plain text where there is room.",
+      "Do put the board, and anything that belongs to it, on ink; put everything else on white surfaces over the Panel Gray page.",
+      "Do separate surfaces with 1px lines and tone, using 6px corners for containers, 4px for controls and 3px for tags.",
+      "Do keep controls standard: links for tabs, native selects, radios and date inputs, real tables, 44px minimum height.",
+      "Do give every chart a table view and end-of-line labels, with the model in ink and the comparison in gray.",
+      "Do honor reduced motion with a static state for every animation.",
+      "Do keep the \"Simulated bets · not betting advice\" line beside every bet list and verdict, as a small uppercase label in `text-3`."
+    ],
+    "donts": [
+      "Don't use team logos, team colors or player photos anywhere.",
+      "Don't use yellow for decoration, branding, buttons or headings.",
+      "Don't use green or red outside the record: not for positive or negative money, not for edges, not for chart lines, not for buttons.",
+      "Don't add a dark theme or dark-mode tokens yet; the site is light-only for now.",
+      "Don't add a second accent color. Emphasis is ink on light and white on ink.",
+      "Don't add shadows to containers. Only tickets and the chart tooltip cast one.",
+      "Don't set sentences in Barlow Condensed or prose numbers in mono.",
+      "Don't restyle a ticket after it is written; a settled bet gains a stamp and nothing else changes.",
+      "Don't let the page scroll sideways; wide tables scroll inside their own frame."
+    ]
+  }
+}

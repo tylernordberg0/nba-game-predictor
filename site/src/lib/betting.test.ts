@@ -3,6 +3,7 @@ import {
   checkPrice,
   impliedProb,
   limitOdds,
+  ruleLimit,
   MIN_EDGE,
   parseAmerican,
   payout,
@@ -80,6 +81,19 @@ describe("checkPrice follows the automatic-bet rule", () => {
   it("notes picks under the 60% bar", () => {
     expect(checkPrice(0.58, 110).underConfidence).toBe(true);
     expect(checkPrice(0.6, 110).underConfidence).toBe(false);
+  });
+});
+
+describe("ruleLimit is the price the rule would really take", () => {
+  it("never goes shorter than the -250 cap (NYK 81.3%: limit -360, rule -250)", () => {
+    expect(limitOdds(0.8129)).toBe(-360);
+    expect(ruleLimit(0.8129)).toBe(-250);
+  });
+  it("is the plain limit when that is inside the cap", () => {
+    expect(ruleLimit(0.676)).toBe(-182);
+  });
+  it("has no price for a pick under 60%", () => {
+    expect(ruleLimit(0.597)).toBeNull();
   });
 });
 

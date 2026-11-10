@@ -33,11 +33,11 @@
   --loss-bg: #f7e4e1;
   --loss-on-ink: #f19a90;
 
-  --series: #2c6fbb;
+  --series: #0d1217;
   --series-context: #8795a4;
   --chart-grid: #e3e8ed;
   --chart-axis: #b4bfca;
-  --focus: #2c6fbb;
+  --focus: #0d1217;
 
   --font-ui: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-display: "Barlow Condensed", "Barlow", system-ui, sans-serif;
@@ -372,7 +372,7 @@ main {
 .row-head,
 .row-main {
   display: grid;
-  grid-template-columns: 88px minmax(170px, 1.5fr) minmax(104px, 0.8fr) 92px 96px 64px minmax(132px, 1fr) 44px;
+  grid-template-columns: 88px minmax(0, 1.3fr) minmax(0, 0.7fr) 84px 92px 64px minmax(0, 1fr) 44px;
   align-items: center;
   column-gap: 12px;
   padding: 0 8px 0 20px;
@@ -416,7 +416,7 @@ main {
   color: var(--on-ink-3);
 }
 
-.c-tip {
+.row .c-tip {
   font-size: 0.9375rem;
   white-space: nowrap;
 }
@@ -488,8 +488,9 @@ main {
   color: var(--ink);
 }
 .status-skip {
-  border-color: var(--ink-line);
   color: var(--on-ink-2);
+  padding-left: 0;
+  white-space: normal;
 }
 .status-tipped {
   color: var(--on-ink-2);
@@ -836,7 +837,6 @@ main {
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  transform: rotate(-3deg);
   white-space: nowrap;
 }
 .stamp b {
@@ -853,7 +853,6 @@ main {
 .stamp-open {
   color: var(--text-3);
   border-style: dashed;
-  transform: none;
 }
 .ticket-facts {
   display: grid;
@@ -923,8 +922,12 @@ main {
 
 /* ---------- Record strip ---------- */
 
+.main-col {
+  display: grid;
+  gap: 24px;
+  min-width: 0;
+}
 .strip {
-  margin-top: 24px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 6px;
@@ -1346,6 +1349,22 @@ input[aria-invalid="true"] {
   gap: 6px;
   padding: 0 !important;
 }
+.pick-day.has-version {
+  margin-top: 10px;
+}
+.pick-day.has-version:first-child {
+  margin-top: 0;
+}
+.pick-version {
+  grid-column: 1 / -1;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--line-2);
+}
 .pick-day {
   display: grid;
   grid-template-columns: 64px minmax(0, 1fr) 48px;
@@ -1413,7 +1432,13 @@ input[aria-invalid="true"] {
 
 .table-wrap {
   overflow-x: auto;
-  background: var(--surface);
+  /* A soft edge shows when there is more table to scroll to. */
+  background:
+    linear-gradient(to right, var(--surface) 30%, transparent) left / 32px 100% no-repeat local,
+    linear-gradient(to left, var(--surface) 30%, transparent) right / 32px 100% no-repeat local,
+    linear-gradient(to right, rgb(13 18 23 / 0.14), transparent) left / 12px 100% no-repeat scroll,
+    linear-gradient(to left, rgb(13 18 23 / 0.14), transparent) right / 12px 100% no-repeat scroll,
+    var(--surface);
   border: 1px solid var(--line);
   border-radius: 6px;
 }
@@ -1610,7 +1635,7 @@ table.data {
 
 /* ---------- Narrower screens ---------- */
 
-@media (max-width: 1180px) {
+@media (max-width: 1280px) {
   .today-grid {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -1733,8 +1758,15 @@ table.data {
 @media (max-width: 520px) {
   .row-head,
   .row-main {
-    grid-template-columns: 58px minmax(0, 1fr) 42px 52px 36px;
-    column-gap: 8px;
+    grid-template-columns: 66px minmax(0, 1fr) 40px 48px 36px;
+    column-gap: 6px;
+  }
+  .data th,
+  .data td {
+    padding: 9px 8px;
+  }
+  .data .col-opt {
+    display: none;
   }
   .matchup,
   .pick {
@@ -1746,9 +1778,9 @@ table.data {
   .expander {
     width: 36px;
   }
-  .c-tip,
-  .c-conf {
-    font-size: 0.8125rem;
+  .row .c-tip,
+  .row .c-conf {
+    font-size: 0.75rem;
   }
   .cities {
     display: none;

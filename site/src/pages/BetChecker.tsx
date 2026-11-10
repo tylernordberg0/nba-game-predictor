@@ -3,7 +3,7 @@ import { useApp } from "../App";
 import { AlertIcon, CheckIcon, CrossIcon } from "../components/icons";
 import { InjuryList, InjuryStamp } from "../components/InjuryList";
 import { Ticket } from "../components/Ticket";
-import { checkPrice, impliedProb, MAX_FAVORITE, parseAmerican, payout, type Verdict } from "../lib/betting";
+import { checkPrice, impliedProb, MAX_FAVORITE, parseAmerican, payout, ruleLimit, type Verdict } from "../lib/betting";
 import type { Bet, Game } from "../lib/data";
 import { dateLabel, fmtOdds, money, pct, points, stampET, timeET } from "../lib/format";
 import { summarizeTeam } from "../lib/injuries";
@@ -264,7 +264,7 @@ export function BetChecker({ preselect }: { preselect: string | null }) {
                 <div><dt>Edge</dt><dd>{points(verdict.edge)} pts</dd></div>
                 <div><dt>Expected value per $1</dt><dd>{money(verdict.ev)}</dd></div>
                 <div><dt>Fair odds</dt><dd>{fmtOdds(verdict.fair)}</dd></div>
-                <div><dt>Bet only at</dt><dd>{verdict.limit != null ? `${fmtOdds(verdict.limit)} or better` : "–"}</dd></div>
+                <div><dt>Bet only at</dt><dd>{ruleLimit(prob) != null ? `${fmtOdds(ruleLimit(prob))} or better` : "never: under 60%"}</dd></div>
                 {stakeOk && (
                   <div><dt>{money(stake, false)} wins</dt><dd>{money(payout(odds, stake), false)}</dd></div>
                 )}
@@ -294,7 +294,7 @@ export function BetChecker({ preselect }: { preselect: string | null }) {
               )}
 
               <div className="verdict-actions">
-                <button type="button" className="btn btn-primary" onClick={addToSandbox} disabled={!stakeOk}>
+                <button type="button" className={`btn ${good ? "btn-primary" : "btn-quiet"}`} onClick={addToSandbox} disabled={!stakeOk}>
                   Add to my sandbox
                 </button>
                 <span className="disclaimer">Simulated bets · not betting advice</span>

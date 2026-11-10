@@ -3,6 +3,7 @@ import { useApp, type Change } from "../App";
 import { AlertIcon, ArrowIcon, CheckIcon, ChevronIcon, CrossIcon } from "../components/icons";
 import { InjuryList, InjuryStamp } from "../components/InjuryList";
 import { Ticket } from "../components/Ticket";
+import { ruleLimit } from "../lib/betting";
 import { betRecord, pickRecord, type Game } from "../lib/data";
 import { dateLabel, fmtOdds, money, pct, plural, points, stampET, timeET, todayET } from "../lib/format";
 import { href, Link } from "../lib/router";
@@ -34,7 +35,20 @@ function StatusTag({ game, phase }: { game: Game; phase: Phase }) {
   }
   if (game.decision.action === "bet") return <span className="status status-bet">Bet $10</span>;
   if (game.decision.action === "pending") return <span className="status status-skip">Not checked</span>;
-  return <span className="status status-skip">Skip</span>;
+  const why = shortReason(game.decision.reason);
+  return <span className="status status-skip">Skip{why ? ` · ${why}` : ""}</span>;
+}
+
+/** The log's one-line reason, cut down to fit a board cell. The full reason is in the row. */
+function shortReason(reason: string): string {
+  if (reason.includes("shorter than")) return "too short";
+  if (reason.includes("worse than")) return "past limit";
+  if (reason.includes("confidence bar")) return "under 60%";
+  if (reason.includes("no DraftKings")) return "no line";
+  if (reason.includes("too good")) return "injury check";
+  if (reason.includes("already started")) return "started";
+  if (reason.includes("already has a bet")) return "has a bet";
+  return "";
 }
 
 function changeText(c: Change): string {
@@ -50,6 +64,7 @@ function BoardRow({ game, phase }: { game: Game; phase: Phase }) {
   const [shown, setShown] = useState<Change | null>(null); // what had changed when the row was opened
   const change = changes[game.game_id];
   const panelId = `game-${game.game_id}`;
+  const limit = ruleLimit(game.confidence);
 
   const toggle = () => {
     if (!open && change) {
@@ -147,7 +162,7 @@ function BoardRow({ game, phase }: { game: Game; phase: Phase }) {
               </div>
               <div>
                 <dt>Bet only at</dt>
-                <dd>{fmtOdds(game.limit_odds)} or better</dd>
+                <dd>{limit != null ? `${fmtOdds(limit)} or better` : "never: under 60%"}</dd>
               </div>
             </dl>
             <div className="detail-why">
@@ -156,7 +171,7 @@ function BoardRow({ game, phase }: { game: Game; phase: Phase }) {
                   {game.decision.action === "bet" ? "Bet placed." : game.decision.action === "skip" ? "No bet:" : "Not checked yet."}
                 </strong>{" "}
                 {game.decision.action === "skip" ? `${game.decision.reason}.` : ""}
-                {game.decision.action === "bet" ? `The price beat the ${fmtOdds(game.limit_odds)} limit.` : ""}
+                {game.decision.action === "bet" && limit != null ? `The price beat the ${fmtOdds(limit)} limit.` : ""}
               </p>
               <p className="small">
                 {game.predicted_at ? `Pick saved ${stampET(game.predicted_at)}. ` : ""}
@@ -240,6 +255,7 @@ export function Today() {
       </div>
 
       <div className="today-grid">
+        <div className="main-col">
         <section className="board" aria-label="Today's board">
           {games.length === 0 ? (
             <div className="board-empty">
@@ -267,11 +283,53 @@ export function Today() {
           {games.length > 0 && (
             <p className="board-foot">
               Edge is the model's probability minus the price's implied probability, in points. Prices are a snapshot
-              {meta.odds_fetched_at ? ` from ${stampET(meta.odds_fetched_at)}` : ""}. Final results arrive the next
-              morning.
+              {meta.odds_fetched_at ? ` from ${stampET(meta.odds_fetched_at)}` : ""}. Best bet, Good, Lean and Toss-up are
+              confidence bands, not bets: the price decides. A row is flagged Changed when its price or injury list
+              moves after your first visit. Final results arrive the next morning.
             </p>
           )}
         </section>
+
+        <section className="strip" aria-label="Track record">
+          <div className="strip-cell">
+            <h2>Live record</h2>
+            <p className="strip-fig">
+              {live.wins}–{live.losses}
+              <span>{live.rate != null ? pct(live.rate) : ""}</span>
+            </p>
+            <p className="strip-note">
+              {plural(live.n, "pick")} scored, every one saved before tip-off. Current model (v2): {v2.wins}–{v2.losses}{" "}
+              over {plural(v2.n, "pick")}. Too few to judge on their own.
+            </p>
+          </div>
+          <div className="strip-cell">
+            <h2>Backtest</h2>
+            <p className="strip-fig">
+              {pct(wf.model_accuracy)}
+              <span>vs {pct(wf.home_baseline)} always picking home</span>
+            </p>
+            <p className="strip-note">
+              {wf.games.toLocaleString("en-US")} games, {wf.test_seasons.replace(" to ", " to ")}. Each season predicted by a
+              model trained only on earlier seasons.
+            </p>
+          </div>
+          <div className="strip-cell">
+            <h2>Simulated bets</h2>
+            <p className="strip-fig">
+              {betsAll.wins}–{betsAll.losses}
+              <span>
+                {money(betsAll.profit)} on {money(betsAll.staked, false)} staked
+              </span>
+            </p>
+            <p className="strip-note">
+              {plural(betsAll.n, "settled bet")}. That is far too few to show an edge either way; no real money is placed.
+            </p>
+          </div>
+          <Link to={href("results")} className="strip-link">
+            Full record and method <ArrowIcon />
+          </Link>
+        </section>
+        </div>
 
         <aside className="side" aria-label="Today's bets">
           <section>
@@ -307,7 +365,7 @@ export function Today() {
                 {skipped.map((g) => (
                   <li key={g.game_id}>
                     <span className="skip-pick">
-                      <b>{g.pick}</b> {pct(g.confidence, 0)}
+                      <b>{g.pick}</b> {pct(g.confidence)}
                     </span>
                     <span className="skip-game">{g.away} @ {g.home}</span>
                     <span className="skip-why">{g.decision.reason}</span>
@@ -319,45 +377,6 @@ export function Today() {
         </aside>
       </div>
 
-      <section className="strip" aria-label="Track record">
-        <div className="strip-cell">
-          <h2>Live record</h2>
-          <p className="strip-fig">
-            {live.wins}–{live.losses}
-            <span>{live.rate != null ? pct(live.rate) : ""}</span>
-          </p>
-          <p className="strip-note">
-            {plural(live.n, "pick")} scored, every one saved before tip-off. Current model (v2): {v2.wins}–{v2.losses}{" "}
-            over {plural(v2.n, "pick")}. Too few to judge on their own.
-          </p>
-        </div>
-        <div className="strip-cell">
-          <h2>Backtest</h2>
-          <p className="strip-fig">
-            {pct(wf.model_accuracy)}
-            <span>vs {pct(wf.home_baseline)} always picking home</span>
-          </p>
-          <p className="strip-note">
-            {wf.games.toLocaleString("en-US")} games, {wf.test_seasons.replace(" to ", " to ")}. Each season predicted by a
-            model trained only on earlier seasons.
-          </p>
-        </div>
-        <div className="strip-cell">
-          <h2>Simulated bets</h2>
-          <p className="strip-fig">
-            {betsAll.wins}–{betsAll.losses}
-            <span>
-              {money(betsAll.profit)} on {money(betsAll.staked, false)} staked
-            </span>
-          </p>
-          <p className="strip-note">
-            {plural(betsAll.n, "settled bet")}. That is far too few to show an edge either way; no real money is placed.
-          </p>
-        </div>
-        <Link to={href("results")} className="strip-link">
-          Full record and method <ArrowIcon />
-        </Link>
-      </section>
     </div>
   );
 }
