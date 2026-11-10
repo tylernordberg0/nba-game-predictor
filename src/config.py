@@ -16,6 +16,8 @@ FIGURES_DIR = ROOT / "figures"
 
 PREDICTIONS_CSV = RESULTS_DIR / "predictions.csv"
 BETS_CSV = RESULTS_DIR / "bets.csv"
+ODDS_CSV = RESULTS_DIR / "odds.csv"
+AUTO_BET_LOG = RESULTS_DIR / "auto_bets_log.csv"
 BACKTEST_JSON = RESULTS_DIR / "backtest_metrics.json"
 BACKTEST_SEASONS_CSV = RESULTS_DIR / "backtest_by_season.csv"
 

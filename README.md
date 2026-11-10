@@ -43,6 +43,8 @@ Two things to know about these rows (`model_version = v1`):
 
 `python -m src.betting` logs hypothetical bets on picks with at least 60% model confidence, at odds copied by hand from a sportsbook, and settles them after the games.
 
+`python -m src.run_daily` also places automatic $10 bets ([`src/auto_bet.py`](src/auto_bet.py)) on picks with at least 60% confidence, using DraftKings moneylines from [The Odds API](https://the-odds-api.com). A pick is bet only if the price is no shorter than −250 and the model's probability beats the implied probability by at least 3 points; when that edge is 8 points or more, the bet also needs no starter on the picked team listed Out in ESPN's injury feed. Every decision and its reason goes to `results/auto_bets_log.csv`, and each odds pull to `results/odds.csv`. Automatic bets are marked `source = auto` in `results/bets.csv`. This needs a free API key in a `.env` file at the repo root (`ODDS_API_KEY=...`); `.env` is gitignored.
+
 ![Bankroll](figures/bankroll.png)
 
 **Result: 14 bets over 4 days, 8–6, +$10.75 on $450 wagered (+2.4% ROI).** That's far too small a sample to show an edge in either direction, and stakes were chosen by hand ($10 to $100), so the dollar result mostly reflects bet sizing.

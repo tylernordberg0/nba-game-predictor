@@ -35,7 +35,7 @@ from src.tracking import load_predictions
 MIN_CONFIDENCE = 0.60
 MIN_EDGE = 0.03  # model probability must beat the implied probability by this much
 COLUMNS = ["date", "game_id", "matchup", "pick", "model_prob", "odds", "opp_odds",
-           "implied_prob", "novig_prob", "edge", "stake", "book", "placed_at", "result", "profit"]
+           "implied_prob", "novig_prob", "edge", "stake", "book", "placed_at", "result", "profit", "source"]
 
 
 def implied_prob(american: int) -> float:
@@ -59,7 +59,11 @@ def payout(american: int, stake: float) -> float:
 def load_bets() -> pd.DataFrame:
     if not BETS_CSV.exists():
         return pd.DataFrame(columns=COLUMNS)
-    return pd.read_csv(BETS_CSV, dtype={"game_id": str, "date": str, "result": str, "book": str, "placed_at": str})
+    bets = pd.read_csv(BETS_CSV, dtype={"game_id": str, "date": str, "result": str, "book": str, "placed_at": str})
+    # `source` (auto = placed by src.auto_bet, manual = typed into nbabet) was added
+    # later; every bet before it was manual.
+    bets["source"] = bets["source"].fillna("manual") if "source" in bets else "manual"
+    return bets
 
 
 def save_bets(bets: pd.DataFrame) -> None:
@@ -97,6 +101,21 @@ def report_bets(bets: pd.DataFrame, newly: pd.Series) -> None:
         print(f"\nBets for {d}: {w}-{len(day) - w}, {money(day['profit'].sum())} on ${day['stake'].sum():.2f} staked")
         for b in day.itertuples():
             print(f"  {b.result} {b.matchup:<11} {b.pick:<4} {int(b.odds):+5d}  ${b.stake:>6.2f}  {money(b.profit):>9}")
+
+
+def print_record(bets: pd.DataFrame) -> None:
+    """All-time betting record, split into automatic and manual bets when both exist."""
+    settled = bets.dropna(subset=["result"])
+    if settled.empty:
+        return
+    print()
+    groups = [("Bets all-time", settled)]
+    if settled["source"].nunique() > 1:
+        groups += [(f"  {src.capitalize()}", g) for src, g in settled.groupby("source")]
+    for label, g in groups:
+        wagered, profit = g["stake"].sum(), g["profit"].sum()
+        w = int((g["result"] == "W").sum())
+        print(f"{label}: {w}-{len(g) - w} | wagered ${wagered:.2f} | P/L {money(profit)} | ROI {profit / wagered:+.1%}")
 
 
 def settle(bets: pd.DataFrame, preds: pd.DataFrame) -> pd.DataFrame:
@@ -211,7 +230,7 @@ def main() -> None:
                    "model_prob": p.confidence, "odds": odds, "opp_odds": None, "implied_prob": q,
                    "novig_prob": None, "edge": edge, "stake": stake, "book": book,
                    "placed_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-                   "result": None, "profit": None}
+                   "result": None, "profit": None, "source": "manual"}
             bets.loc[len(bets)] = [row[c] for c in COLUMNS]
             save_bets(bets)  # saved right away, so Ctrl+C later doesn't lose it
             n, staked = n + 1, staked + stake
@@ -220,11 +239,7 @@ def main() -> None:
             print(f"\nLogged {n} bet(s), ${staked:.2f} staked.")
 
     save_bets(bets)
-    settled = bets.dropna(subset=["result"])
-    if len(settled):
-        wagered, profit = settled["stake"].sum(), settled["profit"].sum()
-        w = (settled["result"] == "W").sum()
-        print(f"\nAll-time: {w}-{len(settled) - w} | wagered ${wagered:.2f} | P/L {'+' if profit >= 0 else '-'}${abs(profit):.2f} | ROI {profit / wagered:+.1%}")
+    print_record(bets)
 
 
 if __name__ == "__main__":

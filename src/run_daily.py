@@ -24,7 +24,8 @@ from src import config
 from src.data import get_schedule, load_game_logs, team_abbreviations
 from src.features import build_game_table, current_team_form
 from src.model import home_win_probability, train
-from src.betting import load_bets, save_bets, settle
+from src.auto_bet import run_auto_bets
+from src.betting import load_bets, print_record, save_bets, settle
 from src.tracking import fill_results, load_predictions, print_results, record, save_predictions
 
 
@@ -119,9 +120,18 @@ def main() -> None:
         save_predictions(preds)  # also persists any newly filled results
         save_bets(bets)  # and any newly settled bets
 
+    # 5. Automatic $10 bets on today's saved picks (a dry run only previews them)
+    if not replay:
+        saved = preds[preds["date"] == day.isoformat()]
+        picks = saved if len(saved) or not dry_run else pd.DataFrame(new_rows)
+        bets = run_auto_bets(picks, bets, day.isoformat(), dry_run)
+        if not dry_run:
+            save_bets(bets)
+
     c, n = record(preds)
     if n:
         print(f"\nLive record: {c}-{n - c} ({c / n:.1%}) over {preds.dropna(subset=['correct'])['date'].nunique()} days")
+    print_record(bets)
 
 
 if __name__ == "__main__":
