@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-11-10T22:12:17Z",
+  "generated_at": "2026-11-10T22:20:24Z",
   "export_date": "2026-11-10",
   "board_date": "2026-11-10",
   "results_through": "2026-11-09",
   "model_version": "v2",
-  "odds_fetched_at": "2026-11-10T21:52:42Z",
+  "odds_fetched_at": "2026-11-10T22:20:24Z",
   "rules": {
    "min_confidence": 0.6,
    "min_edge": 0.03,
@@ -36,8 +36,8 @@
     "away": 670,
     "home": -1040,
     "book": "draftkings",
-    "book_updated": "2026-11-10T21:52:28Z",
-    "fetched_at": "2026-11-10T21:52:42Z"
+    "book_updated": "2026-11-10T22:20:12Z",
+    "fetched_at": "2026-11-10T22:20:24Z"
    },
    "pick_odds": -1040,
    "implied_prob": 0.9123,
@@ -67,8 +67,8 @@
     "away": -125,
     "home": 106,
     "book": "draftkings",
-    "book_updated": "2026-11-10T21:52:28Z",
-    "fetched_at": "2026-11-10T21:52:42Z"
+    "book_updated": "2026-11-10T22:20:12Z",
+    "fetched_at": "2026-11-10T22:20:24Z"
    },
    "pick_odds": 106,
    "implied_prob": 0.4854,
@@ -98,8 +98,8 @@
     "away": -406,
     "home": 319,
     "book": "draftkings",
-    "book_updated": "2026-11-10T21:52:28Z",
-    "fetched_at": "2026-11-10T21:52:42Z"
+    "book_updated": "2026-11-10T22:20:12Z",
+    "fetched_at": "2026-11-10T22:20:24Z"
    },
    "pick_odds": -406,
    "implied_prob": 0.8024,
@@ -129,8 +129,8 @@
     "away": 145,
     "home": -173,
     "book": "draftkings",
-    "book_updated": "2026-11-10T21:52:28Z",
-    "fetched_at": "2026-11-10T21:52:42Z"
+    "book_updated": "2026-11-10T22:20:12Z",
+    "fetched_at": "2026-11-10T22:20:24Z"
    },
    "pick_odds": -173,
    "implied_prob": 0.6337,
@@ -160,8 +160,8 @@
     "away": -229,
     "home": 190,
     "book": "draftkings",
-    "book_updated": "2026-11-10T21:52:28Z",
-    "fetched_at": "2026-11-10T21:52:42Z"
+    "book_updated": "2026-11-10T22:20:12Z",
+    "fetched_at": "2026-11-10T22:20:24Z"
    },
    "pick_odds": -229,
    "implied_prob": 0.696,
@@ -191,8 +191,8 @@
     "away": -117,
     "home": -101,
     "book": "draftkings",
-    "book_updated": "2026-11-10T21:52:28Z",
-    "fetched_at": "2026-11-10T21:52:42Z"
+    "book_updated": "2026-11-10T22:20:12Z",
+    "fetched_at": "2026-11-10T22:20:24Z"
    },
    "pick_odds": -117,
    "implied_prob": 0.5392,
