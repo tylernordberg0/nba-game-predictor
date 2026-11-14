@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-11-14T15:01:19Z",
+  "generated_at": "2026-11-14T15:32:42Z",
   "export_date": "2026-11-14",
   "board_date": "2026-11-14",
   "results_through": "2026-11-12",
   "model_version": "v2",
-  "odds_fetched_at": "2026-11-14T15:01:19Z",
+  "odds_fetched_at": "2026-11-14T15:32:41Z",
   "rules": {
    "min_confidence": 0.6,
    "min_edge": 0.03,
@@ -36,8 +36,8 @@
     "away": 620,
     "home": -930,
     "book": "draftkings",
-    "book_updated": "2026-11-14T14:59:57Z",
-    "fetched_at": "2026-11-14T15:01:19Z"
+    "book_updated": "2026-11-14T15:31:43Z",
+    "fetched_at": "2026-11-14T15:32:41Z"
    },
    "pick_odds": -930,
    "implied_prob": 0.9029,
@@ -67,8 +67,8 @@
     "away": 140,
     "home": -167,
     "book": "draftkings",
-    "book_updated": "2026-11-14T14:59:57Z",
-    "fetched_at": "2026-11-14T15:01:19Z"
+    "book_updated": "2026-11-14T15:31:43Z",
+    "fetched_at": "2026-11-14T15:32:41Z"
    },
    "pick_odds": -167,
    "implied_prob": 0.6255,
@@ -98,8 +98,8 @@
     "away": -597,
     "home": 443,
     "book": "draftkings",
-    "book_updated": "2026-11-14T14:59:57Z",
-    "fetched_at": "2026-11-14T15:01:19Z"
+    "book_updated": "2026-11-14T15:31:43Z",
+    "fetched_at": "2026-11-14T15:32:41Z"
    },
    "pick_odds": -597,
    "implied_prob": 0.8565,
@@ -129,15 +129,15 @@
     "away": -113,
     "home": -105,
     "book": "draftkings",
-    "book_updated": "2026-11-14T14:59:57Z",
-    "fetched_at": "2026-11-14T15:01:19Z"
+    "book_updated": "2026-11-14T15:31:43Z",
+    "fetched_at": "2026-11-14T15:32:41Z"
    },
    "pick_odds": -105,
    "implied_prob": 0.5122,
    "edge": 0.0918,
    "decision": {
-    "action": "skip",
-    "reason": "edge +9.2% looks too good: Evan Mobley (32 min) out",
+    "action": "bet",
+    "reason": "",
     "source": "auto"
    }
   },
@@ -160,8 +160,8 @@
     "away": -191,
     "home": 160,
     "book": "draftkings",
-    "book_updated": "2026-11-14T14:59:57Z",
-    "fetched_at": "2026-11-14T15:01:19Z"
+    "book_updated": "2026-11-14T15:31:43Z",
+    "fetched_at": "2026-11-14T15:32:41Z"
    },
    "pick_odds": -191,
    "implied_prob": 0.6564,
@@ -1373,6 +1373,23 @@
    "stake": 10.0,
    "book": "draftkings",
    "placed_at": "2026-11-14T15:01:19Z",
+   "result": null,
+   "profit": null,
+   "source": "auto"
+  },
+  {
+   "seq": 18,
+   "date": "2026-11-14",
+   "game_id": "0022600232",
+   "matchup": "DAL @ CLE",
+   "pick": "CLE",
+   "model_prob": 0.604,
+   "odds": -105,
+   "implied_prob": 0.5122,
+   "edge": 0.0918,
+   "stake": 10.0,
+   "book": "draftkings",
+   "placed_at": "2026-11-14T15:32:41Z",
    "result": null,
    "profit": null,
    "source": "auto"
