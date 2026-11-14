@@ -1,70 +1,70 @@
 {
  "season": "2026-27",
- "updated_at": "2026-11-12T16:53:13Z",
+ "updated_at": "2026-11-14T15:01:20Z",
  "teams": {
   "ATL": [
    {
     "name": "Jalen Johnson",
     "key": "jalen johnson",
-    "min": 33.6,
-    "pts": 19.2,
-    "gp": 9
+    "min": 34.3,
+    "pts": 20.0,
+    "gp": 10
    },
    {
     "name": "Nickeil Alexander-Walker",
     "key": "nickeil alexanderwalker",
-    "min": 31.1,
-    "pts": 21.9,
-    "gp": 12
+    "min": 31.8,
+    "pts": 21.5,
+    "gp": 13
    },
    {
     "name": "Dyson Daniels",
     "key": "dyson daniels",
-    "min": 30.3,
-    "pts": 9.8,
-    "gp": 12
+    "min": 30.7,
+    "pts": 9.5,
+    "gp": 13
    },
    {
     "name": "Onyeka Okongwu",
     "key": "onyeka okongwu",
-    "min": 29.6,
-    "pts": 13.7,
-    "gp": 12
+    "min": 30.0,
+    "pts": 13.9,
+    "gp": 13
+   },
+   {
+    "name": "CJ McCollum",
+    "key": "cj mccollum",
+    "min": 26.1,
+    "pts": 14.1,
+    "gp": 13
    },
    {
     "name": "Aaron Wiggins",
     "key": "aaron wiggins",
     "min": 25.8,
-    "pts": 14.9,
-    "gp": 12
-   },
-   {
-    "name": "CJ McCollum",
-    "key": "cj mccollum",
-    "min": 25.6,
-    "pts": 13.6,
-    "gp": 12
+    "pts": 14.5,
+    "gp": 13
    },
    {
     "name": "Luguentz Dort",
     "key": "luguentz dort",
-    "min": 24.8,
-    "pts": 9.3,
-    "gp": 12
+    "min": 24.4,
+    "pts": 9.4,
+    "gp": 13
    },
    {
     "name": "Kingston Flemings",
     "key": "kingston flemings",
-    "min": 21.9,
-    "pts": 8.5,
-    "gp": 11
+    "min": 21.5,
+    "pts": 7.8,
+    "gp": 12
    },
    {
     "name": "Jock Landale",
     "key": "jock landale",
-    "min": 15.1,
-    "pts": 6.1,
-    "gp": 8
+    "min": 15.5,
+    "pts": 6.8,
+    "gp": 9
    },
    {
     "name": "Zuby Ejiofor",
@@ -341,58 +341,72 @@
    {
     "name": "Naz Reid",
     "key": "naz reid",
-    "min": 29.5,
-    "pts": 17.4,
-    "gp": 11
+    "min": 29.8,
+    "pts": 17.3,
+    "gp": 12
    },
    {
     "name": "Moussa Diabaté",
     "key": "moussa diabate",
-    "min": 28.7,
-    "pts": 8.9,
-    "gp": 9
+    "min": 29.0,
+    "pts": 8.7,
+    "gp": 10
    },
    {
     "name": "Grayson Allen",
     "key": "grayson allen",
-    "min": 26.6,
-    "pts": 15.3,
-    "gp": 11
+    "min": 27.3,
+    "pts": 15.2,
+    "gp": 12
    },
    {
     "name": "Sion James",
     "key": "sion james",
-    "min": 25.5,
-    "pts": 6.3,
-    "gp": 11
+    "min": 26.1,
+    "pts": 6.0,
+    "gp": 12
    },
    {
     "name": "Royce O'Neale",
     "key": "royce oneale",
-    "min": 19.2,
-    "pts": 5.2,
-    "gp": 11
+    "min": 19.4,
+    "pts": 5.3,
+    "gp": 12
    },
    {
     "name": "Ryan Kalkbrenner",
     "key": "ryan kalkbrenner",
-    "min": 18.8,
-    "pts": 4.8,
-    "gp": 11
+    "min": 18.6,
+    "pts": 4.6,
+    "gp": 12
    },
    {
     "name": "Coby White",
     "key": "coby white",
-    "min": 17.7,
-    "pts": 7.0,
-    "gp": 4
+    "min": 18.1,
+    "pts": 9.8,
+    "gp": 5
+   },
+   {
+    "name": "Grant Williams",
+    "key": "grant williams",
+    "min": 16.0,
+    "pts": 11.0,
+    "gp": 1
    },
    {
     "name": "Tidjane Salaün",
     "key": "tidjane salaun",
-    "min": 15.1,
-    "pts": 6.9,
-    "gp": 10
+    "min": 15.2,
+    "pts": 6.5,
+    "gp": 11
+   },
+   {
+    "name": "Christian Anderson",
+    "key": "christian anderson",
+    "min": 12.8,
+    "pts": 4.3,
+    "gp": 11
    },
    {
     "name": "Hannes Steinbach",
@@ -400,13 +414,6 @@
     "min": 12.7,
     "pts": 2.8,
     "gp": 5
-   },
-   {
-    "name": "Christian Anderson",
-    "key": "christian anderson",
-    "min": 12.3,
-    "pts": 3.4,
-    "gp": 10
    },
    {
     "name": "Liam McNeeley",
@@ -441,58 +448,58 @@
    {
     "name": "Norman Powell",
     "key": "norman powell",
-    "min": 28.7,
-    "pts": 19.3,
-    "gp": 8
+    "min": 29.0,
+    "pts": 20.8,
+    "gp": 9
    },
    {
     "name": "Josh Giddey",
     "key": "josh giddey",
-    "min": 27.6,
-    "pts": 10.2,
-    "gp": 10
+    "min": 28.6,
+    "pts": 10.6,
+    "gp": 11
    },
    {
     "name": "Matas Buzelis",
     "key": "matas buzelis",
-    "min": 26.3,
-    "pts": 13.5,
-    "gp": 10
-   },
-   {
-    "name": "Patrick Williams",
-    "key": "patrick williams",
-    "min": 24.2,
-    "pts": 6.7,
-    "gp": 3
+    "min": 26.5,
+    "pts": 13.3,
+    "gp": 11
    },
    {
     "name": "Jalen Smith",
     "key": "jalen smith",
-    "min": 24.0,
-    "pts": 12.8,
-    "gp": 10
+    "min": 24.7,
+    "pts": 13.0,
+    "gp": 11
+   },
+   {
+    "name": "Patrick Williams",
+    "key": "patrick williams",
+    "min": 24.3,
+    "pts": 8.3,
+    "gp": 4
    },
    {
     "name": "Isaac Okoro",
     "key": "isaac okoro",
-    "min": 19.1,
-    "pts": 5.2,
-    "gp": 10
+    "min": 21.1,
+    "pts": 6.1,
+    "gp": 11
    },
    {
     "name": "Tre Jones",
     "key": "tre jones",
-    "min": 18.8,
-    "pts": 10.6,
-    "gp": 10
+    "min": 18.5,
+    "pts": 10.0,
+    "gp": 11
    },
    {
     "name": "Nic Claxton",
     "key": "nic claxton",
-    "min": 16.7,
-    "pts": 10.5,
-    "gp": 2
+    "min": 18.3,
+    "pts": 7.7,
+    "gp": 3
    },
    {
     "name": "Leonard Miller",
@@ -502,18 +509,18 @@
     "gp": 9
    },
    {
-    "name": "Noa Essengue",
-    "key": "noa essengue",
-    "min": 13.8,
-    "pts": 5.6,
+    "name": "Buddy Hield",
+    "key": "buddy hield",
+    "min": 14.4,
+    "pts": 6.3,
     "gp": 9
    },
    {
-    "name": "Buddy Hield",
-    "key": "buddy hield",
-    "min": 13.0,
-    "pts": 5.6,
-    "gp": 8
+    "name": "Noa Essengue",
+    "key": "noa essengue",
+    "min": 13.2,
+    "pts": 5.5,
+    "gp": 10
    },
    {
     "name": "Jordan Hawkins",
@@ -556,15 +563,15 @@
     "name": "Donovan Mitchell",
     "key": "donovan mitchell",
     "min": 33.0,
-    "pts": 22.8,
-    "gp": 12
+    "pts": 23.0,
+    "gp": 13
    },
    {
     "name": "James Harden",
     "key": "james harden",
-    "min": 32.7,
-    "pts": 16.7,
-    "gp": 12
+    "min": 32.8,
+    "pts": 16.9,
+    "gp": 13
    },
    {
     "name": "Evan Mobley",
@@ -576,16 +583,16 @@
    {
     "name": "Peyton Watson",
     "key": "peyton watson",
-    "min": 28.0,
-    "pts": 11.0,
-    "gp": 10
+    "min": 28.2,
+    "pts": 10.4,
+    "gp": 11
    },
    {
     "name": "Jarrett Allen",
     "key": "jarrett allen",
-    "min": 25.4,
-    "pts": 12.9,
-    "gp": 10
+    "min": 26.0,
+    "pts": 12.5,
+    "gp": 11
    },
    {
     "name": "Sam Merrill",
@@ -597,37 +604,37 @@
    {
     "name": "Meleek Thomas",
     "key": "meleek thomas",
-    "min": 23.0,
-    "pts": 13.1,
-    "gp": 9
+    "min": 22.5,
+    "pts": 13.0,
+    "gp": 10
    },
    {
     "name": "Jaylon Tyson",
     "key": "jaylon tyson",
-    "min": 21.1,
-    "pts": 7.0,
-    "gp": 6
+    "min": 22.4,
+    "pts": 8.3,
+    "gp": 7
    },
    {
     "name": "Mario Hezonja",
     "key": "mario hezonja",
-    "min": 18.9,
-    "pts": 7.8,
-    "gp": 12
+    "min": 18.2,
+    "pts": 7.5,
+    "gp": 13
    },
    {
     "name": "Tyrese Proctor",
     "key": "tyrese proctor",
-    "min": 17.1,
-    "pts": 6.8,
-    "gp": 11
+    "min": 17.9,
+    "pts": 8.1,
+    "gp": 12
    },
    {
     "name": "Thomas Bryant",
     "key": "thomas bryant",
-    "min": 12.5,
+    "min": 13.0,
     "pts": 8.7,
-    "gp": 6
+    "gp": 7
    },
    {
     "name": "Riley Minix",
@@ -640,8 +647,8 @@
     "name": "Craig Porter Jr.",
     "key": "craig porter",
     "min": 10.0,
-    "pts": 1.6,
-    "gp": 9
+    "pts": 1.4,
+    "gp": 10
    },
    {
     "name": "Tristan Enaruna",
@@ -662,86 +669,86 @@
    {
     "name": "Cooper Flagg",
     "key": "cooper flagg",
-    "min": 34.1,
-    "pts": 25.9,
-    "gp": 10
+    "min": 33.5,
+    "pts": 24.6,
+    "gp": 11
    },
    {
     "name": "P.J. Washington",
     "key": "pj washington",
-    "min": 33.7,
-    "pts": 14.6,
-    "gp": 11
+    "min": 32.2,
+    "pts": 14.3,
+    "gp": 12
    },
    {
     "name": "Kyrie Irving",
     "key": "kyrie irving",
-    "min": 30.5,
-    "pts": 22.9,
-    "gp": 9
+    "min": 30.1,
+    "pts": 21.6,
+    "gp": 10
    },
    {
     "name": "Naji Marshall",
     "key": "naji marshall",
-    "min": 24.8,
-    "pts": 11.1,
-    "gp": 8
+    "min": 24.6,
+    "pts": 11.3,
+    "gp": 9
    },
    {
     "name": "Zaccharie Risacher",
     "key": "zaccharie risacher",
     "min": 24.2,
-    "pts": 7.1,
-    "gp": 11
+    "pts": 8.3,
+    "gp": 12
    },
    {
     "name": "Daniel Gafford",
     "key": "daniel gafford",
-    "min": 22.0,
-    "pts": 9.6,
-    "gp": 11
-   },
-   {
-    "name": "Max Christie",
-    "key": "max christie",
-    "min": 19.6,
-    "pts": 5.5,
-    "gp": 10
+    "min": 21.5,
+    "pts": 9.1,
+    "gp": 12
    },
    {
     "name": "Caleb Martin",
     "key": "caleb martin",
+    "min": 18.7,
+    "pts": 4.0,
+    "gp": 8
+   },
+   {
+    "name": "Max Christie",
+    "key": "max christie",
     "min": 18.4,
-    "pts": 3.6,
-    "gp": 7
-   },
-   {
-    "name": "Morez Johnson Jr.",
-    "key": "morez johnson",
-    "min": 17.0,
-    "pts": 7.6,
-    "gp": 10
-   },
-   {
-    "name": "Marcus Sasser",
-    "key": "marcus sasser",
-    "min": 16.4,
-    "pts": 5.9,
-    "gp": 9
+    "pts": 5.3,
+    "gp": 11
    },
    {
     "name": "Walter Clayton Jr.",
     "key": "walter clayton",
-    "min": 16.4,
-    "pts": 7.2,
+    "min": 16.9,
+    "pts": 7.0,
+    "gp": 11
+   },
+   {
+    "name": "Morez Johnson Jr.",
+    "key": "morez johnson",
+    "min": 16.7,
+    "pts": 6.9,
+    "gp": 11
+   },
+   {
+    "name": "Marcus Sasser",
+    "key": "marcus sasser",
+    "min": 15.6,
+    "pts": 5.6,
     "gp": 10
    },
    {
     "name": "Santi Aldama",
     "key": "santi aldama",
-    "min": 15.6,
-    "pts": 10.0,
-    "gp": 3
+    "min": 14.1,
+    "pts": 8.3,
+    "gp": 4
    },
    {
     "name": "Sergio de Larrea",
@@ -751,25 +758,25 @@
     "gp": 4
    },
    {
-    "name": "Moussa Cissé",
-    "key": "moussa cisse",
-    "min": 3.0,
-    "pts": 1.7,
+    "name": "Tobi Lawal",
+    "key": "tobi lawal",
+    "min": 3.9,
+    "pts": 1.3,
     "gp": 7
    },
    {
-    "name": "Tobi Lawal",
-    "key": "tobi lawal",
-    "min": 2.5,
+    "name": "Moussa Cissé",
+    "key": "moussa cisse",
+    "min": 3.6,
     "pts": 1.5,
-    "gp": 6
+    "gp": 8
    },
    {
     "name": "Jett Howard",
     "key": "jett howard",
-    "min": 2.4,
-    "pts": 2.4,
-    "gp": 5
+    "min": 2.9,
+    "pts": 2.5,
+    "gp": 6
    }
   ],
   "DEN": [
@@ -890,51 +897,51 @@
    {
     "name": "Cade Cunningham",
     "key": "cade cunningham",
-    "min": 33.2,
-    "pts": 22.3,
-    "gp": 10
+    "min": 34.5,
+    "pts": 25.0,
+    "gp": 11
    },
    {
     "name": "Duncan Robinson",
     "key": "duncan robinson",
-    "min": 30.8,
-    "pts": 18.6,
-    "gp": 10
+    "min": 31.7,
+    "pts": 18.1,
+    "gp": 11
    },
    {
     "name": "Ausar Thompson",
     "key": "ausar thompson",
-    "min": 27.2,
-    "pts": 9.3,
-    "gp": 9
-   },
-   {
-    "name": "John Collins",
-    "key": "john collins",
-    "min": 26.5,
-    "pts": 10.7,
+    "min": 28.8,
+    "pts": 10.1,
     "gp": 10
    },
    {
     "name": "Daniss Jenkins",
     "key": "daniss jenkins",
-    "min": 26.0,
-    "pts": 12.7,
-    "gp": 10
+    "min": 27.5,
+    "pts": 13.5,
+    "gp": 11
    },
    {
     "name": "Paul Reed",
     "key": "paul reed",
-    "min": 25.9,
-    "pts": 11.4,
-    "gp": 10
+    "min": 27.0,
+    "pts": 11.5,
+    "gp": 11
+   },
+   {
+    "name": "John Collins",
+    "key": "john collins",
+    "min": 26.4,
+    "pts": 10.6,
+    "gp": 11
    },
    {
     "name": "Kevin Huerter",
     "key": "kevin huerter",
-    "min": 23.1,
-    "pts": 8.8,
-    "gp": 10
+    "min": 23.2,
+    "pts": 9.0,
+    "gp": 11
    },
    {
     "name": "Jalen Duren",
@@ -946,16 +953,16 @@
    {
     "name": "Javonte Green",
     "key": "javonte green",
-    "min": 17.5,
-    "pts": 6.2,
-    "gp": 10
+    "min": 17.3,
+    "pts": 6.1,
+    "gp": 11
    },
    {
     "name": "Ronald Holland II",
     "key": "ronald holland",
-    "min": 15.5,
-    "pts": 5.2,
-    "gp": 10
+    "min": 15.4,
+    "pts": 4.9,
+    "gp": 11
    },
    {
     "name": "Isaiah Joe",
@@ -1011,23 +1018,16 @@
    {
     "name": "Brandin Podziemski",
     "key": "brandin podziemski",
-    "min": 33.4,
-    "pts": 17.3,
-    "gp": 10
+    "min": 32.4,
+    "pts": 16.5,
+    "gp": 11
    },
    {
     "name": "Yaxel Lendeborg",
     "key": "yaxel lendeborg",
-    "min": 32.2,
-    "pts": 21.7,
-    "gp": 12
-   },
-   {
-    "name": "Draymond Green",
-    "key": "draymond green",
-    "min": 26.8,
-    "pts": 3.2,
-    "gp": 10
+    "min": 31.6,
+    "pts": 20.2,
+    "gp": 13
    },
    {
     "name": "Stephen Curry",
@@ -1037,38 +1037,45 @@
     "gp": 10
    },
    {
+    "name": "Draymond Green",
+    "key": "draymond green",
+    "min": 25.8,
+    "pts": 3.3,
+    "gp": 11
+   },
+   {
     "name": "De'Anthony Melton",
     "key": "deanthony melton",
-    "min": 22.4,
-    "pts": 10.1,
-    "gp": 12
+    "min": 22.1,
+    "pts": 9.9,
+    "gp": 13
    },
    {
     "name": "Georges Niang",
     "key": "georges niang",
-    "min": 20.4,
-    "pts": 8.0,
-    "gp": 12
+    "min": 20.0,
+    "pts": 7.8,
+    "gp": 13
    },
    {
     "name": "Gui Santos",
     "key": "gui santos",
-    "min": 18.4,
-    "pts": 5.4,
-    "gp": 9
-   },
-   {
-    "name": "Al Horford",
-    "key": "al horford",
-    "min": 17.9,
-    "pts": 4.7,
+    "min": 18.6,
+    "pts": 5.6,
     "gp": 10
    },
    {
     "name": "Will Richard",
     "key": "will richard",
-    "min": 17.3,
-    "pts": 5.5,
+    "min": 18.4,
+    "pts": 5.6,
+    "gp": 12
+   },
+   {
+    "name": "Al Horford",
+    "key": "al horford",
+    "min": 17.2,
+    "pts": 4.3,
     "gp": 11
    },
    {
@@ -1081,81 +1088,81 @@
    {
     "name": "Gary Payton II",
     "key": "gary payton",
-    "min": 13.4,
-    "pts": 5.0,
-    "gp": 10
+    "min": 13.3,
+    "pts": 4.7,
+    "gp": 11
    },
    {
     "name": "Charles Bassey",
     "key": "charles bassey",
-    "min": 12.5,
-    "pts": 7.6,
-    "gp": 10
+    "min": 13.2,
+    "pts": 7.9,
+    "gp": 11
    },
    {
     "name": "Graham Ike",
     "key": "graham ike",
-    "min": 9.3,
+    "min": 9.6,
     "pts": 4.8,
-    "gp": 9
+    "gp": 10
    },
    {
     "name": "LJ Cryer",
     "key": "lj cryer",
-    "min": 7.5,
-    "pts": 4.6,
-    "gp": 9
+    "min": 9.2,
+    "pts": 6.1,
+    "gp": 10
    },
    {
     "name": "Malevy Leons",
     "key": "malevy leons",
-    "min": 4.7,
-    "pts": 0.3,
-    "gp": 7
+    "min": 5.9,
+    "pts": 0.9,
+    "gp": 8
    }
   ],
   "HOU": [
    {
-    "name": "Jabari Smith Jr.",
-    "key": "jabari smith",
-    "min": 35.3,
-    "pts": 16.8,
-    "gp": 12
-   },
-   {
     "name": "Alperen Sengun",
     "key": "alperen sengun",
-    "min": 35.0,
-    "pts": 21.1,
-    "gp": 10
+    "min": 35.2,
+    "pts": 23.1,
+    "gp": 11
+   },
+   {
+    "name": "Jabari Smith Jr.",
+    "key": "jabari smith",
+    "min": 34.4,
+    "pts": 15.9,
+    "gp": 13
    },
    {
     "name": "Kevin Durant",
     "key": "kevin durant",
     "min": 34.2,
-    "pts": 20.9,
-    "gp": 12
+    "pts": 21.0,
+    "gp": 13
    },
    {
     "name": "Amen Thompson",
     "key": "amen thompson",
-    "min": 33.1,
-    "pts": 15.3,
-    "gp": 12
+    "min": 33.7,
+    "pts": 15.0,
+    "gp": 13
    },
    {
     "name": "Fred VanVleet",
     "key": "fred vanvleet",
-    "min": 30.0,
-    "pts": 13.7,
-    "gp": 10
+    "min": 30.3,
+    "pts": 14.0,
+    "gp": 11
    },
    {
     "name": "Tari Eason",
     "key": "tari eason",
-    "min": 23.6,
-    "pts": 9.3,
-    "gp": 12
+    "min": 24.4,
+    "pts": 9.7,
+    "gp": 13
    },
    {
     "name": "Marcus Smart",
@@ -1167,9 +1174,9 @@
    {
     "name": "Reed Sheppard",
     "key": "reed sheppard",
-    "min": 20.1,
-    "pts": 10.1,
-    "gp": 9
+    "min": 20.0,
+    "pts": 9.1,
+    "gp": 10
    },
    {
     "name": "Clint Capela",
@@ -1181,9 +1188,9 @@
    {
     "name": "Bogdan Bogdanović",
     "key": "bogdan bogdanovic",
-    "min": 11.2,
-    "pts": 4.8,
-    "gp": 12
+    "min": 11.3,
+    "pts": 5.3,
+    "gp": 13
    },
    {
     "name": "Steven Adams",
@@ -1196,8 +1203,8 @@
     "name": "Oscar Tshiebwe",
     "key": "oscar tshiebwe",
     "min": 6.2,
-    "pts": 2.4,
-    "gp": 7
+    "pts": 2.1,
+    "gp": 8
    },
    {
     "name": "Isaiah Crawford",
@@ -1225,9 +1232,9 @@
    {
     "name": "Andrew Nembhard",
     "key": "andrew nembhard",
-    "min": 33.3,
-    "pts": 17.1,
-    "gp": 10
+    "min": 33.4,
+    "pts": 16.6,
+    "gp": 11
    },
    {
     "name": "Tyrese Haliburton",
@@ -1240,43 +1247,36 @@
     "name": "Pascal Siakam",
     "key": "pascal siakam",
     "min": 32.1,
-    "pts": 22.7,
-    "gp": 11
+    "pts": 22.4,
+    "gp": 12
    },
    {
     "name": "Aaron Nesmith",
     "key": "aaron nesmith",
-    "min": 25.2,
-    "pts": 11.7,
-    "gp": 10
+    "min": 25.9,
+    "pts": 12.3,
+    "gp": 11
    },
    {
     "name": "Kelly Oubre Jr.",
     "key": "kelly oubre",
-    "min": 23.4,
-    "pts": 9.6,
-    "gp": 10
+    "min": 24.0,
+    "pts": 10.2,
+    "gp": 11
    },
    {
     "name": "Ivica Zubac",
     "key": "ivica zubac",
-    "min": 23.0,
-    "pts": 10.6,
-    "gp": 7
+    "min": 23.4,
+    "pts": 10.8,
+    "gp": 8
    },
    {
     "name": "Quenton Jackson",
     "key": "quenton jackson",
-    "min": 21.6,
-    "pts": 9.5,
-    "gp": 12
-   },
-   {
-    "name": "Obi Toppin",
-    "key": "obi toppin",
-    "min": 21.2,
-    "pts": 12.8,
-    "gp": 9
+    "min": 21.5,
+    "pts": 9.0,
+    "gp": 13
    },
    {
     "name": "Jarace Walker",
@@ -1286,24 +1286,31 @@
     "gp": 12
    },
    {
-    "name": "Jay Huff",
-    "key": "jay huff",
-    "min": 17.6,
-    "pts": 7.0,
+    "name": "Obi Toppin",
+    "key": "obi toppin",
+    "min": 20.7,
+    "pts": 12.4,
     "gp": 10
    },
    {
-    "name": "Jalen Slawson",
-    "key": "jalen slawson",
-    "min": 14.6,
-    "pts": 3.6,
-    "gp": 10
+    "name": "Jay Huff",
+    "key": "jay huff",
+    "min": 16.7,
+    "pts": 7.1,
+    "gp": 11
    },
    {
     "name": "Larry Nance Jr.",
     "key": "larry nance",
     "min": 14.6,
-    "pts": 4.6,
+    "pts": 4.4,
+    "gp": 12
+   },
+   {
+    "name": "Jalen Slawson",
+    "key": "jalen slawson",
+    "min": 14.2,
+    "pts": 3.4,
     "gp": 11
    },
    {
@@ -1330,81 +1337,81 @@
    {
     "name": "T.J. McConnell",
     "key": "tj mcconnell",
-    "min": 10.3,
-    "pts": 5.0,
-    "gp": 3
+    "min": 12.1,
+    "pts": 5.3,
+    "gp": 4
    }
   ],
   "LAC": [
    {
     "name": "Darius Garland",
     "key": "darius garland",
-    "min": 32.6,
-    "pts": 20.4,
-    "gp": 10
+    "min": 33.0,
+    "pts": 20.7,
+    "gp": 11
    },
    {
     "name": "Rui Hachimura",
     "key": "rui hachimura",
-    "min": 29.6,
-    "pts": 14.4,
-    "gp": 8
+    "min": 29.8,
+    "pts": 13.6,
+    "gp": 9
    },
    {
     "name": "Derrick Jones Jr.",
     "key": "derrick jones",
     "min": 29.1,
-    "pts": 11.1,
-    "gp": 9
+    "pts": 11.4,
+    "gp": 10
    },
    {
     "name": "Kris Dunn",
     "key": "kris dunn",
-    "min": 28.5,
-    "pts": 8.5,
-    "gp": 10
-   },
-   {
-    "name": "Kobe Sanders",
-    "key": "kobe sanders",
-    "min": 24.2,
-    "pts": 9.8,
-    "gp": 10
+    "min": 27.8,
+    "pts": 7.9,
+    "gp": 11
    },
    {
     "name": "Brook Lopez",
     "key": "brook lopez",
+    "min": 24.1,
+    "pts": 14.7,
+    "gp": 11
+   },
+   {
+    "name": "Kobe Sanders",
+    "key": "kobe sanders",
     "min": 23.4,
-    "pts": 13.6,
-    "gp": 10
+    "pts": 9.4,
+    "gp": 11
    },
    {
     "name": "Keaton Wagler",
     "key": "keaton wagler",
-    "min": 23.2,
-    "pts": 12.2,
-    "gp": 10
+    "min": 22.7,
+    "pts": 12.4,
+    "gp": 11
    },
    {
     "name": "Max Strus",
     "key": "max strus",
-    "min": 22.0,
-    "pts": 9.8,
-    "gp": 4
+    "min": 22.1,
+    "pts": 8.4,
+    "gp": 5
    },
    {
     "name": "Isaiah Jackson",
     "key": "isaiah jackson",
-    "min": 20.4,
-    "pts": 8.1,
-    "gp": 9
+    "min": 20.1,
+    "pts": 7.8,
+    "gp": 10
    },
    {
     "name": "Gradey Dick",
     "key": "gradey dick",
-    "min": 15.4,
-    "pts": 7.3,
-    "gp": 10
+    "min": 15.7,
+    "pts": 7.8,
+    "gp": 11
    },
    {
     "name": "Baba Miller",
@@ -1574,37 +1581,37 @@
    {
     "name": "Cameron Boozer",
     "key": "cameron boozer",
-    "min": 32.3,
-    "pts": 15.9,
-    "gp": 11
+    "min": 31.7,
+    "pts": 15.6,
+    "gp": 12
    },
    {
     "name": "Ty Jerome",
     "key": "ty jerome",
-    "min": 30.7,
-    "pts": 26.2,
-    "gp": 10
+    "min": 30.5,
+    "pts": 25.4,
+    "gp": 11
    },
    {
     "name": "Cedric Coward",
     "key": "cedric coward",
-    "min": 28.3,
-    "pts": 12.8,
-    "gp": 10
+    "min": 28.4,
+    "pts": 12.9,
+    "gp": 11
    },
    {
     "name": "Jaylen Wells",
     "key": "jaylen wells",
     "min": 27.3,
-    "pts": 12.0,
-    "gp": 11
+    "pts": 11.9,
+    "gp": 12
    },
    {
     "name": "Jerami Grant",
     "key": "jerami grant",
-    "min": 23.6,
-    "pts": 10.7,
-    "gp": 11
+    "min": 23.8,
+    "pts": 11.7,
+    "gp": 12
    },
    {
     "name": "Zach Edey",
@@ -1614,25 +1621,32 @@
     "gp": 10
    },
    {
-    "name": "Javon Small",
-    "key": "javon small",
-    "min": 19.9,
-    "pts": 7.3,
-    "gp": 4
-   },
-   {
     "name": "Cam Spencer",
     "key": "cam spencer",
-    "min": 19.4,
-    "pts": 9.3,
-    "gp": 11
+    "min": 19.8,
+    "pts": 9.7,
+    "gp": 12
+   },
+   {
+    "name": "Javon Small",
+    "key": "javon small",
+    "min": 19.0,
+    "pts": 7.8,
+    "gp": 5
    },
    {
     "name": "Isaiah Stewart",
     "key": "isaiah stewart",
-    "min": 18.3,
-    "pts": 10.8,
-    "gp": 8
+    "min": 18.5,
+    "pts": 10.9,
+    "gp": 9
+   },
+   {
+    "name": "GG Jackson",
+    "key": "gg jackson",
+    "min": 16.1,
+    "pts": 7.0,
+    "gp": 11
    },
    {
     "name": "Scotty Pippen Jr.",
@@ -1640,13 +1654,6 @@
     "min": 16.0,
     "pts": 6.4,
     "gp": 5
-   },
-   {
-    "name": "GG Jackson",
-    "key": "gg jackson",
-    "min": 15.5,
-    "pts": 6.3,
-    "gp": 10
    },
    {
     "name": "Quinten Post",
@@ -1658,23 +1665,23 @@
    {
     "name": "Kris Murray",
     "key": "kris murray",
-    "min": 12.1,
-    "pts": 1.3,
-    "gp": 7
+    "min": 10.7,
+    "pts": 1.1,
+    "gp": 8
    },
    {
     "name": "Taylor Hendricks",
     "key": "taylor hendricks",
-    "min": 7.3,
-    "pts": 4.3,
-    "gp": 6
+    "min": 9.0,
+    "pts": 5.1,
+    "gp": 7
    },
    {
     "name": "Olivier-Maxence Prosper",
     "key": "oliviermaxence prosper",
-    "min": 5.1,
-    "pts": 2.4,
-    "gp": 5
+    "min": 4.6,
+    "pts": 3.0,
+    "gp": 6
    },
    {
     "name": "Karim López",
@@ -1695,23 +1702,23 @@
    {
     "name": "Davion Mitchell",
     "key": "davion mitchell",
-    "min": 35.8,
-    "pts": 16.5,
-    "gp": 11
+    "min": 36.0,
+    "pts": 16.9,
+    "gp": 12
    },
    {
     "name": "Bam Adebayo",
     "key": "bam adebayo",
-    "min": 33.2,
-    "pts": 17.8,
-    "gp": 11
+    "min": 33.6,
+    "pts": 19.4,
+    "gp": 12
    },
    {
     "name": "Giannis Antetokounmpo",
     "key": "giannis antetokounmpo",
-    "min": 32.6,
-    "pts": 27.7,
-    "gp": 11
+    "min": 32.5,
+    "pts": 28.5,
+    "gp": 12
    },
    {
     "name": "Pelle Larsson",
@@ -1723,9 +1730,9 @@
    {
     "name": "Andrew Wiggins",
     "key": "andrew wiggins",
-    "min": 25.7,
+    "min": 26.2,
     "pts": 8.7,
-    "gp": 11
+    "gp": 12
    },
    {
     "name": "Klay Thompson",
@@ -1737,23 +1744,23 @@
    {
     "name": "Bobby Portis Jr.",
     "key": "bobby portis",
-    "min": 20.3,
-    "pts": 6.8,
-    "gp": 11
+    "min": 19.9,
+    "pts": 6.7,
+    "gp": 12
    },
    {
     "name": "Tim Hardaway Jr.",
     "key": "tim hardaway",
-    "min": 14.7,
-    "pts": 4.6,
-    "gp": 10
+    "min": 15.2,
+    "pts": 4.5,
+    "gp": 11
    },
    {
     "name": "Ryan Conwell",
     "key": "ryan conwell",
-    "min": 12.4,
-    "pts": 4.2,
-    "gp": 9
+    "min": 14.4,
+    "pts": 5.8,
+    "gp": 10
    },
    {
     "name": "Nikola Jović",
@@ -1765,22 +1772,22 @@
    {
     "name": "Dru Smith",
     "key": "dru smith",
-    "min": 8.3,
-    "pts": 2.5,
-    "gp": 6
-   },
-   {
-    "name": "Simone Fontecchio",
-    "key": "simone fontecchio",
-    "min": 3.9,
-    "pts": 1.2,
-    "gp": 5
+    "min": 8.0,
+    "pts": 2.1,
+    "gp": 7
    },
    {
     "name": "Myron Gardner",
     "key": "myron gardner",
-    "min": 3.4,
-    "pts": 1.3,
+    "min": 5.7,
+    "pts": 1.1,
+    "gp": 7
+   },
+   {
+    "name": "Simone Fontecchio",
+    "key": "simone fontecchio",
+    "min": 4.5,
+    "pts": 1.0,
     "gp": 6
    },
    {
@@ -1795,51 +1802,44 @@
    {
     "name": "Tyler Herro",
     "key": "tyler herro",
-    "min": 31.0,
-    "pts": 21.9,
-    "gp": 11
+    "min": 31.3,
+    "pts": 21.6,
+    "gp": 12
    },
    {
     "name": "Jaime Jaquez Jr.",
     "key": "jaime jaquez",
     "min": 27.8,
-    "pts": 16.1,
-    "gp": 12
+    "pts": 16.5,
+    "gp": 13
    },
    {
     "name": "Myles Turner",
     "key": "myles turner",
-    "min": 27.1,
-    "pts": 6.7,
-    "gp": 11
+    "min": 27.4,
+    "pts": 7.3,
+    "gp": 12
    },
    {
     "name": "Kyle Kuzma",
     "key": "kyle kuzma",
-    "min": 27.0,
-    "pts": 10.8,
-    "gp": 12
+    "min": 27.2,
+    "pts": 11.1,
+    "gp": 13
    },
    {
     "name": "Ryan Rollins",
     "key": "ryan rollins",
-    "min": 23.4,
-    "pts": 10.8,
-    "gp": 12
+    "min": 23.8,
+    "pts": 10.5,
+    "gp": 13
    },
    {
     "name": "Brayden Burries",
     "key": "brayden burries",
-    "min": 21.5,
-    "pts": 9.7,
-    "gp": 12
-   },
-   {
-    "name": "AJ Green",
-    "key": "aj green",
-    "min": 18.1,
-    "pts": 6.5,
-    "gp": 12
+    "min": 21.4,
+    "pts": 9.2,
+    "gp": 13
    },
    {
     "name": "Kasparas Jakučionis",
@@ -1852,22 +1852,29 @@
     "name": "Kel'el Ware",
     "key": "kelel ware",
     "min": 17.7,
-    "pts": 8.5,
-    "gp": 12
+    "pts": 8.6,
+    "gp": 13
    },
    {
     "name": "Nate Ament",
     "key": "nate ament",
-    "min": 17.1,
-    "pts": 7.4,
-    "gp": 10
+    "min": 17.6,
+    "pts": 7.5,
+    "gp": 11
+   },
+   {
+    "name": "AJ Green",
+    "key": "aj green",
+    "min": 17.3,
+    "pts": 6.0,
+    "gp": 13
    },
    {
     "name": "Ousmane Dieng",
     "key": "ousmane dieng",
-    "min": 13.0,
-    "pts": 4.3,
-    "gp": 9
+    "min": 12.2,
+    "pts": 3.9,
+    "gp": 10
    },
    {
     "name": "Jericho Sims",
@@ -1879,9 +1886,9 @@
    {
     "name": "Gary Trent Jr.",
     "key": "gary trent",
-    "min": 5.8,
-    "pts": 4.3,
-    "gp": 4
+    "min": 7.9,
+    "pts": 3.6,
+    "gp": 5
    },
    {
     "name": "Bogoljub Marković",
@@ -1900,13 +1907,6 @@
   ],
   "MIN": [
    {
-    "name": "Jaden McDaniels",
-    "key": "jaden mcdaniels",
-    "min": 33.8,
-    "pts": 17.0,
-    "gp": 11
-   },
-   {
     "name": "Anthony Edwards",
     "key": "anthony edwards",
     "min": 33.7,
@@ -1914,73 +1914,87 @@
     "gp": 4
    },
    {
+    "name": "Jaden McDaniels",
+    "key": "jaden mcdaniels",
+    "min": 33.1,
+    "pts": 16.9,
+    "gp": 12
+   },
+   {
     "name": "Ayo Dosunmu",
     "key": "ayo dosunmu",
-    "min": 31.4,
+    "min": 31.0,
     "pts": 18.1,
-    "gp": 11
+    "gp": 12
    },
    {
     "name": "Jonathan Kuminga",
     "key": "jonathan kuminga",
-    "min": 30.7,
-    "pts": 12.3,
-    "gp": 11
+    "min": 30.2,
+    "pts": 12.4,
+    "gp": 12
    },
    {
     "name": "Rudy Gobert",
     "key": "rudy gobert",
-    "min": 29.9,
-    "pts": 7.8,
-    "gp": 10
+    "min": 29.3,
+    "pts": 7.9,
+    "gp": 11
    },
    {
     "name": "LaMelo Ball",
     "key": "lamelo ball",
-    "min": 27.7,
-    "pts": 18.3,
-    "gp": 11
+    "min": 27.5,
+    "pts": 18.6,
+    "gp": 12
    },
    {
     "name": "Terrence Shannon Jr",
     "key": "terrence shannon",
     "min": 21.5,
-    "pts": 11.1,
-    "gp": 8
+    "pts": 10.6,
+    "gp": 9
    },
    {
     "name": "Trey Lyles",
     "key": "trey lyles",
-    "min": 18.5,
-    "pts": 6.4,
-    "gp": 11
+    "min": 18.2,
+    "pts": 6.0,
+    "gp": 12
    },
    {
     "name": "Joan Beringer",
     "key": "joan beringer",
-    "min": 16.4,
-    "pts": 5.6,
-    "gp": 11
+    "min": 16.9,
+    "pts": 6.3,
+    "gp": 12
    },
    {
     "name": "Jaylen Clark",
     "key": "jaylen clark",
-    "min": 14.1,
-    "pts": 4.7,
-    "gp": 10
+    "min": 14.5,
+    "pts": 4.9,
+    "gp": 11
    },
    {
     "name": "Bones Hyland",
     "key": "bones hyland",
-    "min": 12.3,
-    "pts": 8.5,
-    "gp": 11
+    "min": 13.1,
+    "pts": 9.8,
+    "gp": 12
    },
    {
     "name": "Cody Williams",
     "key": "cody williams",
-    "min": 3.5,
+    "min": 4.0,
     "pts": 0.0,
+    "gp": 7
+   },
+   {
+    "name": "Isaiah Evans",
+    "key": "isaiah evans",
+    "min": 3.2,
+    "pts": 0.3,
     "gp": 6
    },
    {
@@ -1989,13 +2003,6 @@
     "min": 3.1,
     "pts": 2.0,
     "gp": 2
-   },
-   {
-    "name": "Isaiah Evans",
-    "key": "isaiah evans",
-    "min": 2.3,
-    "pts": 0.0,
-    "gp": 5
    },
    {
     "name": "Rocco Zikarsky",
@@ -2016,9 +2023,9 @@
    {
     "name": "Zion Williamson",
     "key": "zion williamson",
-    "min": 32.7,
-    "pts": 21.7,
-    "gp": 11
+    "min": 32.8,
+    "pts": 21.8,
+    "gp": 12
    },
    {
     "name": "Dejounte Murray",
@@ -2030,37 +2037,37 @@
    {
     "name": "Jeremiah Fears",
     "key": "jeremiah fears",
-    "min": 28.8,
-    "pts": 15.3,
-    "gp": 12
+    "min": 29.2,
+    "pts": 15.5,
+    "gp": 13
    },
    {
     "name": "Saddiq Bey",
     "key": "saddiq bey",
-    "min": 26.9,
-    "pts": 15.4,
-    "gp": 12
+    "min": 27.5,
+    "pts": 16.5,
+    "gp": 13
    },
    {
     "name": "Herbert Jones",
     "key": "herbert jones",
-    "min": 22.8,
-    "pts": 5.7,
-    "gp": 12
+    "min": 23.5,
+    "pts": 5.8,
+    "gp": 13
    },
    {
     "name": "Derik Queen",
     "key": "derik queen",
-    "min": 21.6,
-    "pts": 12.2,
-    "gp": 12
+    "min": 21.7,
+    "pts": 12.0,
+    "gp": 13
    },
    {
     "name": "Jordan Poole",
     "key": "jordan poole",
-    "min": 19.8,
-    "pts": 7.5,
-    "gp": 6
+    "min": 19.9,
+    "pts": 8.3,
+    "gp": 7
    },
    {
     "name": "Yves Missi",
@@ -2073,8 +2080,8 @@
     "name": "Karlo Matković",
     "key": "karlo matkovic",
     "min": 18.7,
-    "pts": 8.5,
-    "gp": 11
+    "pts": 7.9,
+    "gp": 12
    },
    {
     "name": "Trendon Watford",
@@ -2084,18 +2091,18 @@
     "gp": 6
    },
    {
-    "name": "Bennedict Mathurin",
-    "key": "bennedict mathurin",
-    "min": 15.8,
-    "pts": 6.0,
-    "gp": 11
-   },
-   {
     "name": "DeAndre Jordan",
     "key": "deandre jordan",
-    "min": 14.8,
-    "pts": 4.0,
-    "gp": 3
+    "min": 15.4,
+    "pts": 4.5,
+    "gp": 4
+   },
+   {
+    "name": "Bennedict Mathurin",
+    "key": "bennedict mathurin",
+    "min": 15.3,
+    "pts": 5.5,
+    "gp": 12
    },
    {
     "name": "Bryce McGowens",
@@ -2105,90 +2112,97 @@
     "gp": 7
    },
    {
-    "name": "Jaron Pierre Jr.",
-    "key": "jaron pierre",
-    "min": 6.6,
-    "pts": 4.0,
-    "gp": 1
-   },
-   {
     "name": "AJ Johnson",
     "key": "aj johnson",
-    "min": 6.3,
-    "pts": 1.5,
-    "gp": 4
+    "min": 5.9,
+    "pts": 1.4,
+    "gp": 5
+   },
+   {
+    "name": "Jaron Pierre Jr.",
+    "key": "jaron pierre",
+    "min": 5.4,
+    "pts": 2.0,
+    "gp": 2
    },
    {
     "name": "Julian Reese",
     "key": "julian reese",
-    "min": 5.6,
-    "pts": 1.5,
-    "gp": 4
+    "min": 5.3,
+    "pts": 1.2,
+    "gp": 5
+   },
+   {
+    "name": "Malik Dia",
+    "key": "malik dia",
+    "min": 4.2,
+    "pts": 2.0,
+    "gp": 1
    }
   ],
   "NYK": [
    {
     "name": "Jalen Brunson",
     "key": "jalen brunson",
-    "min": 33.6,
-    "pts": 26.0,
-    "gp": 11
+    "min": 33.8,
+    "pts": 26.6,
+    "gp": 12
    },
    {
     "name": "OG Anunoby",
     "key": "og anunoby",
-    "min": 32.7,
-    "pts": 16.5,
-    "gp": 11
+    "min": 32.8,
+    "pts": 16.0,
+    "gp": 12
    },
    {
     "name": "Karl-Anthony Towns",
     "key": "karlanthony towns",
-    "min": 31.4,
-    "pts": 20.9,
-    "gp": 11
+    "min": 31.6,
+    "pts": 21.1,
+    "gp": 12
    },
    {
     "name": "Josh Hart",
     "key": "josh hart",
-    "min": 30.9,
-    "pts": 8.3,
-    "gp": 8
+    "min": 30.1,
+    "pts": 7.3,
+    "gp": 9
    },
    {
     "name": "Landry Shamet",
     "key": "landry shamet",
-    "min": 25.9,
-    "pts": 9.6,
-    "gp": 11
+    "min": 25.5,
+    "pts": 9.3,
+    "gp": 12
    },
    {
     "name": "Mikal Bridges",
     "key": "mikal bridges",
-    "min": 24.4,
-    "pts": 5.9,
-    "gp": 11
+    "min": 24.7,
+    "pts": 6.9,
+    "gp": 12
    },
    {
     "name": "Miles McBride",
     "key": "miles mcbride",
-    "min": 18.9,
-    "pts": 7.9,
-    "gp": 11
+    "min": 19.2,
+    "pts": 8.0,
+    "gp": 12
    },
    {
     "name": "Andre Drummond",
     "key": "andre drummond",
     "min": 13.6,
-    "pts": 4.3,
-    "gp": 11
+    "pts": 3.9,
+    "gp": 12
    },
    {
     "name": "Tyler Kolek",
     "key": "tyler kolek",
-    "min": 12.8,
-    "pts": 3.4,
-    "gp": 9
+    "min": 13.4,
+    "pts": 3.6,
+    "gp": 10
    },
    {
     "name": "Mohamed Diawara",
@@ -2200,9 +2214,9 @@
    {
     "name": "Jordan Clarkson",
     "key": "jordan clarkson",
-    "min": 10.5,
-    "pts": 6.0,
-    "gp": 9
+    "min": 10.3,
+    "pts": 5.4,
+    "gp": 10
    },
    {
     "name": "Jose Alvarado",
@@ -2219,18 +2233,18 @@
     "gp": 3
    },
    {
-    "name": "Pacôme Dadiet",
-    "key": "pacome dadiet",
-    "min": 5.4,
-    "pts": 4.0,
-    "gp": 3
-   },
-   {
     "name": "James Wiseman",
     "key": "james wiseman",
     "min": 5.2,
     "pts": 1.6,
     "gp": 5
+   },
+   {
+    "name": "Pacôme Dadiet",
+    "key": "pacome dadiet",
+    "min": 4.3,
+    "pts": 3.0,
+    "gp": 4
    },
    {
     "name": "Jaden Akins",
@@ -2244,9 +2258,9 @@
    {
     "name": "Shai Gilgeous-Alexander",
     "key": "shai gilgeousalexander",
-    "min": 32.8,
-    "pts": 29.7,
-    "gp": 12
+    "min": 33.2,
+    "pts": 30.5,
+    "gp": 13
    },
    {
     "name": "Jalen Williams",
@@ -2272,44 +2286,37 @@
    {
     "name": "Jared McCain",
     "key": "jared mccain",
-    "min": 26.1,
-    "pts": 12.7,
-    "gp": 12
+    "min": 26.5,
+    "pts": 13.5,
+    "gp": 13
    },
    {
     "name": "Isaiah Hartenstein",
     "key": "isaiah hartenstein",
-    "min": 24.9,
-    "pts": 8.0,
-    "gp": 12
+    "min": 25.3,
+    "pts": 9.0,
+    "gp": 13
    },
    {
     "name": "Aday Mara",
     "key": "aday mara",
     "min": 21.3,
-    "pts": 8.5,
-    "gp": 12
+    "pts": 8.6,
+    "gp": 13
    },
    {
     "name": "Alex Caruso",
     "key": "alex caruso",
-    "min": 19.6,
-    "pts": 7.6,
-    "gp": 9
+    "min": 20.4,
+    "pts": 7.3,
+    "gp": 10
    },
    {
     "name": "Kenrich Williams",
     "key": "kenrich williams",
-    "min": 19.0,
-    "pts": 6.8,
-    "gp": 12
-   },
-   {
-    "name": "Bennett Stirtz",
-    "key": "bennett stirtz",
-    "min": 18.7,
-    "pts": 7.9,
-    "gp": 12
+    "min": 20.3,
+    "pts": 6.9,
+    "gp": 13
    },
    {
     "name": "Jaylin Williams",
@@ -2317,6 +2324,13 @@
     "min": 18.5,
     "pts": 2.9,
     "gp": 7
+   },
+   {
+    "name": "Bennett Stirtz",
+    "key": "bennett stirtz",
+    "min": 18.1,
+    "pts": 7.7,
+    "gp": 13
    },
    {
     "name": "Micah Peavy",
@@ -2333,18 +2347,25 @@
     "gp": 3
    },
    {
+    "name": "Nikola Topić",
+    "key": "nikola topic",
+    "min": 15.5,
+    "pts": 0.0,
+    "gp": 1
+   },
+   {
     "name": "Josh Dix",
     "key": "josh dix",
-    "min": 14.6,
-    "pts": 2.3,
-    "gp": 7
+    "min": 15.0,
+    "pts": 2.0,
+    "gp": 8
    },
    {
     "name": "Nique Clifford",
     "key": "nique clifford",
-    "min": 8.5,
-    "pts": 2.2,
-    "gp": 10
+    "min": 8.8,
+    "pts": 2.0,
+    "gp": 11
    },
    {
     "name": "Dalen Terry",
@@ -2365,16 +2386,16 @@
    {
     "name": "Franz Wagner",
     "key": "franz wagner",
-    "min": 36.9,
-    "pts": 23.5,
-    "gp": 11
+    "min": 36.8,
+    "pts": 24.4,
+    "gp": 12
    },
    {
     "name": "Desmond Bane",
     "key": "desmond bane",
     "min": 34.6,
-    "pts": 18.0,
-    "gp": 10
+    "pts": 18.3,
+    "gp": 11
    },
    {
     "name": "Paolo Banchero",
@@ -2384,32 +2405,32 @@
     "gp": 2
    },
    {
-    "name": "Jalen Suggs",
-    "key": "jalen suggs",
-    "min": 33.4,
-    "pts": 8.0,
-    "gp": 3
-   },
-   {
     "name": "Wendell Carter Jr.",
     "key": "wendell carter",
-    "min": 32.9,
-    "pts": 13.6,
-    "gp": 11
+    "min": 32.7,
+    "pts": 13.5,
+    "gp": 12
    },
    {
     "name": "Anthony Black",
     "key": "anthony black",
-    "min": 31.5,
-    "pts": 17.8,
-    "gp": 8
+    "min": 32.1,
+    "pts": 16.3,
+    "gp": 9
    },
    {
     "name": "Tristan da Silva",
     "key": "tristan da silva",
-    "min": 30.5,
-    "pts": 15.1,
-    "gp": 9
+    "min": 30.6,
+    "pts": 14.8,
+    "gp": 10
+   },
+   {
+    "name": "Jalen Suggs",
+    "key": "jalen suggs",
+    "min": 30.3,
+    "pts": 6.8,
+    "gp": 4
    },
    {
     "name": "Jase Richardson",
@@ -2421,16 +2442,16 @@
    {
     "name": "Jamal Cain",
     "key": "jamal cain",
-    "min": 19.6,
-    "pts": 7.0,
-    "gp": 10
+    "min": 18.2,
+    "pts": 6.4,
+    "gp": 11
    },
    {
     "name": "Jevon Carter",
     "key": "jevon carter",
-    "min": 14.6,
-    "pts": 4.4,
-    "gp": 7
+    "min": 14.9,
+    "pts": 4.5,
+    "gp": 8
    },
    {
     "name": "Alex Morales",
@@ -2442,16 +2463,16 @@
    {
     "name": "Goga Bitadze",
     "key": "goga bitadze",
-    "min": 10.8,
-    "pts": 3.6,
-    "gp": 9
+    "min": 11.5,
+    "pts": 4.4,
+    "gp": 10
    },
    {
     "name": "Nikola Vučević",
     "key": "nikola vucevic",
-    "min": 9.9,
+    "min": 10.0,
     "pts": 2.7,
-    "gp": 11
+    "gp": 12
    },
    {
     "name": "Colin Castleton",
@@ -2465,23 +2486,23 @@
    {
     "name": "Tyrese Maxey",
     "key": "tyrese maxey",
-    "min": 36.3,
+    "min": 36.2,
     "pts": 26.7,
-    "gp": 12
+    "gp": 13
    },
    {
     "name": "Jaylen Brown",
     "key": "jaylen brown",
-    "min": 34.9,
-    "pts": 21.5,
-    "gp": 11
+    "min": 35.0,
+    "pts": 21.2,
+    "gp": 12
    },
    {
     "name": "VJ Edgecombe",
     "key": "vj edgecombe",
-    "min": 33.4,
-    "pts": 12.7,
-    "gp": 11
+    "min": 33.7,
+    "pts": 12.9,
+    "gp": 12
    },
    {
     "name": "LeBron James",
@@ -2493,30 +2514,30 @@
    {
     "name": "Joel Embiid",
     "key": "joel embiid",
-    "min": 31.8,
-    "pts": 17.7,
-    "gp": 10
+    "min": 31.5,
+    "pts": 17.9,
+    "gp": 11
    },
    {
     "name": "Dean Wade",
     "key": "dean wade",
-    "min": 24.4,
-    "pts": 3.7,
-    "gp": 10
-   },
-   {
-    "name": "Anfernee Simons",
-    "key": "anfernee simons",
-    "min": 21.6,
-    "pts": 9.7,
-    "gp": 12
+    "min": 25.3,
+    "pts": 3.9,
+    "gp": 11
    },
    {
     "name": "Kentavious Caldwell-Pope",
     "key": "kentavious caldwellpope",
-    "min": 21.4,
-    "pts": 5.3,
-    "gp": 12
+    "min": 21.9,
+    "pts": 5.7,
+    "gp": 13
+   },
+   {
+    "name": "Anfernee Simons",
+    "key": "anfernee simons",
+    "min": 21.7,
+    "pts": 10.2,
+    "gp": 13
    },
    {
     "name": "Adem Bona",
@@ -2528,16 +2549,16 @@
    {
     "name": "Jabari Walker",
     "key": "jabari walker",
-    "min": 11.4,
-    "pts": 4.9,
-    "gp": 8
+    "min": 11.9,
+    "pts": 5.3,
+    "gp": 9
    },
    {
     "name": "Labaron Philon Jr.",
     "key": "labaron philon",
-    "min": 6.3,
-    "pts": 2.4,
-    "gp": 7
+    "min": 5.7,
+    "pts": 2.1,
+    "gp": 8
    },
    {
     "name": "Rayan Rupert",
@@ -2547,97 +2568,97 @@
     "gp": 2
    },
    {
-    "name": "Tacko Fall",
-    "key": "tacko fall",
-    "min": 3.4,
-    "pts": 0.0,
-    "gp": 1
-   },
-   {
     "name": "Justin Edwards",
     "key": "justin edwards",
-    "min": 2.9,
-    "pts": 1.0,
-    "gp": 5
+    "min": 2.6,
+    "pts": 0.8,
+    "gp": 6
+   },
+   {
+    "name": "Tacko Fall",
+    "key": "tacko fall",
+    "min": 2.1,
+    "pts": 0.0,
+    "gp": 2
    },
    {
     "name": "Caleb Love",
     "key": "caleb love",
-    "min": 0.5,
+    "min": 0.7,
     "pts": 0.0,
-    "gp": 1
+    "gp": 2
    }
   ],
   "PHX": [
    {
     "name": "Devin Booker",
     "key": "devin booker",
-    "min": 33.9,
-    "pts": 25.1,
-    "gp": 10
-   },
-   {
-    "name": "Miles Bridges",
-    "key": "miles bridges",
-    "min": 30.1,
-    "pts": 15.0,
-    "gp": 10
+    "min": 34.0,
+    "pts": 25.5,
+    "gp": 11
    },
    {
     "name": "Dillon Brooks",
     "key": "dillon brooks",
     "min": 29.8,
     "pts": 14.9,
-    "gp": 10
+    "gp": 11
+   },
+   {
+    "name": "Miles Bridges",
+    "key": "miles bridges",
+    "min": 29.6,
+    "pts": 14.6,
+    "gp": 11
    },
    {
     "name": "Jalen Green",
     "key": "jalen green",
-    "min": 27.7,
+    "min": 27.1,
     "pts": 11.8,
-    "gp": 10
+    "gp": 11
    },
    {
     "name": "Collin Gillespie",
     "key": "collin gillespie",
-    "min": 24.2,
-    "pts": 7.2,
-    "gp": 10
+    "min": 24.4,
+    "pts": 7.7,
+    "gp": 11
    },
    {
     "name": "Oso Ighodaro",
     "key": "oso ighodaro",
-    "min": 21.0,
-    "pts": 6.5,
-    "gp": 8
+    "min": 22.2,
+    "pts": 6.0,
+    "gp": 9
    },
    {
     "name": "Khaman Maluach",
     "key": "khaman maluach",
-    "min": 19.8,
-    "pts": 8.1,
-    "gp": 10
+    "min": 19.5,
+    "pts": 7.7,
+    "gp": 11
    },
    {
     "name": "Jordan Goodwin",
     "key": "jordan goodwin",
-    "min": 17.8,
-    "pts": 9.5,
-    "gp": 6
-   },
-   {
-    "name": "Ryan Dunn",
-    "key": "ryan dunn",
-    "min": 17.6,
-    "pts": 5.8,
-    "gp": 10
+    "min": 18.8,
+    "pts": 9.0,
+    "gp": 7
    },
    {
     "name": "Luke Kennard",
     "key": "luke kennard",
-    "min": 16.6,
+    "min": 17.0,
     "pts": 8.3,
-    "gp": 9
+    "gp": 10
+   },
+   {
+    "name": "Ryan Dunn",
+    "key": "ryan dunn",
+    "min": 16.9,
+    "pts": 5.3,
+    "gp": 11
    },
    {
     "name": "Rasheer Fleming",
@@ -2679,30 +2700,30 @@
    {
     "name": "Deni Avdija",
     "key": "deni avdija",
-    "min": 32.5,
-    "pts": 23.0,
-    "gp": 11
+    "min": 32.7,
+    "pts": 23.9,
+    "gp": 12
    },
    {
     "name": "Damian Lillard",
     "key": "damian lillard",
-    "min": 29.1,
-    "pts": 19.8,
-    "gp": 11
+    "min": 29.4,
+    "pts": 20.6,
+    "gp": 12
    },
    {
     "name": "Toumani Camara",
     "key": "toumani camara",
-    "min": 28.5,
-    "pts": 13.1,
-    "gp": 11
+    "min": 29.1,
+    "pts": 13.2,
+    "gp": 12
    },
    {
     "name": "Jrue Holiday",
     "key": "jrue holiday",
     "min": 26.2,
-    "pts": 13.4,
-    "gp": 11
+    "pts": 12.8,
+    "gp": 12
    },
    {
     "name": "Ja Morant",
@@ -2714,30 +2735,30 @@
    {
     "name": "Donovan Clingan",
     "key": "donovan clingan",
-    "min": 25.3,
-    "pts": 10.8,
-    "gp": 11
+    "min": 25.4,
+    "pts": 11.0,
+    "gp": 12
    },
    {
     "name": "Sidy Cissoko",
     "key": "sidy cissoko",
-    "min": 23.1,
-    "pts": 8.3,
-    "gp": 11
+    "min": 23.3,
+    "pts": 7.8,
+    "gp": 12
    },
    {
     "name": "Scoot Henderson",
     "key": "scoot henderson",
-    "min": 22.0,
-    "pts": 8.4,
-    "gp": 11
+    "min": 22.1,
+    "pts": 8.6,
+    "gp": 12
    },
    {
     "name": "Robert Williams III",
     "key": "robert williams",
-    "min": 16.4,
-    "pts": 7.6,
-    "gp": 9
+    "min": 16.5,
+    "pts": 7.0,
+    "gp": 10
    },
    {
     "name": "Chris Youngblood",
@@ -2756,9 +2777,9 @@
    {
     "name": "Jayson Kent",
     "key": "jayson kent",
-    "min": 9.5,
-    "pts": 2.0,
-    "gp": 2
+    "min": 9.9,
+    "pts": 2.3,
+    "gp": 3
    },
    {
     "name": "Yang Hansen",
@@ -2770,9 +2791,9 @@
    {
     "name": "Branden Carlson",
     "key": "branden carlson",
-    "min": 8.2,
-    "pts": 1.7,
-    "gp": 6
+    "min": 8.1,
+    "pts": 2.1,
+    "gp": 7
    },
    {
     "name": "Micah Potter",
@@ -2793,30 +2814,37 @@
    {
     "name": "Darius Acuff Jr.",
     "key": "darius acuff",
-    "min": 37.3,
-    "pts": 26.2,
-    "gp": 11
+    "min": 37.2,
+    "pts": 25.4,
+    "gp": 12
    },
    {
     "name": "Domantas Sabonis",
     "key": "domantas sabonis",
-    "min": 34.3,
-    "pts": 13.8,
-    "gp": 10
+    "min": 34.4,
+    "pts": 14.5,
+    "gp": 11
    },
    {
     "name": "Zach LaVine",
     "key": "zach lavine",
-    "min": 32.7,
-    "pts": 22.3,
-    "gp": 11
+    "min": 33.0,
+    "pts": 21.4,
+    "gp": 12
    },
    {
     "name": "De'Andre Hunter",
     "key": "deandre hunter",
-    "min": 31.5,
-    "pts": 13.3,
-    "gp": 10
+    "min": 32.4,
+    "pts": 14.3,
+    "gp": 11
+   },
+   {
+    "name": "Keegan Murray",
+    "key": "keegan murray",
+    "min": 28.2,
+    "pts": 10.2,
+    "gp": 5
    },
    {
     "name": "Precious Achiuwa",
@@ -2826,39 +2854,32 @@
     "gp": 11
    },
    {
-    "name": "Keegan Murray",
-    "key": "keegan murray",
-    "min": 25.3,
-    "pts": 8.8,
-    "gp": 4
-   },
-   {
     "name": "Leaky Black",
     "key": "leaky black",
-    "min": 19.1,
-    "pts": 5.0,
-    "gp": 7
+    "min": 18.2,
+    "pts": 4.4,
+    "gp": 8
    },
    {
     "name": "Dylan Cardwell",
     "key": "dylan cardwell",
-    "min": 19.0,
-    "pts": 4.5,
-    "gp": 4
+    "min": 17.7,
+    "pts": 4.8,
+    "gp": 5
    },
    {
     "name": "Emanuel Sharp",
     "key": "emanuel sharp",
-    "min": 18.2,
+    "min": 17.3,
     "pts": 4.6,
-    "gp": 11
+    "gp": 12
    },
    {
     "name": "Malik Monk",
     "key": "malik monk",
-    "min": 15.5,
-    "pts": 7.8,
-    "gp": 10
+    "min": 15.7,
+    "pts": 7.7,
+    "gp": 11
    },
    {
     "name": "Jonathan Mogbo",
@@ -2870,9 +2891,9 @@
    {
     "name": "Daeqwon Plowden",
     "key": "daeqwon plowden",
-    "min": 11.0,
-    "pts": 2.6,
-    "gp": 8
+    "min": 10.0,
+    "pts": 2.3,
+    "gp": 9
    },
    {
     "name": "Alex Karaban",
@@ -2886,86 +2907,86 @@
    {
     "name": "Dylan Harper",
     "key": "dylan harper",
-    "min": 31.8,
-    "pts": 18.0,
-    "gp": 12
+    "min": 31.3,
+    "pts": 17.3,
+    "gp": 13
    },
    {
     "name": "Devin Vassell",
     "key": "devin vassell",
-    "min": 30.0,
-    "pts": 11.9,
-    "gp": 10
+    "min": 29.4,
+    "pts": 11.5,
+    "gp": 11
    },
    {
     "name": "Victor Wembanyama",
     "key": "victor wembanyama",
-    "min": 30.0,
-    "pts": 30.3,
-    "gp": 12
-   },
-   {
-    "name": "De'Aaron Fox",
-    "key": "deaaron fox",
-    "min": 29.5,
-    "pts": 14.2,
-    "gp": 12
+    "min": 29.3,
+    "pts": 28.8,
+    "gp": 13
    },
    {
     "name": "Stephon Castle",
     "key": "stephon castle",
-    "min": 29.2,
-    "pts": 14.0,
-    "gp": 12
+    "min": 28.8,
+    "pts": 15.4,
+    "gp": 13
+   },
+   {
+    "name": "De'Aaron Fox",
+    "key": "deaaron fox",
+    "min": 28.5,
+    "pts": 13.6,
+    "gp": 13
    },
    {
     "name": "Julian Champagnie",
     "key": "julian champagnie",
-    "min": 26.6,
-    "pts": 10.3,
-    "gp": 12
+    "min": 26.3,
+    "pts": 10.0,
+    "gp": 13
    },
    {
     "name": "Keldon Johnson",
     "key": "keldon johnson",
-    "min": 24.1,
-    "pts": 8.0,
-    "gp": 12
+    "min": 24.2,
+    "pts": 8.8,
+    "gp": 13
    },
    {
     "name": "Luke Kornet",
     "key": "luke kornet",
-    "min": 14.9,
-    "pts": 3.4,
-    "gp": 12
+    "min": 15.0,
+    "pts": 3.6,
+    "gp": 13
    },
    {
     "name": "Harrison Barnes",
     "key": "harrison barnes",
-    "min": 13.7,
-    "pts": 5.5,
-    "gp": 10
+    "min": 14.4,
+    "pts": 6.0,
+    "gp": 11
    },
    {
     "name": "Carter Bryant",
     "key": "carter bryant",
-    "min": 10.9,
-    "pts": 3.7,
-    "gp": 11
+    "min": 11.6,
+    "pts": 4.1,
+    "gp": 12
    },
    {
     "name": "Jordan McLaughlin",
     "key": "jordan mclaughlin",
-    "min": 7.4,
-    "pts": 1.9,
-    "gp": 7
+    "min": 8.2,
+    "pts": 2.1,
+    "gp": 8
    },
    {
     "name": "Tarris Reed Jr.",
     "key": "tarris reed",
-    "min": 5.4,
+    "min": 6.0,
     "pts": 2.0,
-    "gp": 8
+    "gp": 9
    },
    {
     "name": "David Jones Garcia",
@@ -2991,6 +3012,13 @@
   ],
   "TOR": [
    {
+    "name": "RJ Barrett",
+    "key": "rj barrett",
+    "min": 33.5,
+    "pts": 21.3,
+    "gp": 12
+   },
+   {
     "name": "Scottie Barnes",
     "key": "scottie barnes",
     "min": 33.3,
@@ -2998,25 +3026,18 @@
     "gp": 8
    },
    {
-    "name": "RJ Barrett",
-    "key": "rj barrett",
-    "min": 33.2,
-    "pts": 20.5,
-    "gp": 11
-   },
-   {
     "name": "Immanuel Quickley",
     "key": "immanuel quickley",
-    "min": 31.4,
-    "pts": 16.7,
-    "gp": 9
+    "min": 31.0,
+    "pts": 17.6,
+    "gp": 10
    },
    {
     "name": "Ja'Kobe Walter",
     "key": "jakobe walter",
-    "min": 30.1,
-    "pts": 11.5,
-    "gp": 11
+    "min": 30.3,
+    "pts": 11.1,
+    "gp": 12
    },
    {
     "name": "Kawhi Leonard",
@@ -3026,53 +3047,53 @@
     "gp": 2
    },
    {
-    "name": "Jamal Shead",
-    "key": "jamal shead",
-    "min": 24.1,
-    "pts": 7.0,
-    "gp": 11
-   },
-   {
     "name": "Jakob Poeltl",
     "key": "jakob poeltl",
-    "min": 23.7,
-    "pts": 8.2,
-    "gp": 9
+    "min": 23.9,
+    "pts": 8.3,
+    "gp": 10
+   },
+   {
+    "name": "Jamal Shead",
+    "key": "jamal shead",
+    "min": 23.9,
+    "pts": 6.8,
+    "gp": 12
    },
    {
     "name": "Collin Murray-Boyles",
     "key": "collin murrayboyles",
-    "min": 21.9,
-    "pts": 10.1,
-    "gp": 10
+    "min": 22.9,
+    "pts": 10.5,
+    "gp": 11
    },
    {
     "name": "Jamison Battle",
     "key": "jamison battle",
-    "min": 18.8,
-    "pts": 9.4,
-    "gp": 11
+    "min": 19.3,
+    "pts": 9.7,
+    "gp": 12
    },
    {
     "name": "Allen Graves",
     "key": "allen graves",
-    "min": 13.7,
-    "pts": 5.0,
-    "gp": 11
+    "min": 13.6,
+    "pts": 4.6,
+    "gp": 12
    },
    {
     "name": "Alijah Martin",
     "key": "alijah martin",
-    "min": 11.6,
-    "pts": 6.4,
-    "gp": 10
+    "min": 12.2,
+    "pts": 6.5,
+    "gp": 11
    },
    {
     "name": "Kyle Anderson",
     "key": "kyle anderson",
-    "min": 8.0,
-    "pts": 1.8,
-    "gp": 8
+    "min": 7.6,
+    "pts": 1.6,
+    "gp": 9
    },
    {
     "name": "Trayce Jackson-Davis",
@@ -3084,39 +3105,39 @@
    {
     "name": "Jaden Bradley",
     "key": "jaden bradley",
-    "min": 5.1,
-    "pts": 1.8,
-    "gp": 8
+    "min": 4.7,
+    "pts": 1.7,
+    "gp": 9
    },
    {
     "name": "Malachi Smith",
     "key": "malachi smith",
-    "min": 0.8,
+    "min": 1.2,
     "pts": 0.0,
-    "gp": 1
+    "gp": 2
    }
   ],
   "UTA": [
    {
     "name": "Keyonte George",
     "key": "keyonte george",
-    "min": 32.2,
-    "pts": 20.4,
-    "gp": 11
+    "min": 32.6,
+    "pts": 20.9,
+    "gp": 12
    },
    {
     "name": "Ace Bailey",
     "key": "ace bailey",
-    "min": 31.0,
-    "pts": 13.3,
-    "gp": 12
+    "min": 31.3,
+    "pts": 13.9,
+    "gp": 13
    },
    {
     "name": "Darryn Peterson",
     "key": "darryn peterson",
-    "min": 30.9,
-    "pts": 16.3,
-    "gp": 12
+    "min": 31.2,
+    "pts": 17.2,
+    "gp": 13
    },
    {
     "name": "Lauri Markkanen",
@@ -3135,123 +3156,123 @@
    {
     "name": "Jaxson Hayes",
     "key": "jaxson hayes",
-    "min": 25.1,
-    "pts": 8.5,
-    "gp": 11
+    "min": 24.2,
+    "pts": 8.8,
+    "gp": 12
    },
    {
     "name": "Josh Green",
     "key": "josh green",
-    "min": 20.0,
-    "pts": 3.6,
-    "gp": 10
+    "min": 19.5,
+    "pts": 3.5,
+    "gp": 11
    },
    {
     "name": "Josh Okogie",
     "key": "josh okogie",
-    "min": 18.4,
-    "pts": 4.0,
-    "gp": 11
+    "min": 18.7,
+    "pts": 4.3,
+    "gp": 12
    },
    {
     "name": "Mo Bamba",
     "key": "mo bamba",
-    "min": 17.4,
-    "pts": 7.3,
-    "gp": 8
-   },
-   {
-    "name": "Svi Mykhailiuk",
-    "key": "svi mykhailiuk",
-    "min": 16.1,
-    "pts": 3.6,
-    "gp": 12
+    "min": 17.7,
+    "pts": 7.4,
+    "gp": 9
    },
    {
     "name": "Isaiah Collier",
     "key": "isaiah collier",
     "min": 16.0,
-    "pts": 7.2,
-    "gp": 12
+    "pts": 6.8,
+    "gp": 13
    },
    {
     "name": "Brice Sensabaugh",
     "key": "brice sensabaugh",
-    "min": 14.8,
-    "pts": 8.1,
-    "gp": 12
+    "min": 15.8,
+    "pts": 8.0,
+    "gp": 13
+   },
+   {
+    "name": "Svi Mykhailiuk",
+    "key": "svi mykhailiuk",
+    "min": 15.4,
+    "pts": 3.3,
+    "gp": 13
    },
    {
     "name": "Kyle Filipowski",
     "key": "kyle filipowski",
-    "min": 8.8,
-    "pts": 3.1,
-    "gp": 8
+    "min": 8.0,
+    "pts": 3.0,
+    "gp": 9
    },
    {
     "name": "Tony Bradley",
     "key": "tony bradley",
-    "min": 5.9,
-    "pts": 1.6,
-    "gp": 5
+    "min": 7.0,
+    "pts": 1.3,
+    "gp": 6
    }
   ],
   "WAS": [
    {
     "name": "Trae Young",
     "key": "trae young",
-    "min": 35.3,
-    "pts": 18.3,
-    "gp": 12
-   },
-   {
-    "name": "Kyshawn George",
-    "key": "kyshawn george",
-    "min": 33.7,
-    "pts": 18.5,
-    "gp": 12
+    "min": 36.1,
+    "pts": 19.7,
+    "gp": 13
    },
    {
     "name": "Anthony Davis",
     "key": "anthony davis",
-    "min": 33.2,
-    "pts": 25.2,
-    "gp": 10
+    "min": 34.1,
+    "pts": 25.6,
+    "gp": 11
    },
    {
     "name": "AJ Dybantsa",
     "key": "aj dybantsa",
-    "min": 32.6,
-    "pts": 16.3,
-    "gp": 8
+    "min": 33.9,
+    "pts": 15.0,
+    "gp": 9
+   },
+   {
+    "name": "Kyshawn George",
+    "key": "kyshawn george",
+    "min": 33.1,
+    "pts": 18.2,
+    "gp": 13
    },
    {
     "name": "Alex Sarr",
     "key": "alex sarr",
-    "min": 25.7,
-    "pts": 9.5,
-    "gp": 11
+    "min": 27.2,
+    "pts": 11.2,
+    "gp": 12
    },
    {
     "name": "Bilal Coulibaly",
     "key": "bilal coulibaly",
-    "min": 25.7,
-    "pts": 7.0,
-    "gp": 11
+    "min": 26.0,
+    "pts": 6.8,
+    "gp": 12
    },
    {
     "name": "Tre Johnson",
     "key": "tre johnson",
-    "min": 23.0,
-    "pts": 9.4,
-    "gp": 11
+    "min": 23.5,
+    "pts": 9.7,
+    "gp": 12
    },
    {
     "name": "Bub Carrington",
     "key": "bub carrington",
-    "min": 18.5,
-    "pts": 5.1,
-    "gp": 12
+    "min": 18.3,
+    "pts": 4.8,
+    "gp": 13
    },
    {
     "name": "Justin Champagnie",
@@ -3263,9 +3284,9 @@
    {
     "name": "Deandre Ayton",
     "key": "deandre ayton",
-    "min": 14.5,
-    "pts": 4.8,
-    "gp": 12
+    "min": 14.1,
+    "pts": 4.5,
+    "gp": 13
    },
    {
     "name": "Khris Middleton",
@@ -3277,9 +3298,9 @@
    {
     "name": "Will Riley",
     "key": "will riley",
-    "min": 6.8,
-    "pts": 1.8,
-    "gp": 9
+    "min": 6.4,
+    "pts": 1.9,
+    "gp": 10
    },
    {
     "name": "Tre Mann",

@@ -4,3 +4,7 @@ date,game_id,matchup,pick,model_prob,odds,edge,decision,reason,checked_at
 2026-11-12,0022600228,DET @ WAS,DET,0.6819,-467,-0.1417,skip,-467 is shorter than the -250 cap,2026-11-12T16:53:13Z
 2026-11-12,0022600229,DAL @ MIN,MIN,0.6494,-223,-0.0410,skip,-223 is worse than the -162 limit,2026-11-12T16:53:13Z
 2026-11-12,0022600227,TOR @ PHI,PHI,0.6071,-326,-0.1581,skip,-326 is shorter than the -250 cap,2026-11-12T16:53:13Z
+2026-11-14,0022600235,CHI @ MIN,MIN,0.8520,-930,-0.0509,skip,-930 is shorter than the -250 cap,2026-11-14T15:01:19Z
+2026-11-14,0022600234,BKN @ MEM,MEM,0.7699,-167,0.1444,bet,,2026-11-14T15:01:19Z
+2026-11-14,0022600231,DEN @ NOP,DEN,0.6712,-597,-0.1853,skip,-597 is shorter than the -250 cap,2026-11-14T15:01:19Z
+2026-11-14,0022600232,DAL @ CLE,CLE,0.6040,-105,0.0918,skip,edge +9.2% looks too good: Evan Mobley (32 min) out,2026-11-14T15:01:19Z
