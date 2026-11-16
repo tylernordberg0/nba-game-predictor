@@ -1,4 +1,13 @@
 import { summarizeTeam, type Injury } from "../lib/injuries";
+
+/** "Starter · started 10 of 10 · 26 min", or last season's numbers for a player with no games yet. */
+function roleLine(i: Injury): string {
+  if (i.minutes == null) return "no games on file";
+  const parts: string[] = [ROLE_LABEL[i.role] + (i.lastSeason ? " last season" : "")];
+  if (i.starts) parts.push(`started ${i.starts.gs} of ${i.starts.gp}`);
+  parts.push(`${i.minutes.toFixed(0)} min`);
+  return parts.join(" · ");
+}
 import { stampET } from "../lib/format";
 
 const ROLE_LABEL = { starter: "Starter", rotation: "Rotation", bench: "Bench", unknown: "" } as const;
@@ -23,9 +32,7 @@ export function InjuryList({ team, state, highlight }: { team: string; state: In
             <li key={i.key} className={highlight?.includes(i.name) ? "is-new" : undefined}>
               <span className="inj-name">{i.name}</span>
               <span className={`inj-status ${i.out ? "is-out" : ""}`}>{i.status}</span>
-              <span className="inj-role">
-                {i.minutes != null ? `${ROLE_LABEL[i.role]} · ${i.minutes.toFixed(0)} min` : "minutes not on file"}
-              </span>
+              <span className="inj-role">{roleLine(i)}</span>
               {i.note ? <span className="inj-detail">{i.note}</span> : null}
             </li>
           ))}

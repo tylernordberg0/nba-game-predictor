@@ -2,7 +2,7 @@
 // The feed is unofficial: anything unexpected is treated as "unavailable"
 // rather than guessed at. Notes are plain strings and are only ever rendered
 // as text (React escapes them), never as HTML.
-import type { Players, Rules } from "./data";
+import type { PlayerRow, Players, Rules } from "./data";
 import { TEAM_ABBR } from "./teams";
 
 export const ESPN_URL = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/injuries";
@@ -18,6 +18,10 @@ export interface Injury {
   updated: string | null;
   minutes: number | null;
   role: Role;
+  /** Games started and played, when the export has them. */
+  starts: { gs: number; gp: number } | null;
+  /** True when the numbers are last season's (no games yet this season). */
+  lastSeason: boolean;
 }
 
 export type InjuryMap = Record<string, Injury[]>;
@@ -36,11 +40,16 @@ function text(v: unknown, max: number): string {
   return typeof v === "string" ? v.slice(0, max) : "";
 }
 
-export function roleFor(minutes: number | null, rules: Rules): Role {
-  if (minutes == null) return "unknown";
-  if (minutes >= rules.starter_minutes) return "starter";
-  if (minutes >= rules.rotation_minutes) return "rotation";
-  return "bench";
+/** A starter has started at least half his games. Minutes only split rotation
+ *  from bench (and stand in for starts if an old export has no starts data). */
+export function roleFor(player: PlayerRow | null, rules: Rules): Role {
+  if (!player) return "unknown";
+  const starter =
+    player.gs != null && player.gp > 0
+      ? player.gs / player.gp >= (rules.starter_share ?? 0.5)
+      : player.min >= rules.starter_minutes;
+  if (starter) return "starter";
+  return player.min >= rules.rotation_minutes ? "rotation" : "bench";
 }
 
 /** Turn ESPN's response into team -> injuries. Throws if the shape isn't what we expect. */
@@ -51,14 +60,15 @@ export function parseInjuries(raw: unknown, players: Players | null, rules: Rule
   for (const team of teams) {
     const abbr = TEAM_ABBR[text(team?.displayName, 60)];
     if (!abbr) continue; // unknown team name: leave it out rather than guess
-    const minutes = new Map((players?.teams[abbr] ?? []).map((p) => [p.key, p.min]));
+    const roster = new Map((players?.teams[abbr] ?? []).map((p) => [p.key, p]));
     const list: Injury[] = [];
     for (const item of Array.isArray(team?.injuries) ? team.injuries : []) {
       const name = text(item?.athlete?.displayName, 80);
       const status = text(item?.status, 30);
       if (!name || !status) continue;
       const key = norm(name);
-      const min = minutes.get(key) ?? null;
+      const thisSeason = roster.get(key) ?? null;
+      const player = thisSeason ?? players?.last_season?.[key] ?? null;
       list.push({
         name,
         key,
@@ -66,8 +76,10 @@ export function parseInjuries(raw: unknown, players: Players | null, rules: Rule
         out: status.toLowerCase() === "out",
         note: text(item?.shortComment, 300),
         updated: text(item?.date, 40) || null,
-        minutes: min,
-        role: roleFor(min, rules),
+        minutes: player ? player.min : null,
+        role: roleFor(player, rules),
+        starts: player?.gs != null ? { gs: player.gs, gp: player.gp } : null,
+        lastSeason: !thisSeason && player != null,
       });
     }
     list.sort((a, b) => Number(b.out) - Number(a.out) || (b.minutes ?? -1) - (a.minutes ?? -1));
@@ -116,7 +128,7 @@ export function summarizeTeam(abbr: string, list: Injury[] | undefined): TeamSum
     return {
       missingMinutes: null,
       startersOut,
-      line: `${abbr}: ${out} out, ${injuries.length - out} day-to-day (minutes not on file)`,
+      line: `${abbr}: ${out} out, ${injuries.length - out} day-to-day (no games on file)`,
     };
   }
   // "Out" and "day-to-day" are kept apart: a day-to-day player may still play.

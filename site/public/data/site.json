@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-11-16T14:18:10Z",
+  "generated_at": "2026-11-16T14:27:57Z",
   "export_date": "2026-11-16",
   "board_date": "2026-11-16",
   "results_through": "2026-11-15",
@@ -12,6 +12,7 @@
    "max_favorite": -250,
    "too_good_edge": 0.08,
    "auto_stake": 10.0,
+   "starter_share": 0.5,
    "starter_minutes": 28.0,
    "rotation_minutes": 15.0
   }

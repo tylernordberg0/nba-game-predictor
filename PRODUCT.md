@@ -31,7 +31,7 @@ The pipeline (`nbapred`) runs on the Mac each morning: it scores yesterday's gam
 - v1 pages: Today, Bet checker, Results. Head-to-head comes after v1.
 - Model: 12 features (home and away 10-game averages of plus/minus, eFG%, AST/TO, FT rate, OREB, DREB). It sees no player, injury or rest information.
 - Ratings: 65%+ BEST BET, 58%+ Good, 52%+ Lean, below that Toss-up.
-- Automatic bets: $10, only when confidence is 60%+, the price is no shorter than -250, and the model's probability beats the implied probability by 3+ points; an edge of 8+ points also needs no starter (28+ minutes a game) listed Out.
+- Automatic bets: $10, only when confidence is 60%+, the price is no shorter than -250, and the model's probability beats the implied probability by 3+ points; an edge of 8+ points also needs no starter (a player who has started at least half his games) listed Out.
 - Bets are simulated; no real money is placed.
 - Terminology: pick, confidence, moneyline, implied probability, edge, fair odds, limit, walk-forward, calibration.
 - Undecided: a public site name beyond "NBA Game Predictor"; custom domain.

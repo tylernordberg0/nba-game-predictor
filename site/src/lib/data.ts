@@ -6,6 +6,7 @@ export interface Rules {
   max_favorite: number;
   too_good_edge: number;
   auto_stake: number;
+  starter_share?: number;
   starter_minutes: number;
   rotation_minutes: number;
 }
@@ -127,12 +128,16 @@ export interface PlayerRow {
   min: number;
   pts: number;
   gp: number;
+  gs?: number; // games started; missing in exports from before Nov 16, 2026
+  starter?: boolean;
 }
 
 export interface Players {
   season: string;
   updated_at: string;
   teams: Record<string, PlayerRow[]>;
+  /** Players with no games yet this season, by normalized name. */
+  last_season?: Record<string, PlayerRow>;
 }
 
 async function getJson<T>(path: string): Promise<T> {

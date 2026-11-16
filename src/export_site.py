@@ -31,7 +31,7 @@ from src.odds import ODDS_COLUMNS, OddsError, api_key, fetch_moneylines, save_od
 from src.tracking import load_predictions
 
 SITE_DATA_DIR = config.ROOT / "site" / "public" / "data"
-STARTER_MINUTES = 28.0   # same cutoff as src/injuries.py
+STARTER_MINUTES = 28.0   # only used if players.json has no games-started data
 ROTATION_MINUTES = 15.0
 
 
@@ -180,7 +180,7 @@ def build_site(day: str, refresh_odds: bool, pull_odds: bool) -> dict:
             "rules": {
                 "min_confidence": MIN_CONFIDENCE, "min_edge": MIN_EDGE, "max_favorite": MAX_FAVORITE,
                 "too_good_edge": TOO_GOOD_EDGE, "auto_stake": AUTO_STAKE,
-                "starter_minutes": STARTER_MINUTES, "rotation_minutes": ROTATION_MINUTES,
+                "starter_share": 0.5, "starter_minutes": STARTER_MINUTES, "rotation_minutes": ROTATION_MINUTES,
             },
         },
         "games": build_games(preds, odds, bets, log, board_date),
@@ -191,22 +191,18 @@ def build_site(day: str, refresh_odds: bool, pull_odds: bool) -> dict:
 
 
 def build_players(day) -> dict:
-    """Minutes and points per game by team, from stats.nba.com (Mac only)."""
-    from nba_api.stats.endpoints import leaguedashplayerstats
-
-    from src.injuries import norm
+    """Minutes, points and games started by team, from stats.nba.com (Mac only).
+    `last_season` holds players with no games yet this season, keyed by name."""
+    from src.injuries import load_player_stats
     season = config.season_for_date(day)
-    df = leaguedashplayerstats.LeagueDashPlayerStats(
-        season=season, per_mode_detailed="PerGame", timeout=60).get_data_frames()[0]
+    current, last_season = load_player_stats(season)
     teams: dict[str, list] = {}
-    for r in df.itertuples():
-        teams.setdefault(r.TEAM_ABBREVIATION, []).append({
-            "name": r.PLAYER_NAME, "key": norm(r.PLAYER_NAME),
-            "min": round(float(r.MIN), 1), "pts": round(float(r.PTS), 1), "gp": int(r.GP),
-        })
+    for (team, _), row in current.items():
+        teams.setdefault(team, []).append(row)
     for roster in teams.values():
         roster.sort(key=lambda p: p["min"], reverse=True)
-    return {"season": season, "updated_at": now_utc(), "teams": dict(sorted(teams.items()))}
+    return {"season": season, "updated_at": now_utc(), "teams": dict(sorted(teams.items())),
+            "last_season": dict(sorted(last_season.items()))}
 
 
 def build_model(day) -> dict:
