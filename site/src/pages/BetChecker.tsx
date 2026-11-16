@@ -6,7 +6,7 @@ import { Ticket } from "../components/Ticket";
 import { checkPrice, impliedProb, MAX_FAVORITE, parseAmerican, payout, ruleLimit, type Verdict } from "../lib/betting";
 import type { Bet, Game } from "../lib/data";
 import { dateLabel, fmtOdds, money, pct, points, stampET, timeET } from "../lib/format";
-import { summarizeTeam } from "../lib/injuries";
+import { ruleBlockers, summarizeTeam } from "../lib/injuries";
 import { loadSandbox, saveSandbox, type SandboxBet } from "../lib/store";
 
 const CUSTOM = "custom";
@@ -88,6 +88,9 @@ export function BetChecker({ preselect }: { preselect: string | null }) {
 
   const sideSummary = game && injuries.status === "ok" ? summarizeTeam(side, injuries.map[side]) : null;
   const starterOut = sideSummary ? sideSummary.startersOut : [];
+  const blockers = game && injuries.status === "ok" ? ruleBlockers(injuries.map[side], meta.rules) : [];
+  const blockerKeys = new Set(blockers.map((i) => i.key));
+  const otherStartersOut = starterOut.filter((i) => !blockerKeys.has(i.key));
   const noneListed =
     game && injuries.status === "ok" && !(injuries.map[side]?.length || injuries.map[opponent]?.length);
 
@@ -276,12 +279,22 @@ export function BetChecker({ preselect }: { preselect: string | null }) {
                   {injuries.status === "error" && (
                     <p>Injuries are unavailable right now. Check the news for {side} before betting.</p>
                   )}
-                  {starterOut.length > 0 && (
+                  {blockers.length > 0 && (
                     <p>
                       <strong>
-                        {starterOut.map((i) => i.name).join(", ")} {starterOut.length === 1 ? "is" : "are"} out for {side}.
+                        {blockers.map((i) => i.name).join(", ")} {blockers.length === 1 ? "is" : "are"} out for {side}.
                       </strong>{" "}
-                      The model has not seen that absence. The rule skips this bet.
+                      The model has not seen that absence. The rule skips this bet: it never bets a price this good
+                      when a player averaging {meta.rules.starter_minutes}+ minutes is out.
+                    </p>
+                  )}
+                  {otherStartersOut.length > 0 && (
+                    <p>
+                      <strong>
+                        {otherStartersOut.map((i) => i.name).join(", ")} {otherStartersOut.length === 1 ? "is" : "are"} out for {side}.
+                      </strong>{" "}
+                      The model has not seen that absence. The automatic rule only counts players averaging{" "}
+                      {meta.rules.starter_minutes}+ minutes this season, so it would still place this bet.
                     </p>
                   )}
                   {noneListed && (

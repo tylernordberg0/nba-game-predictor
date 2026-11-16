@@ -336,9 +336,9 @@ export function Results() {
             <li>DraftKings has a moneyline, and it is no shorter than {fmtOdds(meta.rules.max_favorite)}.</li>
             <li>The model's probability is at least 3 points above the price's implied probability.</li>
             <li>
-              If that edge is 8 points or more, no starter on the picked team is listed out. A starter is a player
-              who has started at least half his games; through Nov 16, 2026 the rule used 28 or more minutes a game
-              instead.
+              If that edge is 8 points or more, no player on the picked team who averages{" "}
+              {meta.rules.starter_minutes} or more minutes a game is listed out. (The injury lists label a starter
+              differently: someone who has started at least half his games.)
             </li>
           </ol>
           <h3>What the model cannot see</h3>

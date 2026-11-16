@@ -46,3 +46,13 @@ describe("starter means started at least half his games, not minutes", () => {
     expect(list.find((i) => i.name === "Stephen Curry")!.role).toBe("rotation");
   });
 });
+
+describe("the betting rule stays on minutes", () => {
+  it("counts a 28+ minute player who is out, and not Curry at 26 minutes", async () => {
+    const { ruleBlockers } = await import("./injuries");
+    const both: Players = { ...players, teams: { GSW: [row("Stephen Curry", 26.3, 10, 10), row("Big Minutes", 31, 10, 2)] } };
+    const gsw = parseInjuries(feed("Golden State Warriors", ["Stephen Curry", "Big Minutes"]), both, rules).GSW;
+    expect(ruleBlockers(gsw, rules).map((i) => i.name)).toEqual(["Big Minutes"]);
+    expect(summarizeTeam("GSW", gsw).startersOut.map((i) => i.name)).toEqual(["Stephen Curry"]);
+  });
+});

@@ -31,7 +31,7 @@ from src.odds import ODDS_COLUMNS, OddsError, api_key, fetch_moneylines, save_od
 from src.tracking import load_predictions
 
 SITE_DATA_DIR = config.ROOT / "site" / "public" / "data"
-STARTER_MINUTES = 28.0   # only used if players.json has no games-started data
+STARTER_MINUTES = 28.0   # the betting rule's cutoff (src/injuries.py); the site shows it too
 ROTATION_MINUTES = 15.0
 
 

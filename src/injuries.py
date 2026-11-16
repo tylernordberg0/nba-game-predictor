@@ -1,10 +1,11 @@
 """Who is out tonight: ESPN's injury feed plus each player's minutes per game.
 
 The automatic bets use this for one check: when a price looks too good (an edge
-of 8+ points), skip the bet if a starter on the picked team is listed Out. A
-starter is a player who has started at least half the games he has played this
-season (until Nov 16, 2026 the cutoff was 28+ minutes a game, which mislabelled
-starters on short minutes). ESPN's feed is unofficial, so if anything here fails, the caller
+of 8+ points), skip the bet if a player on the picked team who averages 28+
+minutes a game is listed Out. The website labels players differently: there a
+"starter" is someone who has started at least half his games (load_player_stats),
+because minutes mislabel starters on short minutes. The betting rule deliberately
+stays on minutes. ESPN's feed is unofficial, so if anything here fails, the caller
 skips the bet (fails closed) rather than betting blind.
 """
 import logging
@@ -20,7 +21,8 @@ from src.odds import TEAM_ABBR
 log = logging.getLogger(__name__)
 
 ESPN_URL = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/injuries"
-STARTER_SHARE = 0.5  # started at least half of the games played
+STARTER_MINUTES = 28.0  # the betting rule's cutoff
+STARTER_SHARE = 0.5  # the website's label: started at least half of the games played
 
 
 def norm(name: str) -> str:
@@ -82,9 +84,8 @@ def load_player_stats(season: str) -> tuple[dict[tuple[str, str], dict], dict[st
     """Returns (this season by (team, name), last season by name).
 
     Last season is only a fallback for players with no games yet this season:
-    a starter who has been out since opening night is exactly the absence the
-    "too good" check exists for, and he isn't in this season's numbers at all.
-    It is looked up by name alone because he may have changed teams. If last
+    a starter who has been out since opening night isn't in this season's
+    numbers at all, and the site should still label him. It is looked up by name alone because he may have changed teams. If last
     season can't be loaded, the fallback is simply empty.
     """
     current = _season_stats(season)
@@ -98,16 +99,20 @@ def load_player_stats(season: str) -> tuple[dict[tuple[str, str], dict], dict[st
     return current, {name: row for name, row in last.items() if name not in played}
 
 
-def starters_out(team: str, out: dict[str, list[str]], current: dict[tuple[str, str], dict],
-                 last_season: dict[str, dict]) -> list[str]:
-    """Players on `team` listed Out who are starters (started half or more of their games)."""
+def minutes_per_game(season: str) -> dict[tuple[str, str], float]:
+    """(team, normalized player name) -> minutes per game this season (stats.nba.com)."""
+    df = leaguedashplayerstats.LeagueDashPlayerStats(
+        season=season, per_mode_detailed="PerGame", timeout=60).get_data_frames()[0]
+    return {(r.TEAM_ABBREVIATION, norm(r.PLAYER_NAME)): float(r.MIN) for r in df.itertuples()}
+
+
+def starters_out(team: str, out: dict[str, list[str]], minutes: dict[tuple[str, str], float]) -> list[str]:
+    """Players on `team` listed Out who average STARTER_MINUTES or more (the betting rule)."""
     names = []
     for name in out.get(team, []):
-        row, when = current.get((team, norm(name))), ""
-        if row is None:
-            row, when = last_season.get(norm(name)), " last season"
-        if row is None:
-            log.info("No games found for %s (%s); treated as not a starter", name, team)
-        elif row["starter"]:
-            names.append(f"{name} (started {row['gs']} of {row['gp']}{when})")
+        mpg = minutes.get((team, norm(name)))
+        if mpg is None:
+            log.info("No minutes found for %s (%s); treated as not a starter", name, team)
+        elif mpg >= STARTER_MINUTES:
+            names.append(f"{name} ({mpg:.0f} min)")
     return names

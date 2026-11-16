@@ -100,6 +100,12 @@ export interface TeamSummary {
   line: string;
 }
 
+/** Players the automatic-bet rule counts: listed Out and averaging the rule's
+ *  minutes this season. Not the same as the "starter" label, which uses starts. */
+export function ruleBlockers(list: Injury[] | undefined, rules: Rules): Injury[] {
+  return (list ?? []).filter((i) => i.out && !i.lastSeason && i.minutes != null && i.minutes >= rules.starter_minutes);
+}
+
 function countPhrase(list: Injury[], role: Role, label: string, many: string): string | null {
   const out = list.filter((i) => i.role === role && i.out).length;
   const dtd = list.filter((i) => i.role === role && !i.out).length;

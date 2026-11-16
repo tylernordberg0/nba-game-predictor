@@ -29,10 +29,10 @@ LOG_COLUMNS = ["date", "game_id", "matchup", "pick", "model_prob", "odds", "edge
 
 def _injury_check(day: str):
     """Returns a function team -> starters listed Out, or raises if the data can't be loaded."""
-    from src.injuries import load_player_stats, players_out, starters_out
+    from src.injuries import minutes_per_game, players_out, starters_out
     out = players_out()
-    current, last_season = load_player_stats(season_for_date(pd.Timestamp(day).date()))
-    return lambda team: starters_out(team, out, current, last_season)
+    minutes = minutes_per_game(season_for_date(pd.Timestamp(day).date()))
+    return lambda team: starters_out(team, out, minutes)
 
 
 def run_auto_bets(picks: pd.DataFrame, bets: pd.DataFrame, day: str, dry_run: bool) -> pd.DataFrame:
