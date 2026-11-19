@@ -32,3 +32,7 @@ date,game_id,matchup,pick,model_prob,odds,edge,decision,reason,checked_at
 2026-11-18,0022600264,DET @ NOP,DET,0.6523,-277.0000,-0.0825,skip,-277 is shorter than the -250 cap,2026-11-18T13:08:14Z
 2026-11-18,0022600262,CHI @ BKN,BKN,0.6497,-152.0000,0.0466,bet,,2026-11-18T13:08:14Z
 2026-11-18,0022600265,ATL @ OKC,OKC,0.6470,-270.0000,-0.0828,skip,-270 is shorter than the -250 cap,2026-11-18T13:08:14Z
+2026-11-19,0022600273,LAC @ SAS,SAS,0.8644,-1040.0000,-0.0478,skip,-1040 is shorter than the -250 cap,2026-11-19T15:30:18Z
+2026-11-19,0022600271,POR @ MIL,POR,0.7394,-440.0000,-0.0754,skip,-440 is shorter than the -250 cap,2026-11-19T15:30:18Z
+2026-11-19,0022600270,GSW @ MEM,MEM,0.6802,-243.0000,-0.0283,skip,-243 is worse than the -185 limit,2026-11-19T15:30:18Z
+2026-11-19,0022600272,NYK @ MIN,MIN,0.6129,-104.0000,0.1031,skip,edge +10.3% looks too good: Anthony Edwards (34 min) out,2026-11-19T15:30:18Z
