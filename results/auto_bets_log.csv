@@ -47,3 +47,7 @@ date,game_id,matchup,pick,model_prob,odds,edge,decision,reason,checked_at
 2026-11-21,0022600279,BOS @ SAC,BOS,0.7750,-790.0000,-0.1126,skip,-790 is shorter than the -250 cap,2026-11-21T15:56:37Z
 2026-11-21,0022600275,POR @ NYK,NYK,0.6844,-201.0000,0.0166,skip,-201 is worse than the -189 limit,2026-11-21T15:56:37Z
 2026-11-21,0022600276,LAC @ DAL,DAL,0.6380,-217.0000,-0.0465,skip,-217 is worse than the -155 limit,2026-11-21T15:56:37Z
+2026-11-22,0022600285,IND @ NYK,NYK,0.7563,-344.0000,-0.0185,skip,-344 is shorter than the -250 cap,2026-11-22T15:30:10Z
+2026-11-22,0022600282,ORL @ WAS,ORL,0.6439,-204.0000,-0.0272,skip,-204 is worse than the -158 limit,2026-11-22T15:30:10Z
+2026-11-22,0022600283,DEN @ CHI,DEN,0.6117,-423.0000,-0.1971,skip,-423 is shorter than the -250 cap,2026-11-22T15:30:10Z
+2026-11-22,0022600286,BOS @ GSW,BOS,0.6050,-359.0000,-0.1772,skip,-359 is shorter than the -250 cap,2026-11-22T15:30:10Z
