@@ -61,3 +61,8 @@ date,game_id,matchup,pick,model_prob,odds,edge,decision,reason,checked_at
 2026-11-23,0022600288,POR @ PHI,PHI,0.6197,-166.0000,-0.0044,skip,-166 is worse than the -143 limit,2026-11-23T15:34:38Z
 2026-11-24,0022600053,BOS @ WAS,BOS,0.7370,-453.0000,-0.0821,skip,-453 is shorter than the -250 cap,2026-11-24T15:35:16Z
 2026-11-24,0022600054,DAL @ DEN,DEN,0.6603,-310.0000,-0.0957,skip,-310 is shorter than the -250 cap,2026-11-24T15:35:16Z
+2026-11-25,0022600059,LAC @ MEM,MEM,0.7679,-269.0000,0.0389,skip,-269 is shorter than the -250 cap,2026-11-25T15:40:04Z
+2026-11-25,0022600057,CLE @ NYK,NYK,0.6955,-155.0000,0.0876,skip,edge +8.8% looks too good: OG Anunoby (34 min) out,2026-11-25T15:40:04Z
+2026-11-25,0022600062,SAC @ GSW,GSW,0.6797,-264.0000,-0.0456,skip,-264 is shorter than the -250 cap,2026-11-25T15:40:04Z
+2026-11-25,0022600056,CHI @ CHA,CHI,0.6622,136.0000,0.2385,skip,"edge +23.8% looks too good: Norman Powell (30 min), Caleb Wilson (31 min) out",2026-11-25T15:40:04Z
+2026-11-25,0022600063,SAS @ POR,SAS,0.6320,-155.0000,0.0242,skip,-155 is worse than the -151 limit,2026-11-25T15:40:04Z
