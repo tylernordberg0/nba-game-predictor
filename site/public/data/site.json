@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated_at": "2026-11-25T15:40:05Z",
-  "export_date": "2026-11-25",
+  "generated_at": "2026-11-26T15:30:10Z",
+  "export_date": "2026-11-26",
   "board_date": "2026-11-25",
-  "results_through": "2026-11-24",
+  "results_through": "2026-11-25",
   "model_version": "v2",
   "odds_fetched_at": "2026-11-25T15:40:04Z",
   "rules": {
@@ -28,8 +28,8 @@
    "confidence": 0.7679,
    "rating": "BEST BET",
    "predicted_at": "2026-11-25T15:40:04Z",
-   "winner": null,
-   "correct": null,
+   "winner": "MEM",
+   "correct": 1,
    "fair_odds": -330,
    "limit_odds": -281,
    "tip": "2026-11-26T01:10:00Z",
@@ -59,8 +59,8 @@
    "confidence": 0.6955,
    "rating": "BEST BET",
    "predicted_at": "2026-11-25T15:40:04Z",
-   "winner": null,
-   "correct": null,
+   "winner": "NYK",
+   "correct": 1,
    "fair_odds": -228,
    "limit_odds": -198,
    "tip": "2026-11-26T00:40:00Z",
@@ -90,8 +90,8 @@
    "confidence": 0.6797,
    "rating": "BEST BET",
    "predicted_at": "2026-11-25T15:40:04Z",
-   "winner": null,
-   "correct": null,
+   "winner": "GSW",
+   "correct": 1,
    "fair_odds": -212,
    "limit_odds": -185,
    "tip": "2026-11-26T03:10:00Z",
@@ -121,8 +121,8 @@
    "confidence": 0.6622,
    "rating": "BEST BET",
    "predicted_at": "2026-11-25T15:40:04Z",
-   "winner": null,
-   "correct": null,
+   "winner": "CHI",
+   "correct": 1,
    "fair_odds": -196,
    "limit_odds": -171,
    "tip": "2026-11-26T00:10:00Z",
@@ -152,8 +152,8 @@
    "confidence": 0.632,
    "rating": "Good",
    "predicted_at": "2026-11-25T15:40:04Z",
-   "winner": null,
-   "correct": null,
+   "winner": "POR",
+   "correct": 0,
    "fair_odds": -171,
    "limit_odds": -151,
    "tip": "2026-11-26T03:10:00Z",
@@ -183,8 +183,8 @@
    "confidence": 0.5493,
    "rating": "Lean",
    "predicted_at": "2026-11-25T15:40:04Z",
-   "winner": null,
-   "correct": null,
+   "winner": "HOU",
+   "correct": 1,
    "fair_odds": -121,
    "limit_odds": -108,
    "tip": "2026-11-26T01:40:00Z",
@@ -214,8 +214,8 @@
    "confidence": 0.5255,
    "rating": "Lean",
    "predicted_at": "2026-11-25T15:40:04Z",
-   "winner": null,
-   "correct": null,
+   "winner": "MIN",
+   "correct": 0,
    "fair_odds": -110,
    "limit_odds": 102,
    "tip": "2026-11-26T00:40:00Z",
@@ -245,8 +245,8 @@
    "confidence": 0.5227,
    "rating": "Lean",
    "predicted_at": "2026-11-25T15:40:04Z",
-   "winner": null,
-   "correct": null,
+   "winner": "PHI",
+   "correct": 0,
    "fair_odds": -109,
    "limit_odds": 103,
    "tip": "2026-11-25T22:10:00Z",
@@ -276,8 +276,8 @@
    "confidence": 0.5138,
    "rating": "Toss-up",
    "predicted_at": "2026-11-25T15:40:04Z",
-   "winner": null,
-   "correct": null,
+   "winner": "BKN",
+   "correct": 0,
    "fair_odds": -105,
    "limit_odds": 107,
    "tip": "2026-11-26T01:10:00Z",
@@ -2096,8 +2096,8 @@
    "confidence": 0.7679,
    "model_version": "v2",
    "predicted_at": "2026-11-25T15:40:04Z",
-   "winner": null,
-   "correct": null
+   "winner": "MEM",
+   "correct": 1
   },
   {
    "date": "2026-11-25",
@@ -2108,8 +2108,8 @@
    "confidence": 0.6955,
    "model_version": "v2",
    "predicted_at": "2026-11-25T15:40:04Z",
-   "winner": null,
-   "correct": null
+   "winner": "NYK",
+   "correct": 1
   },
   {
    "date": "2026-11-25",
@@ -2120,8 +2120,8 @@
    "confidence": 0.6797,
    "model_version": "v2",
    "predicted_at": "2026-11-25T15:40:04Z",
-   "winner": null,
-   "correct": null
+   "winner": "GSW",
+   "correct": 1
   },
   {
    "date": "2026-11-25",
@@ -2132,8 +2132,8 @@
    "confidence": 0.6622,
    "model_version": "v2",
    "predicted_at": "2026-11-25T15:40:04Z",
-   "winner": null,
-   "correct": null
+   "winner": "CHI",
+   "correct": 1
   },
   {
    "date": "2026-11-25",
@@ -2144,8 +2144,8 @@
    "confidence": 0.632,
    "model_version": "v2",
    "predicted_at": "2026-11-25T15:40:04Z",
-   "winner": null,
-   "correct": null
+   "winner": "POR",
+   "correct": 0
   },
   {
    "date": "2026-11-25",
@@ -2156,8 +2156,8 @@
    "confidence": 0.5493,
    "model_version": "v2",
    "predicted_at": "2026-11-25T15:40:04Z",
-   "winner": null,
-   "correct": null
+   "winner": "HOU",
+   "correct": 1
   },
   {
    "date": "2026-11-25",
@@ -2168,8 +2168,8 @@
    "confidence": 0.5255,
    "model_version": "v2",
    "predicted_at": "2026-11-25T15:40:04Z",
-   "winner": null,
-   "correct": null
+   "winner": "MIN",
+   "correct": 0
   },
   {
    "date": "2026-11-25",
@@ -2180,8 +2180,8 @@
    "confidence": 0.5227,
    "model_version": "v2",
    "predicted_at": "2026-11-25T15:40:04Z",
-   "winner": null,
-   "correct": null
+   "winner": "PHI",
+   "correct": 0
   },
   {
    "date": "2026-11-25",
@@ -2192,8 +2192,8 @@
    "confidence": 0.5138,
    "model_version": "v2",
    "predicted_at": "2026-11-25T15:40:04Z",
-   "winner": null,
-   "correct": null
+   "winner": "BKN",
+   "correct": 0
   }
  ],
  "bets": [
