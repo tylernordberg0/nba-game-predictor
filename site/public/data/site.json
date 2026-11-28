@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-11-27T15:30:09Z",
-  "export_date": "2026-11-27",
-  "board_date": "2026-11-27",
-  "results_through": "2026-11-25",
+  "generated_at": "2026-11-28T15:30:09Z",
+  "export_date": "2026-11-28",
+  "board_date": "2026-11-28",
+  "results_through": "2026-11-27",
   "model_version": "v2",
-  "odds_fetched_at": "2026-11-27T15:30:08Z",
+  "odds_fetched_at": "2026-11-28T15:30:08Z",
   "rules": {
    "min_confidence": 0.6,
    "min_edge": 0.03,
@@ -19,309 +19,92 @@
  },
  "games": [
   {
-   "game_id": "0022600065",
-   "date": "2026-11-27",
-   "away": "MIL",
-   "home": "DET",
-   "pick": "DET",
-   "home_win_prob": 0.7513,
-   "confidence": 0.7513,
+   "game_id": "0022600299",
+   "date": "2026-11-28",
+   "away": "IND",
+   "home": "CHI",
+   "pick": "CHI",
+   "home_win_prob": 0.6852,
+   "confidence": 0.6852,
    "rating": "BEST BET",
-   "predicted_at": "2026-11-27T15:30:08Z",
+   "predicted_at": "2026-11-28T15:30:08Z",
    "winner": null,
    "correct": null,
-   "fair_odds": -302,
-   "limit_odds": -258,
-   "tip": "2026-11-28T00:40:00Z",
+   "fair_odds": -217,
+   "limit_odds": -190,
+   "tip": "2026-11-29T01:10:00Z",
    "odds": {
-    "away": 351,
-    "home": -452,
+    "away": 114,
+    "home": -135,
     "book": "draftkings",
-    "book_updated": "2026-11-27T15:29:31Z",
-    "fetched_at": "2026-11-27T15:30:08Z"
+    "book_updated": "2026-11-28T15:29:47Z",
+    "fetched_at": "2026-11-28T15:30:08Z"
    },
-   "pick_odds": -452,
-   "implied_prob": 0.8188,
-   "edge": -0.0675,
+   "pick_odds": -135,
+   "implied_prob": 0.5745,
+   "edge": 0.1107,
    "decision": {
     "action": "skip",
-    "reason": "-452 is shorter than the -250 cap",
+    "reason": "edge +11.1% looks too good: Norman Powell (30 min), Caleb Wilson (31 min) out",
     "source": "auto"
    }
   },
   {
-   "game_id": "0022600071",
-   "date": "2026-11-27",
-   "away": "LAL",
-   "home": "SAS",
-   "pick": "SAS",
-   "home_win_prob": 0.7358,
-   "confidence": 0.7358,
-   "rating": "BEST BET",
-   "predicted_at": "2026-11-27T15:30:08Z",
-   "winner": null,
-   "correct": null,
-   "fair_odds": -278,
-   "limit_odds": -239,
-   "tip": "2026-11-28T02:40:00Z",
-   "odds": {
-    "away": 196,
-    "home": -237,
-    "book": "draftkings",
-    "book_updated": "2026-11-27T15:29:31Z",
-    "fetched_at": "2026-11-27T15:30:08Z"
-   },
-   "pick_odds": -237,
-   "implied_prob": 0.7033,
-   "edge": 0.0325,
-   "decision": {
-    "action": "bet",
-    "reason": "",
-    "source": "auto"
-   }
-  },
-  {
-   "game_id": "0022600068",
-   "date": "2026-11-27",
-   "away": "ATL",
-   "home": "BOS",
-   "pick": "BOS",
-   "home_win_prob": 0.7252,
-   "confidence": 0.7252,
-   "rating": "BEST BET",
-   "predicted_at": "2026-11-27T15:30:08Z",
-   "winner": null,
-   "correct": null,
-   "fair_odds": -263,
-   "limit_odds": -228,
-   "tip": "2026-11-28T01:10:00Z",
-   "odds": {
-    "away": 286,
-    "home": -359,
-    "book": "draftkings",
-    "book_updated": "2026-11-27T15:29:31Z",
-    "fetched_at": "2026-11-27T15:30:08Z"
-   },
-   "pick_odds": -359,
-   "implied_prob": 0.7821,
-   "edge": -0.0569,
-   "decision": {
-    "action": "skip",
-    "reason": "-359 is shorter than the -250 cap",
-    "source": "auto"
-   }
-  },
-  {
-   "game_id": "0022600073",
-   "date": "2026-11-27",
-   "away": "NOP",
-   "home": "LAC",
-   "pick": "LAC",
-   "home_win_prob": 0.6945,
-   "confidence": 0.6945,
-   "rating": "BEST BET",
-   "predicted_at": "2026-11-27T15:30:08Z",
-   "winner": null,
-   "correct": null,
-   "fair_odds": -227,
-   "limit_odds": -198,
-   "tip": "2026-11-28T02:40:00Z",
-   "odds": {
-    "away": 120,
-    "home": -142,
-    "book": "draftkings",
-    "book_updated": "2026-11-27T15:29:31Z",
-    "fetched_at": "2026-11-27T15:30:08Z"
-   },
-   "pick_odds": -142,
-   "implied_prob": 0.5868,
-   "edge": 0.1077,
-   "decision": {
-    "action": "bet",
-    "reason": "",
-    "source": "auto"
-   }
-  },
-  {
-   "game_id": "0022600074",
-   "date": "2026-11-27",
-   "away": "GSW",
-   "home": "POR",
-   "pick": "POR",
-   "home_win_prob": 0.6834,
-   "confidence": 0.6834,
-   "rating": "BEST BET",
-   "predicted_at": "2026-11-27T15:30:08Z",
-   "winner": null,
-   "correct": null,
-   "fair_odds": -215,
-   "limit_odds": -188,
-   "tip": "2026-11-28T02:40:00Z",
-   "odds": {
-    "away": 322,
-    "home": -410,
-    "book": "draftkings",
-    "book_updated": "2026-11-27T15:29:31Z",
-    "fetched_at": "2026-11-27T15:30:08Z"
-   },
-   "pick_odds": -410,
-   "implied_prob": 0.8039,
-   "edge": -0.1205,
-   "decision": {
-    "action": "skip",
-    "reason": "-410 is shorter than the -250 cap",
-    "source": "auto"
-   }
-  },
-  {
-   "game_id": "0022600070",
-   "date": "2026-11-27",
-   "away": "DAL",
-   "home": "PHX",
-   "pick": "PHX",
-   "home_win_prob": 0.6123,
-   "confidence": 0.6123,
+   "game_id": "0022600300",
+   "date": "2026-11-28",
+   "away": "OKC",
+   "home": "MIL",
+   "pick": "OKC",
+   "home_win_prob": 0.3677,
+   "confidence": 0.6323,
    "rating": "Good",
-   "predicted_at": "2026-11-27T15:30:08Z",
+   "predicted_at": "2026-11-28T15:30:08Z",
    "winner": null,
    "correct": null,
-   "fair_odds": -157,
-   "limit_odds": -139,
-   "tip": "2026-11-28T02:10:00Z",
+   "fair_odds": -171,
+   "limit_odds": -151,
+   "tip": "2026-11-29T01:10:00Z",
    "odds": {
-    "away": 103,
-    "home": -121,
+    "away": -561,
+    "home": 420,
     "book": "draftkings",
-    "book_updated": "2026-11-27T15:29:31Z",
-    "fetched_at": "2026-11-27T15:30:08Z"
+    "book_updated": "2026-11-28T15:29:47Z",
+    "fetched_at": "2026-11-28T15:30:08Z"
    },
-   "pick_odds": -121,
-   "implied_prob": 0.5475,
-   "edge": 0.0648,
-   "decision": {
-    "action": "bet",
-    "reason": "",
-    "source": "auto"
-   }
-  },
-  {
-   "game_id": "0022600072",
-   "date": "2026-11-27",
-   "away": "DEN",
-   "home": "UTA",
-   "pick": "DEN",
-   "home_win_prob": 0.4032,
-   "confidence": 0.5968,
-   "rating": "Good",
-   "predicted_at": "2026-11-27T15:30:08Z",
-   "winner": null,
-   "correct": null,
-   "fair_odds": -148,
-   "limit_odds": -130,
-   "tip": "2026-11-28T02:40:00Z",
-   "odds": {
-    "away": -468,
-    "home": 361,
-    "book": "draftkings",
-    "book_updated": "2026-11-27T15:29:31Z",
-    "fetched_at": "2026-11-27T15:30:08Z"
-   },
-   "pick_odds": -468,
-   "implied_prob": 0.8239,
-   "edge": -0.2271,
+   "pick_odds": -561,
+   "implied_prob": 0.8487,
+   "edge": -0.2164,
    "decision": {
     "action": "skip",
-    "reason": "under the 60% confidence bar",
+    "reason": "-561 is shorter than the -250 cap",
     "source": "auto"
    }
   },
   {
-   "game_id": "0022600067",
-   "date": "2026-11-27",
-   "away": "BKN",
-   "home": "TOR",
-   "pick": "TOR",
-   "home_win_prob": 0.5958,
-   "confidence": 0.5958,
-   "rating": "Good",
-   "predicted_at": "2026-11-27T15:30:08Z",
-   "winner": null,
-   "correct": null,
-   "fair_odds": -147,
-   "limit_odds": -130,
-   "tip": "2026-11-28T00:40:00Z",
-   "odds": {
-    "away": 298,
-    "home": -375,
-    "book": "draftkings",
-    "book_updated": "2026-11-27T15:29:31Z",
-    "fetched_at": "2026-11-27T15:30:08Z"
-   },
-   "pick_odds": -375,
-   "implied_prob": 0.7895,
-   "edge": -0.1937,
-   "decision": {
-    "action": "skip",
-    "reason": "under the 60% confidence bar",
-    "source": "auto"
-   }
-  },
-  {
-   "game_id": "0022600064",
-   "date": "2026-11-27",
-   "away": "MIA",
-   "home": "NYK",
-   "pick": "NYK",
-   "home_win_prob": 0.5923,
-   "confidence": 0.5923,
-   "rating": "Good",
-   "predicted_at": "2026-11-27T15:30:08Z",
-   "winner": null,
-   "correct": null,
-   "fair_odds": -145,
-   "limit_odds": -128,
-   "tip": "2026-11-28T00:10:00Z",
-   "odds": {
-    "away": 151,
-    "home": -180,
-    "book": "draftkings",
-    "book_updated": "2026-11-27T15:29:31Z",
-    "fetched_at": "2026-11-27T15:30:08Z"
-   },
-   "pick_odds": -180,
-   "implied_prob": 0.6429,
-   "edge": -0.0506,
-   "decision": {
-    "action": "skip",
-    "reason": "under the 60% confidence bar",
-    "source": "auto"
-   }
-  },
-  {
-   "game_id": "0022600069",
-   "date": "2026-11-27",
-   "away": "MEM",
-   "home": "MIN",
-   "pick": "MIN",
-   "home_win_prob": 0.5495,
-   "confidence": 0.5495,
+   "game_id": "0022600297",
+   "date": "2026-11-28",
+   "away": "ORL",
+   "home": "WAS",
+   "pick": "ORL",
+   "home_win_prob": 0.4239,
+   "confidence": 0.5761,
    "rating": "Lean",
-   "predicted_at": "2026-11-27T15:30:08Z",
+   "predicted_at": "2026-11-28T15:30:08Z",
    "winner": null,
    "correct": null,
-   "fair_odds": -121,
-   "limit_odds": -108,
-   "tip": "2026-11-28T01:40:00Z",
+   "fair_odds": -135,
+   "limit_odds": -120,
+   "tip": "2026-11-28T22:10:00Z",
    "odds": {
-    "away": 160,
-    "home": -192,
+    "away": -173,
+    "home": 145,
     "book": "draftkings",
-    "book_updated": "2026-11-27T15:29:31Z",
-    "fetched_at": "2026-11-27T15:30:08Z"
+    "book_updated": "2026-11-28T15:29:47Z",
+    "fetched_at": "2026-11-28T15:30:08Z"
    },
-   "pick_odds": -192,
-   "implied_prob": 0.6575,
-   "edge": -0.108,
+   "pick_odds": -173,
+   "implied_prob": 0.6337,
+   "edge": -0.0576,
    "decision": {
     "action": "skip",
     "reason": "under the 60% confidence bar",
@@ -329,30 +112,61 @@
    }
   },
   {
-   "game_id": "0022600066",
-   "date": "2026-11-27",
+   "game_id": "0022600301",
+   "date": "2026-11-28",
    "away": "PHI",
-   "home": "IND",
-   "pick": "PHI",
-   "home_win_prob": 0.4738,
-   "confidence": 0.5262,
+   "home": "HOU",
+   "pick": "HOU",
+   "home_win_prob": 0.5678,
+   "confidence": 0.5678,
    "rating": "Lean",
-   "predicted_at": "2026-11-27T15:30:08Z",
+   "predicted_at": "2026-11-28T15:30:08Z",
    "winner": null,
    "correct": null,
-   "fair_odds": -111,
-   "limit_odds": 102,
-   "tip": "2026-11-28T00:40:00Z",
+   "fair_odds": -131,
+   "limit_odds": -116,
+   "tip": "2026-11-29T01:40:00Z",
    "odds": {
-    "away": -162,
-    "home": 136,
+    "away": 411,
+    "home": -545,
     "book": "draftkings",
-    "book_updated": "2026-11-27T15:29:31Z",
-    "fetched_at": "2026-11-27T15:30:08Z"
+    "book_updated": "2026-11-28T15:29:47Z",
+    "fetched_at": "2026-11-28T15:30:08Z"
    },
-   "pick_odds": -162,
-   "implied_prob": 0.6183,
-   "edge": -0.0921,
+   "pick_odds": -545,
+   "implied_prob": 0.845,
+   "edge": -0.2772,
+   "decision": {
+    "action": "skip",
+    "reason": "under the 60% confidence bar",
+    "source": "auto"
+   }
+  },
+  {
+   "game_id": "0022600298",
+   "date": "2026-11-28",
+   "away": "BKN",
+   "home": "CHA",
+   "pick": "CHA",
+   "home_win_prob": 0.5174,
+   "confidence": 0.5174,
+   "rating": "Toss-up",
+   "predicted_at": "2026-11-28T15:30:08Z",
+   "winner": null,
+   "correct": null,
+   "fair_odds": -107,
+   "limit_odds": 106,
+   "tip": "2026-11-28T23:10:00Z",
+   "odds": {
+    "away": 205,
+    "home": -248,
+    "book": "draftkings",
+    "book_updated": "2026-11-28T15:29:47Z",
+    "fetched_at": "2026-11-28T15:30:08Z"
+   },
+   "pick_odds": -248,
+   "implied_prob": 0.7126,
+   "edge": -0.1952,
    "decision": {
     "action": "skip",
     "reason": "under the 60% confidence bar",
@@ -2266,8 +2080,8 @@
    "confidence": 0.7513,
    "model_version": "v2",
    "predicted_at": "2026-11-27T15:30:08Z",
-   "winner": null,
-   "correct": null
+   "winner": "DET",
+   "correct": 1
   },
   {
    "date": "2026-11-27",
@@ -2278,8 +2092,8 @@
    "confidence": 0.7358,
    "model_version": "v2",
    "predicted_at": "2026-11-27T15:30:08Z",
-   "winner": null,
-   "correct": null
+   "winner": "SAS",
+   "correct": 1
   },
   {
    "date": "2026-11-27",
@@ -2290,8 +2104,8 @@
    "confidence": 0.7252,
    "model_version": "v2",
    "predicted_at": "2026-11-27T15:30:08Z",
-   "winner": null,
-   "correct": null
+   "winner": "ATL",
+   "correct": 0
   },
   {
    "date": "2026-11-27",
@@ -2302,8 +2116,8 @@
    "confidence": 0.6945,
    "model_version": "v2",
    "predicted_at": "2026-11-27T15:30:08Z",
-   "winner": null,
-   "correct": null
+   "winner": "NOP",
+   "correct": 0
   },
   {
    "date": "2026-11-27",
@@ -2314,8 +2128,8 @@
    "confidence": 0.6834,
    "model_version": "v2",
    "predicted_at": "2026-11-27T15:30:08Z",
-   "winner": null,
-   "correct": null
+   "winner": "POR",
+   "correct": 1
   },
   {
    "date": "2026-11-27",
@@ -2326,8 +2140,8 @@
    "confidence": 0.6123,
    "model_version": "v2",
    "predicted_at": "2026-11-27T15:30:08Z",
-   "winner": null,
-   "correct": null
+   "winner": "DAL",
+   "correct": 0
   },
   {
    "date": "2026-11-27",
@@ -2338,8 +2152,8 @@
    "confidence": 0.5968,
    "model_version": "v2",
    "predicted_at": "2026-11-27T15:30:08Z",
-   "winner": null,
-   "correct": null
+   "winner": "DEN",
+   "correct": 1
   },
   {
    "date": "2026-11-27",
@@ -2350,8 +2164,8 @@
    "confidence": 0.5958,
    "model_version": "v2",
    "predicted_at": "2026-11-27T15:30:08Z",
-   "winner": null,
-   "correct": null
+   "winner": "TOR",
+   "correct": 1
   },
   {
    "date": "2026-11-27",
@@ -2362,8 +2176,8 @@
    "confidence": 0.5923,
    "model_version": "v2",
    "predicted_at": "2026-11-27T15:30:08Z",
-   "winner": null,
-   "correct": null
+   "winner": "MIA",
+   "correct": 0
   },
   {
    "date": "2026-11-27",
@@ -2374,8 +2188,8 @@
    "confidence": 0.5495,
    "model_version": "v2",
    "predicted_at": "2026-11-27T15:30:08Z",
-   "winner": null,
-   "correct": null
+   "winner": "MEM",
+   "correct": 0
   },
   {
    "date": "2026-11-27",
@@ -2386,6 +2200,66 @@
    "confidence": 0.5262,
    "model_version": "v2",
    "predicted_at": "2026-11-27T15:30:08Z",
+   "winner": "PHI",
+   "correct": 1
+  },
+  {
+   "date": "2026-11-28",
+   "game_id": "0022600299",
+   "away": "IND",
+   "home": "CHI",
+   "pick": "CHI",
+   "confidence": 0.6852,
+   "model_version": "v2",
+   "predicted_at": "2026-11-28T15:30:08Z",
+   "winner": null,
+   "correct": null
+  },
+  {
+   "date": "2026-11-28",
+   "game_id": "0022600300",
+   "away": "OKC",
+   "home": "MIL",
+   "pick": "OKC",
+   "confidence": 0.6323,
+   "model_version": "v2",
+   "predicted_at": "2026-11-28T15:30:08Z",
+   "winner": null,
+   "correct": null
+  },
+  {
+   "date": "2026-11-28",
+   "game_id": "0022600297",
+   "away": "ORL",
+   "home": "WAS",
+   "pick": "ORL",
+   "confidence": 0.5761,
+   "model_version": "v2",
+   "predicted_at": "2026-11-28T15:30:08Z",
+   "winner": null,
+   "correct": null
+  },
+  {
+   "date": "2026-11-28",
+   "game_id": "0022600301",
+   "away": "PHI",
+   "home": "HOU",
+   "pick": "HOU",
+   "confidence": 0.5678,
+   "model_version": "v2",
+   "predicted_at": "2026-11-28T15:30:08Z",
+   "winner": null,
+   "correct": null
+  },
+  {
+   "date": "2026-11-28",
+   "game_id": "0022600298",
+   "away": "BKN",
+   "home": "CHA",
+   "pick": "CHA",
+   "confidence": 0.5174,
+   "model_version": "v2",
+   "predicted_at": "2026-11-28T15:30:08Z",
    "winner": null,
    "correct": null
   }
@@ -2812,8 +2686,8 @@
    "stake": 10.0,
    "book": "draftkings",
    "placed_at": "2026-11-27T15:30:08Z",
-   "result": null,
-   "profit": null,
+   "result": "W",
+   "profit": 4.2194,
    "source": "auto"
   },
   {
@@ -2829,8 +2703,8 @@
    "stake": 10.0,
    "book": "draftkings",
    "placed_at": "2026-11-27T15:30:08Z",
-   "result": null,
-   "profit": null,
+   "result": "L",
+   "profit": -10.0,
    "source": "auto"
   },
   {
@@ -2846,8 +2720,8 @@
    "stake": 10.0,
    "book": "draftkings",
    "placed_at": "2026-11-27T15:30:08Z",
-   "result": null,
-   "profit": null,
+   "result": "L",
+   "profit": -10.0,
    "source": "auto"
   }
  ],
